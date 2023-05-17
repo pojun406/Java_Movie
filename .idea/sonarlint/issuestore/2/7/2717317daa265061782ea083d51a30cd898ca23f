@@ -1,0 +1,5 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ûãî
+n	java:S116"TRename this field "JoinPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®úùÿÿÿÿ
+k
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8éºÊÆ‚1
