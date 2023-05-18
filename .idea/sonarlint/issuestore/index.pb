@@ -16,10 +16,10 @@ I
 I
 src/LoginPage/FindID.java,8\7\871f6ea174ae5a8c0525c38abfdaad00a2529023
 U
+%src/MainPage/MyPage/CheckBooking.java,e\4\e49fd8d8f7fe3663048013f57bae6afac3fe1b94
+U
 %src/MainPage/MyPage/CheckBooking.form,e\1\e166f7141b8a27e136f42bf52332ac53438b309c
 O
-src/MainPage/MyPage/MyPage.form,7\7\77ba2e045474546a834508dff901dae3936018ab
-U
-%src/MainPage/MyPage/CheckBooking.java,e\4\e49fd8d8f7fe3663048013f57bae6afac3fe1b94
-O
 src/MainPage/MyPage/MyPage.java,6\8\680421293a47bf07cb6a501dc885441beee095e3
+O
+src/MainPage/MyPage/MyPage.form,7\7\77ba2e045474546a834508dff901dae3936018ab
