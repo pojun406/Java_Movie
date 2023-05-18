@@ -12,13 +12,18 @@ public class Login extends JFrame{
     private JButton btn_FindID;
     private JButton btn_FindPW;
     private JButton btn_Join;
+    private JLabel lb_ID;
+    private JLabel lb_PW;
 
     public Login() {
 
         setContentPane(LoginPanel);
+        LoginPanel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
         setTitle("로그인 페이지");
-        setSize(350,180);
+        setSize(460,160);
+        setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setResizable(false);
         setVisible(true);
 
 
@@ -31,19 +36,24 @@ public class Login extends JFrame{
         btn_FindID.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                FindID findid = new FindID();
+                findid.setVisible(true);
+                Login.this.setVisible(false);
             }
         });
         btn_FindPW.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                FindPW findpw = new FindPW();
+                findpw.setVisible(true);
+                Login.this.setVisible(false);
             }
         });
         btn_Join.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Join JoinPanel = new Join();
-                JoinPanel.setVisible(true);
+                Join join = new Join();
+                join.setVisible(true);
                 Login.this.setVisible(false);
             }
         });
