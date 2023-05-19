@@ -1,4 +1,4 @@
-package LoginPage;
+package MainPage.LoginPage;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

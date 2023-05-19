@@ -1,4 +1,4 @@
-package LoginPage;
+package MainPage.LoginPage;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -15,8 +15,8 @@ public class FindID extends JFrame {
 
     public FindID(){
         setContentPane(FindIDPanel);
-        FindIDPanel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
-        setTitle("아이디 찾기 페이지");
+        rder(BorderFactory.createEmptyBorder(10,10,10,10));
+        setTitle("아이디 찾기         FindIDPanel.setBo페이지");
         setSize(350,220);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
