@@ -1,31 +1,0 @@
-
-E
-java:S1604"(Make this anonymous inner class a lambda(¾ŸŞ8Õ®şå‚1
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ûãî
-w	java:S116"VRename this field "FindPWPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹¤Úôùÿÿÿÿ8„ îâ‚1
-n	java:S116	"RRename this field "lb_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ÑÙ•8ø¿Öå‚1
-o	java:S116
-"SRename this field "lb_PhNum" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿˆë8Óù÷å‚1
-q	java:S116"PRename this field "lb_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ŸØùúÿÿÿÿ8äÚõå‚1
-t	java:S116"SRename this field "txt_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä¹›¾úÿÿÿÿ8•ãöå‚1
-o	java:S116"TRename this field "txt_PhNum" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€³˜A8ûÓ÷å‚1
-m	java:S116"QRename this field "txt_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°‡…8ûÓ÷å‚1
-t	java:S116"SRename this field "btn_Exit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ŞÛÈûÿÿÿÿ8•ãöå‚1
-q	java:S116"URename this field "btn_FindPW" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıã÷¶8•ãöå‚1
-k
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8™ú÷å‚1
-H
-java:S1068	"+Remove this unused "lb_Name" private field.(¥ÑÙ•8ÿ¿Öå‚1
-I
-java:S1068
-",Remove this unused "lb_PhNum" private field.(ÿˆë8œú÷å‚1
-K
-java:S1068")Remove this unused "lb_ID" private field.(¢ŸØùúÿÿÿÿ8ğÚõå‚1
-N
-java:S1068",Remove this unused "txt_Name" private field.(Ä¹›¾úÿÿÿÿ8Ÿãöå‚1
-I
-java:S1068"-Remove this unused "txt_PhNum" private field.(€³˜A8‚Ô÷å‚1
-G
-java:S1068"*Remove this unused "txt_ID" private field.(°‡…8‚Ô÷å‚1
-K
-java:S1068".Remove this unused "btn_FindPW" private field.(ıã÷¶8Ÿãöå‚1

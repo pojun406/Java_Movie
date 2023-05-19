@@ -1,0 +1,5 @@
+
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²İ›[
+w	java:S116"VRename this field "MyPagefield" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘€¿ºÿÿÿÿÿ8Ùİğ‚1
+Q
+java:S1068"/Remove this unused "MyPagefield" private field.(‘€¿ºÿÿÿÿÿ8Ùİğ‚1
