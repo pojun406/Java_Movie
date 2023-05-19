@@ -15,8 +15,8 @@ public class FindID extends JFrame {
 
     public FindID(){
         setContentPane(FindIDPanel);
-        rder(BorderFactory.createEmptyBorder(10,10,10,10));
-        setTitle("아이디 찾기         FindIDPanel.setBo페이지");
+        FindIDPanel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+        setTitle("아이디 찾기 페이지");
         setSize(350,220);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
