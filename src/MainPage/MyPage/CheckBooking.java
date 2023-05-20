@@ -6,4 +6,6 @@ import javax.swing.*;
 
 public class CheckBooking {
     private JPanel CheckBookingPanel;
+    private JLabel lb_BookingList;
+    private JList list_booking;
 }

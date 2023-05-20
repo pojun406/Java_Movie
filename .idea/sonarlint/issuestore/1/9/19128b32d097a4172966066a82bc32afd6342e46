@@ -1,0 +1,26 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¹†éºüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
+r	java:S116"VRename this field "lb_UserName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¾Ê•8¦òËºƒ1
+o	java:S116"SRename this field "lb_hello" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êœ²—8§òËºƒ1
+x	java:S116"WRename this field "lb_MovieName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æñô÷ÿÿÿÿÿ8¨òËºƒ1
+s	java:S116	"RRename this field "lb_Seat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªæ•ùÿÿÿÿ8¨òËºƒ1
+r	java:S116
+"VRename this field "lb_showDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èúüÕ8¨òËºƒ1
+q	java:S116"URename this field "lb_theater" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼÷8¨òËºƒ1
+p	java:S116"TRename this field "btn_check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÍ‹8¨òËºƒ1
+L
+java:S1068"/Remove this unused "lb_UserName" private field.(Ã¾Ê•8©òËºƒ1
+I
+java:S1068",Remove this unused "lb_hello" private field.(Êœ²—8©òËºƒ1
+R
+java:S1068"0Remove this unused "lb_MovieName" private field.(Æñô÷ÿÿÿÿÿ8©òËºƒ1
+M
+java:S1068	"+Remove this unused "lb_Seat" private field.(ªæ•ùÿÿÿÿ8©òËºƒ1
+L
+java:S1068
+"/Remove this unused "lb_showDate" private field.(èúüÕ8©òËºƒ1
+K
+java:S1068".Remove this unused "lb_theater" private field.(¼÷8©òËºƒ1
+J
+java:S1068"-Remove this unused "btn_check" private field.(éÍ‹8©òËºƒ1

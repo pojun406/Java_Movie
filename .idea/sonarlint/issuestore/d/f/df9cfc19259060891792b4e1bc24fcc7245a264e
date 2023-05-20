@@ -1,0 +1,32 @@
+
+E
+java:S1604"(Make this anonymous inner class a lambda(›ß­ä8À±ÎÁƒ1
+a	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(îöÌ?
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û˜ìŒ
+z	java:S116"YRename this field "MovieinfoPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷´ƒıÿÿÿÿ8„ÿ®Áƒ1
+q	java:S116"URename this field "pan_Poster" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áªµ8ê»¸¹ƒ1
+s	java:S116"RRename this field "btn_out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿ÕÃ·úÿÿÿÿ8ÍÅ¹ƒ1
+v	java:S116"URename this field "lb_MovieNm" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛØğƒıÿÿÿÿ8’Ş¾¹ƒ1
+p	java:S116"TRename this field "lb_Selled" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¬Æ8’ã¿¹ƒ1
+v	java:S116"URename this field "lb_dayUser" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿªË€ÿÿÿÿÿ8¦‡Á¹ƒ1
+v	java:S116"URename this field "lb_allUser" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¢Ééşÿÿÿÿ8­Â¹ƒ1
+p	java:S116"TRename this field "lb_profit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïåú€8¢¤Ä¹ƒ1
+k
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8Ôş¬Áƒ1
+V
+java:S1128"4Remove this unused import 'MainPage.LoginPage.Join'.(›íÏßúÿÿÿÿ8©œÕÁƒ1
+W
+java:S1128"5Remove this unused import 'MainPage.LoginPage.Login'.(îë¦óşÿÿÿÿ8©œÕÁƒ1
+K
+java:S1068".Remove this unused "pan_Poster" private field.(áªµ8ë»¸¹ƒ1
+P
+java:S1068".Remove this unused "lb_MovieNm" private field.(ÛØğƒıÿÿÿÿ8”Ş¾¹ƒ1
+J
+java:S1068"-Remove this unused "lb_Selled" private field.(ÿ¬Æ8“ã¿¹ƒ1
+P
+java:S1068".Remove this unused "lb_dayUser" private field.(ÿªË€ÿÿÿÿÿ8¨‡Á¹ƒ1
+P
+java:S1068".Remove this unused "lb_allUser" private field.(“¢Ééşÿÿÿÿ8‘­Â¹ƒ1
+J
+java:S1068"-Remove this unused "lb_profit" private field.(Ïåú€8¤¤Ä¹ƒ1

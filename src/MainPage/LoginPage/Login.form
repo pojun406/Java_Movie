@@ -29,6 +29,7 @@
           <grid row="0" column="3" row-span="10" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <focusTraversalPolicyProvider value="false"/>
           <opaque value="false"/>
           <text value="로그인"/>
         </properties>
@@ -40,6 +41,7 @@
           </grid>
         </constraints>
         <properties>
+          <focusTraversalPolicyProvider value="false"/>
           <text value=""/>
         </properties>
       </component>
@@ -50,6 +52,9 @@
           </grid>
         </constraints>
         <properties>
+          <enabled value="true"/>
+          <focusCycleRoot value="false"/>
+          <focusTraversalPolicyProvider value="false"/>
           <text value=""/>
         </properties>
       </component>

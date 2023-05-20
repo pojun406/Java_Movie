@@ -1,5 +1,7 @@
 package MainPage.LoginPage;
 
+import AdminPage.AdminPage;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -30,7 +32,20 @@ public class Login extends JFrame{
         btn_Login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null,"HelloWorld");
+                String Password = "";
+                char[] pw = txt_PW.getPassword();
+                for(char cha : pw){
+                    Character.toString(cha);
+                    Password += (Password.equals("")? ""+cha+"" : ""+cha+"");
+                }
+                if(txt_ID.getText().equals("1") && Password.equals("1")){
+                    AdminPage adminpage = new AdminPage();
+                    adminpage.setVisible(true);
+                    Login.this.setVisible(false);
+                }
+                else{
+                    JOptionPane.showMessageDialog(null,"로그인 성공 (테스트)");
+                }
             }
         });
         btn_FindID.addActionListener(new ActionListener() {

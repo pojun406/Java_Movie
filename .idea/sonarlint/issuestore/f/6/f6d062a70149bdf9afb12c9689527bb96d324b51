@@ -1,0 +1,9 @@
+
+C
+java:S1604'"(Make this anonymous inner class a lambda(‹‹¿üşÿÿÿÿ
+J
+java:S1604S"(Make this anonymous inner class a lambda(Í‚ÅÌûÿÿÿÿ8ôÊ¸ƒ1
+n	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ó„Š¶şÿÿÿÿ8 Å˜¸ƒ1
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
+i
+java:S3252Y"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(§ıÏÁ8’Ë¸ƒ1

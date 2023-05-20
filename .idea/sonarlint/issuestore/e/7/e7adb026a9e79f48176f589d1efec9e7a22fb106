@@ -1,0 +1,14 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
+s	java:S116"WRename this field "PaymentPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ–Ìş8€üÈ¶ƒ1
+o	java:S116"SRename this field "btn_Cash" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Üê8ßØé¶ƒ1
+t	java:S116"SRename this field "btn_Card" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¨ÀÅùÿÿÿÿ8©°ê¶ƒ1
+v	java:S116	"URename this field "lb_WhatPay" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²·½Úûÿÿÿÿ8ÙÅî¶ƒ1
+k
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8¬–ø¶ƒ1
+I
+java:S1068",Remove this unused "btn_Cash" private field.(–Üê8áØé¶ƒ1
+N
+java:S1068",Remove this unused "btn_Card" private field.(–¨ÀÅùÿÿÿÿ8«°ê¶ƒ1
+P
+java:S1068	".Remove this unused "lb_WhatPay" private field.(²·½Úûÿÿÿÿ8ÛÅî¶ƒ1

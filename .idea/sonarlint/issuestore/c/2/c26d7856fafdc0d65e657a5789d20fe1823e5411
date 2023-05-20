@@ -1,0 +1,5 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
+x	java:S116"WRename this field "BookingPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÄùÿÿÿÿ8³Å½¶ƒ1
+R
+java:S1068"0Remove this unused "BookingPanel" private field.(ÆÄùÿÿÿÿ8´Å½¶ƒ1

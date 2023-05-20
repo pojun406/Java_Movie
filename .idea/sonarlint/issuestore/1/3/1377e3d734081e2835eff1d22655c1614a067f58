@@ -1,0 +1,33 @@
+
+k	java:S117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¼ûÿÿÿÿ
+>
+java:S1604 "(Make this anonymous inner class a lambda(“ã¶†
+C
+java:S16043"(Make this anonymous inner class a lambda(ÖÌëÃúÿÿÿÿ
+=
+java:S1604;"(Make this anonymous inner class a lambda(®­È%
+>
+java:S1604C"(Make this anonymous inner class a lambda(ÿëæ†
+7
+java:S1643'"Use a StringBuilder instead.(„ËÏúÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹äÕz
+o	java:S116
+"URename this field "LoginPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ¬›šşÿÿÿÿ
+f	java:S116"QRename this field "txt_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°‡…
+i	java:S116"TRename this field "btn_Login" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘«‚‹
+k	java:S116"QRename this field "txt_PW" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÎ÷Îıÿÿÿÿ
+j	java:S116"URename this field "btn_FindID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á¼º
+j	java:S116"URename this field "btn_FindPW" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıã÷¶
+h	java:S116"SRename this field "btn_Join" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë›üÄ
+j	java:S116"PRename this field "lb_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ŸØùúÿÿÿÿ
+j	java:S116"PRename this field "lb_PW" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(× é–úÿÿÿÿ
+d
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+A
+java:S2201&",The return value of "toString" must be used.(Ï ³E
+x
+java:S3923'"]This conditional operation returns the same value whether the condition is "true" or "false".(„ËÏúÿÿÿÿ
+D
+java:S1068")Remove this unused "lb_ID" private field.(¢ŸØùúÿÿÿÿ
+D
+java:S1068")Remove this unused "lb_PW" private field.(× é–úÿÿÿÿ

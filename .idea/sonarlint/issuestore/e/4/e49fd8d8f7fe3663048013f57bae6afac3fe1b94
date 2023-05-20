@@ -1,5 +1,16 @@
 
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²İ›[
-}	java:S116"\Rename this field "CheckBookingPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§»ˆ‘øÿÿÿÿ8·›šñ‚1
+Q
+java:S3740
+"/Provide the parametrized type for this generic.(ÕúÔÓıÿÿÿÿ8‚ª·ƒ1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²İ›[8ƒª·ƒ1
+}	java:S116"\Rename this field "CheckBookingPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§»ˆ‘øÿÿÿÿ8…ª·ƒ1
+z	java:S116	"YRename this field "lb_BookingList" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×Ğ·‰ùÿÿÿÿ8†ª·ƒ1
+x	java:S116
+"WRename this field "list_booking" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕúÔÓıÿÿÿÿ8‡ª·ƒ1
 W
-java:S1068"5Remove this unused "CheckBookingPanel" private field.(§»ˆ‘øÿÿÿÿ8¼›šñ‚1
+java:S1068"5Remove this unused "CheckBookingPanel" private field.(§»ˆ‘øÿÿÿÿ8ˆª·ƒ1
+T
+java:S1068	"2Remove this unused "lb_BookingList" private field.(×Ğ·‰ùÿÿÿÿ8ˆª·ƒ1
+R
+java:S1068
+"0Remove this unused "list_booking" private field.(ÕúÔÓıÿÿÿÿ8‰ª·ƒ1
