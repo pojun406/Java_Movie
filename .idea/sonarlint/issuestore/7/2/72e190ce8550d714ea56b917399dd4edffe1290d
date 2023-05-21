@@ -1,0 +1,11 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¿‘êã
+l	java:S116"RRename this field "User_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿáå”ýÿÿÿÿ
+t	java:S116"ZRename this field "Reservation_Num" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á¡Îáùÿÿÿÿ
+i	java:S116"URename this field "Movie_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¦ó.
+F
+java:S1068"+Remove this unused "User_ID" private field.(Ÿáå”ýÿÿÿÿ
+N
+java:S1068"3Remove this unused "Reservation_Num" private field.(Á¡Îáùÿÿÿÿ
+C
+java:S1068".Remove this unused "Movie_Name" private field.(ò¦ó.
