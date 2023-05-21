@@ -1,6 +1,7 @@
 package MainPage.LoginPage;
 
 import AdminPage.AdminPage;
+import DAODTO.MemberDTO;
 import MainPage.BookingPage.BookingPage;
 
 import javax.swing.*;

@@ -1,19 +1,0 @@
-
->
-java:S1604"(Make this anonymous inner class a lambda(’À–â
-C
-java:S1604$"(Make this anonymous inner class a lambda(³Úž©ÿÿÿÿÿ
->
-java:S1604,"(Make this anonymous inner class a lambda(ÝŽ‚Ž
->
-java:S16044"(Make this anonymous inner class a lambda(›ß­ä
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û˜ìŒ
-i	java:S116"URename this field "AdminPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ðèÿs
-m	java:S116"XRename this field "btn_Movieinfo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Þþ˜
-n	java:S116"YRename this field "btn_UserManage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨³ß¥
-o	java:S116"ZRename this field "btn_MovieUpdate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì§Åê
-l	java:S116"RRename this field "btn_out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿ÕÃ·úÿÿÿÿ
-d
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öþÿÿÿÿ
-V
-java:S1128"4Remove this unused import 'MainPage.LoginPage.Join'.(›íÏßúÿÿÿÿ8ôƒËÁƒ1

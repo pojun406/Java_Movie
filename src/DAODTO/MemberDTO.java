@@ -1,4 +1,4 @@
-package MainPage.LoginPage;
+package DAODTO;
 
 public class MemberDTO {
     private int UID;

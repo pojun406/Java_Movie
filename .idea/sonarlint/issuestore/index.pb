@@ -7,8 +7,6 @@ _
 /src/MainPage/BookingPage/SeatPage_example1.java,f\6\f6d062a70149bdf9afb12c9689527bb96d324b51
 \
 ,src/MainPage/BookingPage/Booking_Detail.form,1\9\194e88e85735dec58cc06d6acdbfc1842817a011
-\
-,src/MainPage/BookingPage/Booking_Detail.java,1\9\19128b32d097a4172966066a82bc32afd6342e46
 R
 "src/MainPage/LoginPage/FindPW.form,c\e\cedb75d879fbbaac2bfb386df3da3a9cdbd4030a
 L
@@ -27,16 +25,8 @@ N
 src/AdminPage/User_Manage.java,7\8\7818bdf986a82c300effad1695bf7215476100b6
 P
  src/MainPage/LoginPage/Join.form,f\5\f547d9d819424073f64ad30621e1c666f417639c
-Q
-!src/MainPage/LoginPage/Login.form,7\0\7089140be696ea747abb5839be4795f2971ad0b1
 R
 "src/MainPage/LoginPage/FindPW.java,b\0\b0ec4f6426ed43c137b81bda8cec9e34273cbb24
-P
- src/MainPage/LoginPage/Join.java,4\4\44de2dc82a6a7afc9dcc88d532f52dc01db08039
-Y
-)src/MainPage/BookingPage/BookingPage.form,5\1\51dff5651a20025a68b99038894a1f42241eff79
-Y
-)src/MainPage/BookingPage/BookingPage.java,c\2\c26d7856fafdc0d65e657a5789d20fe1823e5411
 Q
 !src/MainPage/LoginPage/Login.java,1\3\1377e3d734081e2835eff1d22655c1614a067f58
 U
@@ -45,8 +35,6 @@ X
 (src/MainPage/BookingPage/BookingDAO.java,b\b\bbfe449fceea44bdde5e845c1874ef94b81f8168
 X
 (src/MainPage/BookingPage/BookingDTO.java,d\2\d200bf534989d4edd094ca258405d640460faa7a
-L
-src/AdminPage/AdminPage.java,9\1\918c5cc86109bfec32bcc6df3c3cc751cb039168
 U
 %src/MainPage/MyPage/CheckBooking.java,e\4\e49fd8d8f7fe3663048013f57bae6afac3fe1b94
 R
