@@ -1,5 +1,8 @@
 package MainPage.LoginPage;
 
+import DAODTO.MemberDAO;
+import DAODTO.MemberDTO;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

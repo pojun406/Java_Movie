@@ -1,8 +1,6 @@
-package MainPage.LoginPage;
+package DAODTO;
 
-import MainPage.LoginPage.MemberDTO;
 import DataBase.DBConnect;
-import org.w3c.dom.ls.LSOutput;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
