@@ -1,5 +1,26 @@
 
+Q
+java:S3740"/Provide the parametrized type for this generic.(ÙØ³şÿÿÿÿ8ü¶Öãƒ1
+L
+java:S3740"/Provide the parametrized type for this generic.(ê£îõ8ı¶Öãƒ1
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
 x	java:S116"WRename this field "BookingPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÄùÿÿÿÿ8³Å½¶ƒ1
+v	java:S116"URename this field "list_movie" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙØ³şÿÿÿÿ8€·Öãƒ1
+s	java:S116"WRename this field "list_Theater" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê£îõ8€·Öãƒ1
+n	java:S116	"SRename this field "btn_Next" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üåşu8€·Öãƒ1
+o	java:S116
+"SRename this field "lb_movie" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èñ·µ8€·Öãƒ1
+v	java:S116"URename this field "lb_Theater" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß®¥Åøÿÿÿÿ8€·Öãƒ1
 R
 java:S1068"0Remove this unused "BookingPanel" private field.(ÆÄùÿÿÿÿ8´Å½¶ƒ1
+P
+java:S1068".Remove this unused "list_movie" private field.(ÙØ³şÿÿÿÿ8·Öãƒ1
+M
+java:S1068"0Remove this unused "list_Theater" private field.(ê£îõ8·Öãƒ1
+H
+java:S1068	",Remove this unused "btn_Next" private field.(üåşu8‚·Öãƒ1
+I
+java:S1068
+",Remove this unused "lb_movie" private field.(èñ·µ8‚·Öãƒ1
+P
+java:S1068".Remove this unused "lb_Theater" private field.(ß®¥Åøÿÿÿÿ8‚·Öãƒ1

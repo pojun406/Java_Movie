@@ -4,5 +4,4 @@ f	java:S117"QRename this local variable to match the regular expression '^[a-
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹Ÿ¨€
 S	java:S106"9Replace this use of System.out or System.err by a logger.(Ž‚¨†ÿÿÿÿÿ
 S	java:S106"9Replace this use of System.out or System.err by a logger.(ñìôºýÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ø¥¯îÿÿÿÿÿ
-C	java:S108")Either remove or fill this block of code.(Ú¼›ßþÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ø¥¯îÿÿÿÿÿ

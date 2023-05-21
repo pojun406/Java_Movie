@@ -16,7 +16,7 @@
 
 
 -- cinema 데이터베이스 구조 내보내기
-CREATE DATABASE IF NOT EXISTS `cinema` /*!40100 DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci */;
+CREATE DATABASE IF NOT EXISTS `cinema` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
 USE `cinema`;
 
 -- 테이블 cinema.movie 구조 내보내기
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `movie` (
   `Movie_Num` int(11) NOT NULL,
   `Movie_Title` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`Movie_Num`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- 테이블 데이터 cinema.movie:~0 rows (대략적) 내보내기
 
@@ -114,12 +114,16 @@ CREATE TABLE IF NOT EXISTS `user` (
   `User_PW` varchar(50) NOT NULL,
   `User_Name` varchar(50) NOT NULL,
   `User_CallNum` varchar(50) NOT NULL,
-  `User_Pay` int(11) NOT NULL DEFAULT 0,
-  `User_Watch_list` varchar(50) NOT NULL,
+  `User_Pay` int(11) DEFAULT 0,
+  `User_Watch_list` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`UID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci COMMENT='고객정보';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci COMMENT='고객정보';
 
--- 테이블 데이터 cinema.user:~0 rows (대략적) 내보내기
+-- 테이블 데이터 cinema.user:~3 rows (대략적) 내보내기
+REPLACE INTO `user` (`UID`, `User_ID`, `User_PW`, `User_Name`, `User_CallNum`, `User_Pay`, `User_Watch_list`) VALUES
+	(0, 'admin', '1234', 'admin', '00000000000', 0, NULL),
+	(1, 'test1', '1234', 'testman', '01015812348', 0, NULL),
+	(2, 'po', '123', '이병준', '01059135675', 0, NULL);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

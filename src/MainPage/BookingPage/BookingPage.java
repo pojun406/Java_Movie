@@ -2,7 +2,7 @@ package MainPage.BookingPage;
 
 import javax.swing.*;
 
-public class BookingPage {
+public class BookingPage extends JFrame{
     private JPanel BookingPanel;
     private JList list_movie;
     private JList list_Theater;

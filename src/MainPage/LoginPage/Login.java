@@ -1,6 +1,7 @@
 package MainPage.LoginPage;
 
 import AdminPage.AdminPage;
+import MainPage.BookingPage.BookingPage;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -28,24 +29,36 @@ public class Login extends JFrame{
         setResizable(false);
         setVisible(true);
 
+        MemberDTO member = new MemberDTO();
+
 
         btn_Login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                // Admin Page 진입 -----------------------
                 String Password = "";
                 char[] pw = txt_PW.getPassword();
                 for(char cha : pw){
                     Character.toString(cha);
                     Password += (Password.equals("")? ""+cha+"" : ""+cha+"");
                 }
-                if(txt_ID.getText().equals("1") && Password.equals("1")){
+
+                member.setUSER_ID(txt_ID.getText());
+                member.setUSER_PW(Password);
+
+                if(member.getUSER_ID().equals("admin") && member.getUSER_PW().equals("1234")){
                     AdminPage adminpage = new AdminPage();
                     adminpage.setVisible(true);
                     Login.this.setVisible(false);
                 }
                 else{
-                    JOptionPane.showMessageDialog(null,"로그인 성공 (테스트)");
+                    BookingPage bookpage = new BookingPage();
+                    bookpage.setVisible(true);
+                    Login.this.setVisible(false);
                 }
+
+
+
             }
         });
         btn_FindID.addActionListener(new ActionListener() {
