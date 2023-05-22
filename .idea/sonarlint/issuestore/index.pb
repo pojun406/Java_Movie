@@ -13,13 +13,37 @@ R
 "src/MainPage/LoginPage/FindID.form,7\c\7c052e4560503c006b50d9fbfe2ed8d669639a81
 O
 src/MainPage/MyPage/MyPage.form,7\7\77ba2e045474546a834508dff901dae3936018ab
-J
-src/DAODTO/BookingDAO.java,e\2\e2ebaff4503d05ada18ef295b8533b7d7bbf788d
+\
+,src/MainPage/BookingPage/Booking_Detail.java,1\9\19128b32d097a4172966066a82bc32afd6342e46
+G
+src/DAODTO/SeatDTO.java,9\c\9cd18a8ee2a4e287faeb23b18451c5e50de568fa
+G
+src/DAODTO/SeatDAO.java,a\7\a72947a57c43a044355e32d2c35e5c001ffd32d6
+L
+src/AdminPage/AdminPage.java,9\1\918c5cc86109bfec32bcc6df3c3cc751cb039168
+F
+src/MainPage/test.java,3\0\30950b1300aa3c6ef05e123bfc7b782265649f90
+O
+src/AdminPage/Movie_Update.form,5\1\510d27cadc41d5f7c206a81efd056111c9c13124
+O
+src/AdminPage/Movie_Update.java,d\d\dd9758a7ce18e5291e311bf626d9483ca12cc642
+H
+src/DAODTO/MovieDAO.java,e\d\ed9bd4d17e6701b68926a9279c5cf5a0c481d381
 H
 src/DAODTO/MovieDTO.java,4\5\456c4cd8047cbb90b2046db541741316df0cbb09
 J
+src/DAODTO/PaymentDTO.java,a\8\a877c4b76d9d0001ad35b68118376cfaba96a689
+J
+src/DAODTO/PaymentDAO.java,b\4\b4a27ad3d24e0d85151ae9cda7b0da376600068a
+J
+src/DAODTO/BookingDAO.java,e\2\e2ebaff4503d05ada18ef295b8533b7d7bbf788d
+J
 src/DAODTO/BookingDTO.java,7\2\72e190ce8550d714ea56b917399dd4edffe1290d
-I
-src/DAODTO/MemberDTO.java,b\3\b3af21880d2aa1e6f3f12bab9efd1133fc92645e
+P
+ src/MainPage/LoginPage/Join.java,4\4\44de2dc82a6a7afc9dcc88d532f52dc01db08039
 I
 src/DAODTO/MemberDAO.java,9\a\9a2e582e03e4893022cd526998be197894bdcfc8
+I
+src/DAODTO/MemberDTO.java,b\3\b3af21880d2aa1e6f3f12bab9efd1133fc92645e
+Q
+!src/MainPage/LoginPage/Login.java,1\3\1377e3d734081e2835eff1d22655c1614a067f58

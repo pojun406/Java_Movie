@@ -1,0 +1,53 @@
+
+`
+java:S1192’"IDefine a constant instead of duplicating this literal "peopleNm" 3 times.(ı¡»
+f	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÿÒÉ
+f	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô›½Ã
+k	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½¥¿‚ùÿÿÿÿ
+k	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞšÑªúÿÿÿÿ
+f	java:S117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öšĞ„
+k	java:S117m"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ÄÎøşÿÿÿÿ
+g	java:S117ƒ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï›Ôø
+l	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾Òùÿÿÿÿ
+g	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅáÀ
+l	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÊëµøÿÿÿÿ
+g	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ú“£
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¦âãøÿÿÿÿ
+g	java:S117‘"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ø©È
+g	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¼
+l	java:S117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Üûóûÿÿÿÿ
+g	java:S117¢"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•†Á–
+g	java:S117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“ş„ù
+3
+java:S1643Š"Use a StringBuilder instead.(®åû¾
+8
+java:S1643œ"Use a StringBuilder instead.(È™©îşÿÿÿÿ
+3
+java:S1643"Use a StringBuilder instead.(Ç¤˜ğ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¿‘êã
+d
+java:S2095p"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ğ€B
+g
+java:S20954"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÃİÙ‘ÿÿÿÿÿ
+e
+java:S2095>"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ö¤«§
+e
+java:S2095h"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(©õ€…
+g
+java:S2095y"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÃİÙ‘ÿÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßñ–Áşÿÿÿÿ
+T
+java:S47194"9Replace charset name argument with StandardCharsets.UTF_8(ÃİÙ‘ÿÿÿÿÿ
+E
+java:S2093&"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+h	java:S100Y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿îÈƒûÿÿÿÿ
+m
+java:S3776Y"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¿îÈƒûÿÿÿÿ
+T
+java:S4719y"9Replace charset name argument with StandardCharsets.UTF_8(ÃİÙ‘ÿÿÿÿÿ
+U
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(™‡Ñé
+E
+java:S2093d"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+E
+java:S1128"/Remove this unused import 'java.sql.Statement'.(ÏÖÔø

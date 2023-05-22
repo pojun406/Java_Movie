@@ -2,10 +2,10 @@
 e	java:S117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ŸÅ
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¿‘êã
 j
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-j
 java:S2095/"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™´‹ú
+j
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™´‹ú8Ûîó¨„1
 c	java:S100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Þ®óï
 h	java:S100G"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó§„—øÿÿÿÿ
 N	java:S106U"9Replace this use of System.out or System.err by a logger.(ÿØêâ

@@ -1,0 +1,29 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(óÎ °ùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æâ»Î
+T
+java:S1854"7Remove this useless assignment to local variable "key".(Áô8§ÅŸ§„1
+E
+java:S1481"(Remove this unused "key" local variable.(Áô8§ÅŸ§„1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ŞÔœÿ8êï §„1
+I
+java:S1128"3Remove this unused import 'java.io.BufferedReader'.(€é²Å
+L
+java:S1128"6Remove this unused import 'java.io.InputStreamReader'.(ãˆÎÉ
+D
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ
+J
+java:S1128"/Remove this unused import 'DataBase.DBConnect'.(‡«—¾ıÿÿÿÿ
+Q
+java:S1128"6Remove this unused import 'org.json.simple.JSONArray'.(àĞ›¢şÿÿÿÿ
+R
+java:S1128	"7Remove this unused import 'org.json.simple.JSONObject'.(‚ƒç‘ÿÿÿÿÿ
+T
+java:S1128
+">Remove this unused import 'org.json.simple.parser.JSONParser'.(õø²¹
+F
+java:S1128"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ
+R
+java:S1128"7Remove this unused import 'java.sql.PreparedStatement'.(òÄ™ƒÿÿÿÿÿ
+D
+java:S1128"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw

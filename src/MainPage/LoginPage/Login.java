@@ -1,6 +1,7 @@
 package MainPage.LoginPage;
 
 import AdminPage.AdminPage;
+import DAODTO.MemberDAO;
 import DAODTO.MemberDTO;
 import MainPage.BookingPage.BookingPage;
 
@@ -47,20 +48,25 @@ public class Login extends JFrame{
                 member.setUSER_ID(txt_ID.getText());
                 member.setUSER_PW(Password);
 
-                if(member.getUSER_ID().equals("admin") && member.getUSER_PW().equals("1234")){
-                    AdminPage adminpage = new AdminPage();
-                    adminpage.setVisible(true);
-                    Login.this.setVisible(false);
+                MemberDAO dao = new MemberDAO();
+                boolean login = dao.Login(member);
+                if(login){
+                    if(member.getUID() == 0 && "admin".equals(member.getUSER_ID())){
+                        AdminPage adminpage = new AdminPage();
+                        adminpage.setVisible(true);
+                        Login.this.setVisible(false);
+                    }
+                    else{
+                        BookingPage bookpage = new BookingPage();
+                        bookpage.setVisible(true);
+                        Login.this.setVisible(false);
+                    }
                 }
                 else{
-                    BookingPage bookpage = new BookingPage();
-                    bookpage.setVisible(true);
-                    Login.this.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "아이디 / 비밀번호를 확인하세요");
                 }
-
-
-
-            }
+                    
+                }
         });
         btn_FindID.addActionListener(new ActionListener() {
             @Override

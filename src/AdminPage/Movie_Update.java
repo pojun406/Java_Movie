@@ -11,7 +11,6 @@ import java.awt.event.ActionListener;
 
 public class Movie_Update extends JFrame{
     private JPanel MovieUpdatePanel;
-    private JList list_UpdateDate;
     private JList list_Movie;
     private JList list_Theater;
     private JList list_Time;

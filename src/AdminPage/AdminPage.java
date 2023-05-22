@@ -1,5 +1,7 @@
 package AdminPage;
 
+import DAODTO.MovieDAO;
+import DAODTO.MovieDTO;
 import MainPage.LoginPage.Join;
 import MainPage.LoginPage.Login;
 
@@ -25,6 +27,8 @@ public class AdminPage extends JFrame{
         setResizable(false);
         setVisible(true);
 
+        MovieDTO moviedto = new MovieDTO();
+
         btn_Movieinfo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -44,9 +48,23 @@ public class AdminPage extends JFrame{
         btn_MovieUpdate.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Movie_Update update = new Movie_Update();
-                update.setVisible(true);
-                AdminPage.this.setVisible(false);
+                MovieDAO moviedao = new MovieDAO();
+                boolean success_GET = moviedao.GetAPI_MovieCD();
+                boolean success_Get_Detail = moviedao.GET_MOVIEDetail();
+
+                if(success_GET){
+                    if(success_Get_Detail){
+                        Movie_Update update = new Movie_Update();
+                        update.setVisible(true);
+                        AdminPage.this.setVisible(false);
+                    }
+                    else{
+                        System.out.println("세부정보 불러오기 실패");
+                    }
+                }
+                else{
+                    System.out.println("영화정보 불러오기 실패");
+                }
             }
         });
         btn_out.addActionListener(new ActionListener() {

@@ -1,37 +1,32 @@
 
 L
-java:S3740"/Provide the parametrized type for this generic.(øÎ8‘ÇÛ¾ƒ1
+java:S3740"/Provide the parametrized type for this generic.(äÌ¼8¡¡æ¾ƒ1
 L
-java:S3740"/Provide the parametrized type for this generic.(äÌ¼8¡¡æ¾ƒ1
+java:S3740"/Provide the parametrized type for this generic.(ê£îõ8€Ùñ¾ƒ1
 L
-java:S3740"/Provide the parametrized type for this generic.(ê£îõ8€Ùñ¾ƒ1
-L
-java:S3740"/Provide the parametrized type for this generic.(ÜÛß 8¦ìŠ¿ƒ1
+java:S3740"/Provide the parametrized type for this generic.(ÜÛß 8¦ìŠ¿ƒ1
 E
-java:S1604"(Make this anonymous inner class a lambda(²ÂëÁ8à¢‹Àƒ1
+java:S1604"(Make this anonymous inner class a lambda(²ÂëÁ8à¢‹Àƒ1
 E
-java:S1604$"(Make this anonymous inner class a lambda(é‚£ç8çÒÀƒ1
+java:S1604#"(Make this anonymous inner class a lambda(é‚£ç8çÒÀƒ1
 J
-java:S1604*"(Make this anonymous inner class a lambda(€ÀØÔúÿÿÿÿ8çœÏÁƒ1
+java:S1604)"(Make this anonymous inner class a lambda(€ÀØÔúÿÿÿÿ8çœÏÁƒ1
 b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(š›¼¸
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û˜ìŒ
 |	java:S116"[Rename this field "MovieUpdatePanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§“÷äøÿÿÿÿ8Êè×¾ƒ1
-v	java:S116"ZRename this field "list_UpdateDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÎ8ŞÜ¾ƒ1
-q	java:S116"URename this field "list_Movie" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÌ¼8”«è¾ƒ1
-s	java:S116"WRename this field "list_Theater" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê£îõ8¨ìŠ¿ƒ1
-p	java:S116"TRename this field "list_Time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÛß 8’ëû¾ƒ1
-r	java:S116"QRename this field "btn_OK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘°Ë…úÿÿÿÿ8ùßú¾ƒ1
+q	java:S116"URename this field "list_Movie" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÌ¼8”«è¾ƒ1
+s	java:S116"WRename this field "list_Theater" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê£îõ8¨ìŠ¿ƒ1
+p	java:S116"TRename this field "list_Time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÛß 8’ëû¾ƒ1
+r	java:S116"QRename this field "btn_OK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘°Ë…úÿÿÿÿ8ùßú¾ƒ1
 k
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8¥Å²Áƒ1
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8¥Å²Áƒ1
 
-java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™àíŸ8æ¢‹Àƒ1
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™àíŸ8æ¢‹Àƒ1
 
-java:S1186&"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™àíŸ8ìÒÀƒ1
+java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™àíŸ8ìÒÀƒ1
 V
 java:S1128"4Remove this unused import 'MainPage.LoginPage.Join'.(›íÏßúÿÿÿÿ8èÔÖÁƒ1
 W
 java:S1128"5Remove this unused import 'MainPage.LoginPage.Login'.(îë¦óşÿÿÿÿ8èÔÖÁƒ1
-P
-java:S1068"3Remove this unused "list_UpdateDate" private field.(øÎ8àÜ¾ƒ1
 K
-java:S1068".Remove this unused "list_Movie" private field.(äÌ¼8•«è¾ƒ1
+java:S1068".Remove this unused "list_Movie" private field.(äÌ¼8•«è¾ƒ1
