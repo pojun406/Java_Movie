@@ -145,23 +145,26 @@ CREATE TABLE IF NOT EXISTS `theater` (
 
 -- 테이블 Cinema.user 구조 내보내기
 CREATE TABLE IF NOT EXISTS `user` (
-  `UID` int(15) NOT NULL DEFAULT 0,
+  `UID` int(15) NOT NULL,
   `User_ID` varchar(50) NOT NULL,
   `User_PW` varchar(50) NOT NULL,
   `User_Name` varchar(50) NOT NULL,
   `User_CallNum` varchar(50) NOT NULL,
-  `User_Pay` int(11) DEFAULT NULL,
+  `User_Pay` int(11) DEFAULT 0,
   `User_Watch_list` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`UID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci COMMENT='고객정보';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
--- 테이블 데이터 Cinema.user:~4 rows (대략적) 내보내기
+-- 테이블 데이터 Cinema.user:~7 rows (대략적) 내보내기
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`UID`, `User_ID`, `User_PW`, `User_Name`, `User_CallNum`, `User_Pay`, `User_Watch_list`) VALUES
 	(0, 'admin', '1234', 'admin', '00000000000', 0, NULL),
 	(1, 'test1', '1234', 'testman', '01015812348', 0, NULL),
 	(2, 'test2', '1111', '테스트', '12342365', 0, NULL),
-	(3, 'test4', '123', '자바발표중', '1231231234', 0, NULL);
+	(3, 'test4', '123', '자바발표중', '1231231234', 0, NULL),
+	(4, 'dkdkd', '11', '테섯터', '0002020202', 0, NULL),
+	(5, 't', '1', 'y', '11', 0, NULL),
+	(6, '1', '1', '1', '1', 0, NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
