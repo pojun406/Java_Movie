@@ -1,8 +1,8 @@
 package MainPage.LoginPage;
 
-import AdminPage.AdminPage;
-import DAODTO.MemberDAO;
-import DAODTO.MemberDTO;
+import MainPage.AdminPage.AdminPage;
+import DAODTO.Member.MemberDAO;
+import DAODTO.Member.MemberDTO;
 import MainPage.BookingPage.BookingPage;
 
 import javax.swing.*;

@@ -1,7 +1,7 @@
 package MainPage.LoginPage;
 
-import DAODTO.MemberDAO;
-import DAODTO.MemberDTO;
+import DAODTO.Member.MemberDAO;
+import DAODTO.Member.MemberDTO;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -79,6 +79,8 @@ public Join(){
         public void actionPerformed(ActionEvent e) {
             char[] pw = pw_PW.getPassword();
             char[] pw_ch = pw_PWch.getPassword();
+            Password = "";
+            Password_Check = "";
 
             for(char cha : pw){
                 Character.toString(cha);
@@ -91,6 +93,7 @@ public Join(){
             }
 //                System.out.println(Password); // 비밀번호칸 확인
 //                System.out.println(Password_Check); // 비밀번호 확인칸 확인
+            // Password가 중첩되는 현상 발견 해결해야함 // 메이비 해결된듯 확인
 
             if(Password.equals(Password_Check)) {
                 if(Password_Check != ""){
