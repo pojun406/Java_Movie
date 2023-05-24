@@ -31,10 +31,10 @@ INSERT INTO `movie` (`Movie_Num`, `Movie_Title`) VALUES
 	('20226270', '스즈메의 문단속'),
 	('20226411', '범죄도시3'),
 	('20227890', '슈퍼 마리오 브라더스'),
-	('20228555', '더 퍼스트 슬램덩크'),
 	('20231029', '슬픔의 삼각형'),
 	('20231089', '존 윅 4'),
 	('20231348', '극장판 짱구는 못말려: 동물소환 닌자 배꼽수비대'),
+	('20231437', '문재인입니다'),
 	('20231496', '가디언즈 오브 갤럭시: Volume 3'),
 	('20231592', '분노의 질주: 라이드 오어 다이');
 /*!40000 ALTER TABLE `movie` ENABLE KEYS */;
@@ -48,23 +48,24 @@ CREATE TABLE IF NOT EXISTS `movie_detail` (
   `Actor` varchar(1000) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
   `Running_Time` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
   `Description` varchar(15000) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
+  `Poster_URL` varchar(1000) DEFAULT NULL,
   KEY `Detail_MovieNum` (`Movie_Num`),
   CONSTRAINT `Detail_MovieNum` FOREIGN KEY (`Movie_Num`) REFERENCES `movie` (`Movie_Num`) ON DELETE CASCADE ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- 테이블 데이터 Cinema.movie_detail:~10 rows (대략적) 내보내기
 /*!40000 ALTER TABLE `movie_detail` DISABLE KEYS */;
-INSERT INTO `movie_detail` (`Movie_Num`, `Movie_Title`, `Genre`, `Director`, `Actor`, `Running_Time`, `Description`) VALUES
-	('20198482', '드림', '코미디,드라마,', '이병헌', '박서준,이지은,김종수,고창석,정승길,이현우,양현민,홍완표,허준석,이하늬,박재철,', '125', ''),
-	('20226270', '스즈메의 문단속', '애니메이션,', '신카이 마코토', '', '121', ''),
-	('20226411', '범죄도시3', '범죄,액션,', '이상용', '마동석,이준혁,아오키 무네타카,이범수,김민재,이지훈,전석호,고규필,', '105', ''),
-	('20227890', '슈퍼 마리오 브라더스', '애니메이션,어드벤처,코미디,', 'empty', '크리스 프랫,안야 테일러 조이,잭 블랙,찰리 데이,', '92', ''),
-	('20228555', '더 퍼스트 슬램덩크', '애니메이션,', '이노우에 다케히코', '', '124', ''),
-	('20231029', '슬픔의 삼각형', '코미디,드라마,', '루벤 외스틀룬드', '우디 해럴슨,해리스 딕킨슨,', '147', ''),
-	('20231089', '존 윅 4', '액션,', '채드 스타헬스키', '키아누 리브스,로렌스 피쉬번,이안 맥쉐인,빌 스카스가드,견자단,', '169', ''),
-	('20231348', '극장판 짱구는 못말려: 동물소환 닌자 배꼽수비대', '애니메이션,', '하시모토 마사카즈', '', '99', ''),
-	('20231496', '가디언즈 오브 갤럭시: Volume 3', '액션,', '제임스 건', '크리스 프랫,조 샐다나,데이브 바티스타,카렌 길런,폼 클레멘티에프,빈 디젤,브래들리 쿠퍼,윌 폴터,', '149', ''),
-	('20231592', '분노의 질주: 라이드 오어 다이', '액션,', '루이스 리테리어', '빈 디젤,제이슨 모모아,제이슨 스타뎀,샤를리즈 테론,브리 라슨,미셸 로드리게즈,성 강,', '140', '');
+INSERT INTO `movie_detail` (`Movie_Num`, `Movie_Title`, `Genre`, `Director`, `Actor`, `Running_Time`, `Description`, `Poster_URL`) VALUES
+	('20198482', '드림', '코미디,드라마,', '이병헌', '박서준,이지은,김종수,고창석,정승길,이현우,양현민,홍완표,허준석,이하늬,박재철,', '125', '', NULL),
+	('20226270', '스즈메의 문단속', '애니메이션,', '신카이 마코토', '', '121', '', NULL),
+	('20226411', '범죄도시3', '범죄,액션,', '이상용', '마동석,이준혁,아오키 무네타카,이범수,김민재,이지훈,전석호,고규필,', '105', '', NULL),
+	('20227890', '슈퍼 마리오 브라더스', '애니메이션,어드벤처,코미디,', 'empty', '크리스 프랫,안야 테일러 조이,잭 블랙,찰리 데이,', '92', '', NULL),
+	('20231029', '슬픔의 삼각형', '코미디,드라마,', '루벤 외스틀룬드', '우디 해럴슨,해리스 딕킨슨,', '147', '', NULL),
+	('20231089', '존 윅 4', '액션,', '채드 스타헬스키', '키아누 리브스,로렌스 피쉬번,이안 맥쉐인,빌 스카스가드,견자단,', '169', '', NULL),
+	('20231348', '극장판 짱구는 못말려: 동물소환 닌자 배꼽수비대', '애니메이션,', '하시모토 마사카즈', '', '99', '', NULL),
+	('20231437', '문재인입니다', '다큐멘터리,', '이창재', '', '114', '', NULL),
+	('20231496', '가디언즈 오브 갤럭시: Volume 3', '액션,', '제임스 건', '크리스 프랫,조 샐다나,데이브 바티스타,카렌 길런,폼 클레멘티에프,빈 디젤,브래들리 쿠퍼,윌 폴터,', '149', '', NULL),
+	('20231592', '분노의 질주: 라이드 오어 다이', '액션,', '루이스 리테리어', '빈 디젤,제이슨 모모아,제이슨 스타뎀,샤를리즈 테론,브리 라슨,미셸 로드리게즈,성 강,', '140', '', NULL);
 /*!40000 ALTER TABLE `movie_detail` ENABLE KEYS */;
 
 -- 테이블 Cinema.movie_schedule 구조 내보내기
@@ -155,7 +156,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`UID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
--- 테이블 데이터 Cinema.user:~7 rows (대략적) 내보내기
+-- 테이블 데이터 Cinema.user:~9 rows (대략적) 내보내기
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`UID`, `User_ID`, `User_PW`, `User_Name`, `User_CallNum`, `User_Pay`, `User_Watch_list`) VALUES
 	(0, 'admin', '1234', 'admin', '00000000000', 0, NULL),
@@ -164,7 +165,9 @@ INSERT INTO `user` (`UID`, `User_ID`, `User_PW`, `User_Name`, `User_CallNum`, `U
 	(3, 'test4', '123', '자바발표중', '1231231234', 0, NULL),
 	(4, 'dkdkd', '11', '테섯터', '0002020202', 0, NULL),
 	(5, 't', '1', 'y', '11', 0, NULL),
-	(6, '1', '1', '1', '1', 0, NULL);
+	(6, '1', '123', '1', '1', 0, NULL),
+	(7, '11', '112', '11', '122', 0, NULL),
+	(8, '555', '5555', 'test555', '555', 0, NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
