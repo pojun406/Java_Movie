@@ -2,6 +2,7 @@ package DAODTO.Movie;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 import java.net.URL;
 
 import DataBase.DBConnect;
@@ -9,54 +10,122 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
+import java.net.URLEncoder;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MovieDAO {
     //영화제목, 장르, 감독, 출연배우, 상영시간, 줄거리등
-    public boolean GETAPI_Poster(String title){
+    public String getTitle(int i){
+        String title = "";
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            return null;
+        }catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public boolean GETAPI_Poster(String title) {
         MovieDAO dao = new MovieDAO();
         Connection conn = null;
         PreparedStatement pstmt = null;
 
         String key = "U46C5834J59T322L0028";
-        String result = "";
 
-        try{
+        try {
             conn = new DBConnect().getConn();
-            String add_other = "UPDATE movie_detail SET description = ? AND Poster_URL = ? WHERE Movie_Title = ?";
+            String add_other = "UPDATE movie_detail SET description = ?, Poster_URL = ? WHERE Movie_Title = ?";
 
             pstmt = conn.prepareStatement(add_other);
 
+            String encoding = URLEncoder.encode(title);
+
 
             URL url = new URL("https://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&ServiceKey="
-                    + key + "&detail=Y&query=" + title);
+                    + key + "&detail=Y&query=" + encoding);
 
-            BufferedReader bf;
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
 
-            bf = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
+            int responseCode = connection.getResponseCode();
+            if (responseCode == HttpURLConnection.HTTP_OK) {
+                BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream(), "UTF-8"));
+                String inputLine;
+                StringBuilder response = new StringBuilder();
 
-            result = bf.readLine();
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+                in.close();
 
-            JSONParser jsonParser = new JSONParser();
-            JSONObject jsonObject = (JSONObject) jsonParser.parse(result);
-            JSONObject plots = (JSONObject) jsonObject.get("plots");
-            JSONArray plot = (JSONArray) plots.get("plot");
+                String plots = "plots";
+                String posters = "posters";
+                int targetplot = -1;
+                int targetposter = -1;
 
-            for(Object description : plot){
-                JSONObject descriptions = (JSONObject) description;
-                String movieCd = (String) descriptions.get("movieCd");
-                
+                String posterimg = null;
+                String plotText = null;
+
+                // JSON 파싱
+                JSONParser parser = new JSONParser();
+                JSONObject jsonObject = (JSONObject) parser.parse(response.toString());
+                JSONArray dataArray = (JSONArray) jsonObject.get("Data");
+                JSONObject result = (JSONObject) dataArray.get(0);
+                JSONArray resultArray = (JSONArray) result.get("Result");// 여기서는 2023년만
+                for (Object obj : resultArray) {
+                    JSONObject resultobj = (JSONObject) obj;
+                    String mod = (String) resultobj.get("modDate");
+                    String year = mod.substring(0, 3);
+                    JSONObject plotsArray = (JSONObject) resultArray.get(0); // 여기서 poster도 가져와야함 포스터가 비어있는건 prodYear이 많은새끼들 뿐임
+                    //----------------------plot 가져오는 부분
+                    JSONObject objplots = (JSONObject) plotsArray.get("plots");
+                    JSONArray plotArray = (JSONArray) objplots.get("plot");
+                    JSONObject firstPlot = (JSONObject) plotArray.get(0);
+                    plotText = (String) firstPlot.get("plotText");
+                    //----------------------poster 가져오는 부분
+                    String objposters = (String) plotsArray.get("posters");
+                    String[] poster = objposters.split("\\|");
+                    posterimg = poster[0];
+                }
+                pstmt.setString(1, plotText);
+                pstmt.setString(2, posterimg);
+                pstmt.setString(3, title);
+
+                pstmt.executeUpdate();
+                return true;
+            } else {
+                System.out.println("HTTPERROR : " + responseCode);
+                return false;
             }
-
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
+            return false;
+        } finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
-
     }
+
     public boolean GetAPI_MovieCD() {
 
         Connection conn = null;
@@ -133,6 +202,8 @@ public class MovieDAO {
         ResultSet rs = null;
 
         PreparedStatement inspstmt = null;
+
+        boolean r = false;
 
         String key = "6fec5f3e4ac7862b9846d39babec533c";
         String result = "";
@@ -212,10 +283,17 @@ public class MovieDAO {
                 inspstmt.setString(7, Description);
 
                 inspstmt.executeUpdate();
-
                 GETAPI_Poster(Movie_Title);
+
+                boolean check = GETAPI_Poster(Movie_Title); // 나머지 줄거리랑 poster url도 받아오는 함수까지
+
+                if (!check) {
+                    r = false;
+                } else {
+                    r = true;
+                }
             }
-            return true;
+            return r;
         } catch (Exception e) {
             e.printStackTrace();
             return false;

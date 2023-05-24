@@ -1,0 +1,37 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùáªîùÿÿÿÿ
+e	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯—»8
+>
+java:S1604"(Make this anonymous inner class a lambda(ï¹ğ¡
+>
+java:S1604P"(Make this anonymous inner class a lambda(¾ŸŞ
+7
+java:S1643&"Use a StringBuilder instead.(„ËÏúÿÿÿÿ
+2
+java:S1643+"Use a StringBuilder instead.(‹£òŒ
+b	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ø¿²†
+W
+java:S4973."<Strings and Boxed types should be compared using "equals()".(Î÷Ê™şÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹äÕz
+k	java:S116"QRename this field "btn_Ch" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä»÷Èüÿÿÿÿ
+m	java:S116"SRename this field "btn_Exit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ŞÛÈûÿÿÿÿ
+j	java:S116"PRename this field "pw_pw" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ßğµúÿÿÿÿ
+g	java:S116"RRename this field "pw_pwch" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚âƒ¥
+i	java:S116"TRename this field "PW_Checks" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶‡×
+m	java:S116"SRename this field "Password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¼ûÿÿÿÿ
+n	java:S116"YRename this field "Password_Check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”¹±ˆ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ùáªîùÿÿÿÿ
+b
+java:S3252"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(¬ëëÆ
+A
+java:S2201%",The return value of "toString" must be used.(Ï ³E
+x
+java:S3923&"]This conditional operation returns the same value whether the condition is "true" or "false".(„ËÏúÿÿÿÿ
+A
+java:S2201*",The return value of "toString" must be used.(Ï ³E
+s
+java:S3923+"]This conditional operation returns the same value whether the condition is "true" or "false".(‹£òŒ
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(˜—áú
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(æ¦û†şÿÿÿÿ

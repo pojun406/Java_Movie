@@ -31,7 +31,7 @@ public class AdminPage extends JFrame{
         btn_Movieinfo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Movie_info info = new Movie_info();
+                Movie_Choose info = new Movie_Choose();
                 info.setVisible(true);
                 AdminPage.this.setVisible(false);
             }
