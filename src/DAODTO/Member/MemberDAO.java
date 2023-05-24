@@ -19,6 +19,7 @@ public class MemberDAO{
             pstmt.setString(1, dto.getUSER_PW());
             pstmt.setString(2, dto.getUSER_ID());
             pstmt.executeUpdate();
+            System.out.println(pstmt.executeUpdate());
             return true;
         }catch (Exception e) {
             e.printStackTrace();

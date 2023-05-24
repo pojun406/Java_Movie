@@ -17,6 +17,46 @@ import java.time.LocalDate;
 
 public class MovieDAO {
     //영화제목, 장르, 감독, 출연배우, 상영시간, 줄거리등
+    public boolean GETAPI_Poster(String title){
+        MovieDAO dao = new MovieDAO();
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+
+        String key = "U46C5834J59T322L0028";
+        String result = "";
+
+        try{
+            conn = new DBConnect().getConn();
+            String add_other = "UPDATE movie_detail SET description = ? AND Poster_URL = ? WHERE Movie_Title = ?";
+
+            pstmt = conn.prepareStatement(add_other);
+
+
+            URL url = new URL("https://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&ServiceKey="
+                    + key + "&detail=Y&query=" + title);
+
+            BufferedReader bf;
+
+            bf = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
+
+            result = bf.readLine();
+
+            JSONParser jsonParser = new JSONParser();
+            JSONObject jsonObject = (JSONObject) jsonParser.parse(result);
+            JSONObject plots = (JSONObject) jsonObject.get("plots");
+            JSONArray plot = (JSONArray) plots.get("plot");
+
+            for(Object description : plot){
+                JSONObject descriptions = (JSONObject) description;
+                String movieCd = (String) descriptions.get("movieCd");
+                
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
     public boolean GetAPI_MovieCD() {
 
         Connection conn = null;
@@ -172,6 +212,8 @@ public class MovieDAO {
                 inspstmt.setString(7, Description);
 
                 inspstmt.executeUpdate();
+
+                GETAPI_Poster(Movie_Title);
             }
             return true;
         } catch (Exception e) {

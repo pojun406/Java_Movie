@@ -30,6 +30,7 @@ boolean PW_Checks = false;
 boolean ID_Checks = false;
 String Password = "";
 String Password_Check = "";
+boolean success = false;
 
 public Join(){
     setContentPane(JoinPanel);
@@ -120,20 +121,23 @@ public Join(){
             else{
                 if(PW_Checks == true && ID_Checks == true){
                     if(Callnum.matches("\\d+")) {
-                        member.setUSER_ID(txt_ID.getText());
-                        member.setUSER_PW(Password);
-                        member.setUSER_Name(txt_Name.getText());
-                        member.setUSER_CallNum(txt_PhNum.getText());
+                        if(txt_Name.getText().equals("") || txt_PhNum.getText().equals("")){
+                            JOptionPane.showMessageDialog(null, "빈칸을 확인해주세요");
+                        }
+                        else {
+                            member.setUSER_ID(txt_ID.getText());
+                            member.setUSER_PW(Password);
+                            member.setUSER_Name(txt_Name.getText());
+                            member.setUSER_CallNum(txt_PhNum.getText());
 
-                        MemberDAO dao = new MemberDAO();
-                        boolean success = dao.Join(member);
-
+                            MemberDAO dao = new MemberDAO();
+                            success = dao.Join(member);
+                        }
                         if (success) {
-                            JOptionPane.showMessageDialog(null, "가입완료");
-
-                            Login login = new Login();
-                            login.setVisible(true);
-                            Join.this.setVisible(false);
+                                JOptionPane.showMessageDialog(null, "가입완료");
+                                Login login = new Login();
+                                login.setVisible(true);
+                                Join.this.setVisible(false);
                         } else {
                             System.out.println("실패");
                         }

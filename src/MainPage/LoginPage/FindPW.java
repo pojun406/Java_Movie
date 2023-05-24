@@ -19,6 +19,7 @@ public class FindPW extends JFrame{
     private JTextField txt_ID;
     private JButton btn_Exit;
     private JButton btn_FindPW;
+    public String ID;
 
     public FindPW(){
         setContentPane(FindPWPanel);
@@ -44,6 +45,7 @@ public class FindPW extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 MemberDAO dao = new MemberDAO();
+                ID = txt_ID.getText();
 
                 if(txt_Name.getText().equals("") ||
                         txt_PhNum.getText().equals("") ||
@@ -55,7 +57,7 @@ public class FindPW extends JFrame{
                     member.setUSER_ID(txt_ID.getText());
 
                     if(dao.FindPW(member)){
-                        Dialog_ChPw chpw = new Dialog_ChPw();
+                        Dialog_ChPw chpw = new Dialog_ChPw(ID);
                         chpw.setVisible(true);
                     }
                     else{
