@@ -8,8 +8,8 @@ import java.awt.event.ActionListener;
 
 public class SeatPage_example1 {
     private JComponent ui = null;
-    private JToggleButton[] seats = new JToggleButton[80];
-    private JTextArea selectedSeats = new JTextArea(3, 40);
+    private JToggleButton[] seats = new JToggleButton[60];
+    private JTextArea selectedSeats = new JTextArea(1, 40);
 
     SeatPage_example1() {
         initUI();

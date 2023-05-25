@@ -1,7 +1,6 @@
 package DAODTO.Movie;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -12,6 +11,10 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.net.URLEncoder;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -20,11 +23,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MovieDAO {
-    public String TitletoChoice = "";
     //영화제목, 장르, 감독, 출연배우, 상영시간, 줄거리등
 
-    public boolean ChoiceTitle(String title){
-        MovieDTO dto = new MovieDTO();
+    public boolean ChoiceTitle(String title) {
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -36,10 +37,8 @@ public class MovieDAO {
             pstmt.setString(1, title);
             rs = pstmt.executeQuery();
 
-            TitletoChoice = title;
-
             return rs.next();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return false;
         } finally {
@@ -51,35 +50,8 @@ public class MovieDAO {
             }
         }
     }
-    public boolean infoTitle(){
-        MovieDTO dto = new MovieDTO();
-        Connection conn = null;
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
 
-        String infotitle = TitletoChoice;
-        try {
-            conn = new DBConnect().getConn();
-            String query = "SELECT Movie_Title, Genre, Director, Actor, Running_Time, Description, Poster_URL FROM movie_detail WHERE Movie_Title = ?";
-            pstmt = conn.prepareStatement(query);
-            pstmt.setString(1, infotitle);
-            rs = pstmt.executeQuery();
-            if(rs.next()){
-                dto.setTitle(rs.getString("Movie_Title"));
-                dto.setGenre(rs.getString("Genre"));
-                dto.setDirector(rs.getString("Director"));
-                dto.setCast(rs.getString("Actor"));
-                dto.setRunning_Time(rs.getString("Running_Time"));
-                dto.setDescription(rs.getString("Description"));
-                dto.setPoster(rs.getString("Poster_URL"));
-            }
-            return rs.next();
-        }catch (Exception e){
-            e.printStackTrace();
-            return false;
-        }
-    }
-    public List<String> getTitle(){
+    public List<String> getTitle() {
         List<String> movieTitle = new ArrayList<>();
 
         Connection conn = null;
@@ -93,12 +65,12 @@ public class MovieDAO {
             pstmt = conn.prepareStatement(query);
             rs = pstmt.executeQuery();
 
-            while(rs.next()){
+            while (rs.next()) {
                 String movieName = rs.getString("Movie_Title");
                 movieTitle.add(movieName);
             }
 
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             try {
@@ -126,7 +98,7 @@ public class MovieDAO {
             String encoding = URLEncoder.encode(title);
 
 
-            URL url = new URL("https://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&ServiceKey="
+            URL url = new URL("https://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&sort=prodYear,1&ServiceKey="
                     + key + "&detail=Y&query=" + encoding);
 
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -143,11 +115,6 @@ public class MovieDAO {
                 }
                 in.close();
 
-                String plots = "plots";
-                String posters = "posters";
-                int targetplot = -1;
-                int targetposter = -1;
-
                 String posterimg = null;
                 String plotText = null;
 
@@ -156,22 +123,22 @@ public class MovieDAO {
                 JSONObject jsonObject = (JSONObject) parser.parse(response.toString());
                 JSONArray dataArray = (JSONArray) jsonObject.get("Data");
                 JSONObject result = (JSONObject) dataArray.get(0);
-                JSONArray resultArray = (JSONArray) result.get("Result");// 여기서는 2023년만
-                for (Object obj : resultArray) {
-                    JSONObject resultobj = (JSONObject) obj;
-                    String mod = (String) resultobj.get("modDate");
-                    String year = mod.substring(0, 3);
-                    JSONObject plotsArray = (JSONObject) resultArray.get(0); // 여기서 poster도 가져와야함 포스터가 비어있는건 prodYear이 많은새끼들 뿐임
-                    //----------------------plot 가져오는 부분
-                    JSONObject objplots = (JSONObject) plotsArray.get("plots");
-                    JSONArray plotArray = (JSONArray) objplots.get("plot");
-                    JSONObject firstPlot = (JSONObject) plotArray.get(0);
-                    plotText = (String) firstPlot.get("plotText");
-                    //----------------------poster 가져오는 부분
-                    String objposters = (String) plotsArray.get("posters");
-                    String[] poster = objposters.split("\\|");
-                    posterimg = poster[0];
-                }
+                JSONArray resultArray = (JSONArray) result.get("Result");// API 문의결과 최신결과가 위로나오게 SORT 가능해서 YEAR 삭제
+                JSONObject plotsArray = (JSONObject) resultArray.get(0); // 여기서 poster도 가져와야함 포스터가 비어있는건 prodYear이 많은새끼들 뿐임
+                //----------------------plot 가져오는 부분
+                JSONObject objplots = (JSONObject) plotsArray.get("plots");
+                JSONArray plotArray = (JSONArray) objplots.get("plot");
+                JSONObject firstPlot = (JSONObject) plotArray.get(0);
+                plotText = (String) firstPlot.get("plotText");
+                //----------------------poster 가져오는 부분
+                String objposters = (String) plotsArray.get("posters");
+                String[] poster = objposters.split("\\|");
+                posterimg = poster[0];
+
+                // 이미지 다운로드 및 저장
+                String localImagePath = generateUniqueFileName(title);
+                downloadImage(posterimg, localImagePath);
+
                 pstmt.setString(1, plotText);
                 pstmt.setString(2, posterimg);
                 pstmt.setString(3, title);
@@ -193,6 +160,29 @@ public class MovieDAO {
                 e.printStackTrace();
             }
         }
+    }
+    private void downloadImage(String imageUrl, String destinationPath) throws IOException {
+        // 기존의 이미지 파일 삭제
+        File existingImage = new File(destinationPath);
+        if (existingImage.exists()) {
+            existingImage.delete();
+        }
+
+        // 이미지 다운로드
+        URL url = new URL(imageUrl);
+        try (InputStream in = url.openStream();
+             FileOutputStream out = new FileOutputStream(destinationPath)) {
+            byte[] buffer = new byte[4096];
+            int bytesRead;
+            while ((bytesRead = in.read(buffer)) != -1) {
+                out.write(buffer, 0, bytesRead);
+            }
+        }
+    }
+    private String generateUniqueFileName(String title) {
+        String sanitizedTitle = title.replaceAll("[^ㄱ-ㅎ가-힣0-9]+", "").replaceAll("\\s+", "");
+        String uniqueFileName = "./img/" + sanitizedTitle + ".jpg";
+        return uniqueFileName;
     }
 
     public boolean GetAPI_MovieCD() {

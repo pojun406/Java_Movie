@@ -6,8 +6,77 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MemberDAO{
+
+    public String getUserWatched(String User){
+        String User_Watched = "";
+
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = new DBConnect().getConn();
+
+            String query = "SELECT User_Watch_list FROM user WHERE user_id = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1, User);
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                User_Watched = rs.getString("User_Watch_list");
+            }
+            return User_Watched;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public List<String> getUser() {
+        List<String> Users = new ArrayList<>();
+
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = new DBConnect().getConn();
+
+            String query = "SELECT User_ID FROM user";
+            pstmt = conn.prepareStatement(query);
+            rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                String UserID = rs.getString("User_ID");
+                Users.add(UserID);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return Users;
+    }
+
     public boolean Ch_PW(MemberDTO dto){
         Connection conn = null;
         PreparedStatement pstmt = null;

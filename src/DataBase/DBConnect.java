@@ -20,8 +20,6 @@ public class DBConnect {
 
         try{
             conn = DriverManager.getConnection(url + database, user_name,user_password);
-            System.out.println("연결 성공");
-
         }catch (SQLException e) {
             System.err.println("에러 내용 : " + e.getMessage());
             e.printStackTrace();

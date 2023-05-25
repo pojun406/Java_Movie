@@ -5,12 +5,20 @@ E
 java:S3740"/Provide the parametrized type for this generic.(ê£îõ
 E
 java:S3740"/Provide the parametrized type for this generic.(ÜÛß 
->
-java:S1604"(Make this anonymous inner class a lambda(²ÂëÁ
->
-java:S1604 "(Make this anonymous inner class a lambda(é‚£ç
+J
+java:S3740"/Provide the parametrized type for this generic.(ùÔã“ûÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(Ğ³õøıÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(°ü’Øıÿÿÿÿ
 C
-java:S1604&"(Make this anonymous inner class a lambda(€ÀØÔúÿÿÿÿ
+java:S1604""(Make this anonymous inner class a lambda(ã’Õ¼øÿÿÿÿ
+>
+java:S1604+"(Make this anonymous inner class a lambda(²ÂëÁ
+E
+java:S16044"(Make this anonymous inner class a lambda(é‚£ç8ç’°¡…1
+C
+java:S1604<"(Make this anonymous inner class a lambda(€ÀØÔúÿÿÿÿ
 b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(š›¼¸
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–¯ãN
 u	java:S116
@@ -20,10 +28,7 @@ l	java:S116"WRename this field "list_Theater" to match the regular expression
 i	java:S116"TRename this field "list_Time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÛß 
 k	java:S116"QRename this field "btn_OK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘°Ë…úÿÿÿÿ
 d
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
-—
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™àíŸ
-—
-java:S1186""€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™àíŸ
-D
-java:S1068".Remove this unused "list_Movie" private field.(äÌ¼
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+>	java:S108%")Either remove or fill this block of code.(—Ğ®¼
+E	java:S108.")Either remove or fill this block of code.(—Ğ®¼8÷ı­¡…1
+E	java:S1087")Either remove or fill this block of code.(ÅÙÔÛ8“ï°¡…1

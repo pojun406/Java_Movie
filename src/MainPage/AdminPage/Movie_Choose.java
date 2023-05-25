@@ -22,7 +22,6 @@ public class Movie_Choose extends JFrame {
 
     public String selectedMovie = "";
 
-
     DefaultListModel<String> listModel = new DefaultListModel<>();
     List<String> movieList = new ArrayList<>();
 
@@ -34,7 +33,6 @@ public class Movie_Choose extends JFrame {
         btn_exit.setBounds(440, 5, 70, 30);
 
         movieList = dao.getTitle();
-        System.out.println(movieList);
 
         for (String title : movieList) {
             listModel.addElement(title);
@@ -70,7 +68,6 @@ public class Movie_Choose extends JFrame {
                 }
             }
         });
-
         setVisible(true);
 
         list_Movie.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
