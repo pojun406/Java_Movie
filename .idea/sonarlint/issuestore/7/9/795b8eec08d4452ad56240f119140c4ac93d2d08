@@ -1,11 +1,11 @@
 
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö·ş•ÿÿÿÿÿ8§¾ª¶„1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö·ş•ÿÿÿÿÿ8§¾ª¶„1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö·ş•ÿÿÿÿÿ8§¾ª¶„1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö·ş•ÿÿÿÿÿ8¨¾ª¶„1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö·ş•ÿÿÿÿÿ8¬¾ª¶„1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦–Š¹ùÿÿÿÿ8®¾ª¶„1
-r	java:S117G"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á³‚úÿÿÿÿ8°¾ª¶„1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö·ş•ÿÿÿÿÿ8§¾ª¶„1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö·ş•ÿÿÿÿÿ8§¾ª¶„1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö·ş•ÿÿÿÿÿ8§¾ª¶„1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö·ş•ÿÿÿÿÿ8¨¾ª¶„1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö·ş•ÿÿÿÿÿ8¬¾ª¶„1
+r	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦–Š¹ùÿÿÿÿ8®¾ª¶„1
+r	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á³‚úÿÿÿÿ8°¾ª¶„1
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Çñ˜­8´¾ª¶„1
 u	java:S116"TRename this field "Movie_Num" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èñ›Äşÿÿÿÿ8Î¾ª¶„1
 l	java:S116"PRename this field "Title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã¨„æ8Î¾ª¶„1
@@ -13,7 +13,8 @@ p	java:S116"ORename this field "Cast" to match the regular expression '^[a-z]
 s	java:S116	"WRename this field "Running_Time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¦²8Ï¾ª¶„1
 w	java:S116
 "VRename this field "Description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¼Â­ùÿÿÿÿ8Ğ¾ª¶„1
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û²²8è¾ª¶„1
-o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦–Š¹ùÿÿÿÿ8ê¾ª¶„1
-o	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òº¿üûÿÿÿÿ8ú¾ª¶„1
-o	java:S100G"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á³‚úÿÿÿÿ8ü¾ª¶„1
+r	java:S116"QRename this field "Poster" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îüæùÿÿÿÿ8™Ğ¸……1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û²²8è¾ª¶„1
+o	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦–Š¹ùÿÿÿÿ8ê¾ª¶„1
+o	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òº¿üûÿÿÿÿ8ú¾ª¶„1
+o	java:S100I"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á³‚úÿÿÿÿ8ü¾ª¶„1

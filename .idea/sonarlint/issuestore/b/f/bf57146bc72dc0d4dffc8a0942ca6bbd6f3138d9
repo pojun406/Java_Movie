@@ -1,28 +1,47 @@
 
+k	java:S117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½İúûüÿÿÿÿ
+f	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şáóá
+f	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¥ÌÑ
+k	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òœÉşşÿÿÿÿ
+k	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æñï•ÿÿÿÿÿ
+k	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠöÉÑıÿÿÿÿ
 >
-java:S1604"(Make this anonymous inner class a lambda(›ß­ä
-a	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(îöÌ?
+java:S1604-"(Make this anonymous inner class a lambda(›ß­ä
+a	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(îöÌ?
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–¯ãN
-s	java:S116"YRename this field "MovieinfoPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷´ƒıÿÿÿÿ
-j	java:S116	"URename this field "pan_Poster" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áªµ
-l	java:S116
-"RRename this field "btn_out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿ÕÃ·úÿÿÿÿ
-o	java:S116"URename this field "lb_MovieNm" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛØğƒıÿÿÿÿ
-i	java:S116"TRename this field "lb_Selled" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¬Æ
-o	java:S116"URename this field "lb_dayUser" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿªË€ÿÿÿÿÿ
-o	java:S116"URename this field "lb_allUser" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¢Ééşÿÿÿÿ
-i	java:S116"TRename this field "lb_profit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïåú€
+s	java:S116"YRename this field "MovieinfoPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷´ƒıÿÿÿÿ
+j	java:S116"URename this field "pan_Poster" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áªµ
+l	java:S116"RRename this field "btn_out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿ÕÃ·úÿÿÿÿ
+o	java:S116"URename this field "lb_MovieNm" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛØğƒıÿÿÿÿ
+i	java:S116"TRename this field "lb_Selled" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¬Æ
+o	java:S116"URename this field "lb_dayUser" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿªË€ÿÿÿÿÿ
+o	java:S116"URename this field "lb_allUser" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¢Ééşÿÿÿÿ
+i	java:S116"TRename this field "lb_profit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïåú€
+@
+java:S1948"%Make "dao" transient or serializable.(àù¼ìşÿÿÿÿ
 d
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+E
+java:S1481%"/Remove this unused "genre_info" local variable.(Şáóá
+H
+java:S1481&"2Remove this unused "director_info" local variable.(¾¥ÌÑ
+J
+java:S1481'"/Remove this unused "Actor_info" local variable.(òœÉşşÿÿÿÿ
+L
+java:S1481("1Remove this unused "Running_info" local variable.(Æñï•ÿÿÿÿÿ
+P
+java:S1481)"5Remove this unused "Description_info" local variable.(ŠöÉÑıÿÿÿÿ
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(¼‡¬³şÿÿÿÿ8ŞïŠˆ…1
 D
-java:S1068	".Remove this unused "pan_Poster" private field.(áªµ
+java:S1068".Remove this unused "pan_Poster" private field.(áªµ
 I
-java:S1068".Remove this unused "lb_MovieNm" private field.(ÛØğƒıÿÿÿÿ
+java:S1068".Remove this unused "lb_MovieNm" private field.(ÛØğƒıÿÿÿÿ
 C
-java:S1068"-Remove this unused "lb_Selled" private field.(ÿ¬Æ
+java:S1068"-Remove this unused "lb_Selled" private field.(ÿ¬Æ
 I
-java:S1068".Remove this unused "lb_dayUser" private field.(ÿªË€ÿÿÿÿÿ
+java:S1068".Remove this unused "lb_dayUser" private field.(ÿªË€ÿÿÿÿÿ
 I
-java:S1068".Remove this unused "lb_allUser" private field.(“¢Ééşÿÿÿÿ
+java:S1068".Remove this unused "lb_allUser" private field.(“¢Ééşÿÿÿÿ
 C
-java:S1068"-Remove this unused "lb_profit" private field.(Ïåú€
+java:S1068"-Remove this unused "lb_profit" private field.(Ïåú€

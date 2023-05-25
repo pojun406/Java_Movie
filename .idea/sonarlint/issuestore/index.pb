@@ -19,14 +19,10 @@ P
  src/MainPage/LoginPage/Join.form,f\5\f547d9d819424073f64ad30621e1c666f417639c
 R
 "src/MainPage/LoginPage/FindID.form,7\c\7c052e4560503c006b50d9fbfe2ed8d669639a81
-N
-src/DAODTO/Movie/MovieDTO.java,7\9\795b8eec08d4452ad56240f119140c4ac93d2d08
 W
 'src/MainPage/LoginPage/Dialog_ChPw.form,6\5\6570f0322b3c1f4a280949dafea3b3e007e6a89f
 X
 (src/MainPage/AdminPage/Movie_Update.java,9\3\93bfff99e1d07f9506f12e7de10c758ae97cb244
-P
- src/MainPage/LoginPage/Join.java,4\4\44de2dc82a6a7afc9dcc88d532f52dc01db08039
 :
 
 src/a.json,9\2\920d8e8c0bfe6f6f328c60e2933615dcb19075e8
@@ -34,21 +30,27 @@ Q
 !src/MainPage/LoginPage/Login.java,1\3\1377e3d734081e2835eff1d22655c1614a067f58
 F
 src/MainPage/test.java,3\0\30950b1300aa3c6ef05e123bfc7b782265649f90
-V
-&src/MainPage/AdminPage/Movie_info.form,8\0\8043b1f57bfe3c05bc68937e09b6de03a3d76ae5
+W
+'src/MainPage/LoginPage/Dialog_ChPw.java,f\9\f98d4059b8567a5c772b07a59cd584ea63f93485
 U
 %src/MainPage/AdminPage/AdminPage.form,1\3\1301eae3c059441877969b2bcf99d4c2dcb7e484
 U
 %src/MainPage/AdminPage/AdminPage.java,b\b\bb6ba03fb4bee5e3a9a2aaa867ba74ba2f77c692
-W
-'src/MainPage/LoginPage/Dialog_ChPw.java,f\9\f98d4059b8567a5c772b07a59cd584ea63f93485
 V
-&src/MainPage/AdminPage/Movie_info.java,b\f\bf57146bc72dc0d4dffc8a0942ca6bbd6f3138d9
+&src/MainPage/AdminPage/Movie_info.form,8\0\8043b1f57bfe3c05bc68937e09b6de03a3d76ae5
+P
+ src/DAODTO/Member/MemberDAO.java,e\a\ea86c351e82b6013b4079f76cc369863bedf5635
+P
+ src/MainPage/LoginPage/Join.java,4\4\44de2dc82a6a7afc9dcc88d532f52dc01db08039
 R
 "src/MainPage/LoginPage/FindID.java,c\a\caf26cebf2ed752f595b8587bf53be526f0f07b5
-X
-(src/MainPage/AdminPage/Movie_Choose.form,d\0\d0fe5719f31d45aa7dd897fa2877eee7f118ead6
+R
+"src/DAODTO/Booking/BookingDAO.java,2\8\28309d704c81c4f3fbd8fd447dab5bce8a496860
+N
+src/DAODTO/Movie/MovieDTO.java,7\9\795b8eec08d4452ad56240f119140c4ac93d2d08
 X
 (src/MainPage/AdminPage/Movie_Choose.java,e\d\edca4f431cd37b494f8290e354a1fdc6250046b0
 N
 src/DAODTO/Movie/MovieDAO.java,e\3\e3f8f67b3333dbea4ebd5cfb3b97b78de401a15f
+V
+&src/MainPage/AdminPage/Movie_info.java,b\f\bf57146bc72dc0d4dffc8a0942ca6bbd6f3138d9

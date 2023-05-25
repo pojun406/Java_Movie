@@ -1,90 +1,82 @@
 
-a
-java:S1192D"FDefine a constant instead of duplicating this literal "UTF-8" 3 times.(ÀÔ€ªøÿÿÿÿ
+b
+java:S1192‰"FDefine a constant instead of duplicating this literal "UTF-8" 3 times.(ÀÔ€ªøÿÿÿÿ
 `
-java:S1192"IDefine a constant instead of duplicating this literal "peopleNm" 3 times.(ý¡»
-f	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÚî¢
-g	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÿÒÉ
-g	java:S117—"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô›½Ã
-l	java:S117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½¥¿‚ùÿÿÿÿ
-l	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÐšÑªúÿÿÿÿ
-g	java:S117Õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öšÐ„
-l	java:S117Ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ÄÎøþÿÿÿÿ
-g	java:S117ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï›Ôø
-l	java:S117ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ž¾Òùÿÿÿÿ
-g	java:S117õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅáÀ
-l	java:S117ö"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÊëµøÿÿÿÿ
-g	java:S117ø"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ú“£
-l	java:S117ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¦âãøÿÿÿÿ
-g	java:S117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ø©È
-g	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃŽ¼
-l	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Üûóûÿÿÿÿ
-g	java:S117‘"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•†Á–
-g	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“þ„ù
+java:S1192Æ"IDefine a constant instead of duplicating this literal "peopleNm" 3 times.(ý¡»
+f	java:S117z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÚî¢
+g	java:S117Û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÿÒÉ
+g	java:S117Ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô›½Ã
+l	java:S117ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½¥¿‚ùÿÿÿÿ
+l	java:S117í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÐšÑªúÿÿÿÿ
+g	java:S117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öšÐ„
+l	java:S117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ÄÎøþÿÿÿÿ
+g	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï›Ôø
+l	java:S117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ž¾Òùÿÿÿÿ
+g	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅáÀ
+l	java:S117»"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÊëµøÿÿÿÿ
+g	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ú“£
+l	java:S117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¦âãøÿÿÿÿ
+g	java:S117Å"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ø©È
+g	java:S117Ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃŽ¼
+l	java:S117Î"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Üûóûÿÿÿÿ
+g	java:S117Ö"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•†Á–
+g	java:S117Ø"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“þ„ù
 3
-java:S1643ù"Use a StringBuilder instead.(®åû¾
+java:S1643¾"Use a StringBuilder instead.(®åû¾
 8
-java:S1643‹"Use a StringBuilder instead.(È™©îþÿÿÿÿ
+java:S1643Ð"Use a StringBuilder instead.(È™©îþÿÿÿÿ
 3
-java:S1643"Use a StringBuilder instead.(Ç¤˜ð
+java:S1643Ò"Use a StringBuilder instead.(Ç¤˜ð
+{
+java:S1104"YMake TitletoChoice a static final constant or non-public and provide accessors if needed.(Èƒòïýÿÿÿÿ8Ìð†…1
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Çñ˜­
-f
-java:S2095«"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ö¤«§
-h
-java:S2095¡"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÃÝÙ‘ÿÿÿÿÿ
-e
-java:S2095ß"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(žÐ€B
-f
-java:S2095×"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(©õ€…
-h
-java:S2095è"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÃÝÙ‘ÿÿÿÿÿ
-f
-java:S2583%"DChange this condition so that it does not always evaluate to "false"(â¹þÃùÿÿÿÿ8«ª÷„1
-f
-java:S2583$"DChange this condition so that it does not always evaluate to "false"(Ø©¹Áüÿÿÿÿ8«ª÷„1
-V
-java:S3516"9Refactor this method to not always return the same value.(½ˆ¢è8«ª÷„1
->
-java:S1172"(Remove this unused method parameter "i".(½ˆ¢è
+o
+java:S2095­"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÃÝÙ‘ÿÿÿÿÿ8ìéç‡…1
+m
+java:S2095œ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(©õ€…8ìéç‡…1
+m
+java:S2095ð"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ö¤«§8ëéç‡…1
+l
+java:S2095¤"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(žÐ€B8ìéç‡…1
+q
+java:S2095@"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ8ößø†…1
+o
+java:S2095æ"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÃÝÙ‘ÿÿÿÿÿ8íéç‡…1
+y	java:S116"XRename this field "TitletoChoice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èƒòïýÿÿÿÿ8 àð†…1
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úŽÈ´úÿÿÿÿ
 E
-java:S1481"*Remove this unused "title" local variable.(†¢¢ôùÿÿÿÿ
-B
-java:S1481"'Remove this unused "rs" local variable.(ÀÇÄûÿÿÿÿ
-h	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´µûúÿÿÿÿ
-C
-java:S1481-"(Remove this unused "dao" local variable.(àù¼ìþÿÿÿÿ
-I
-java:S18749".Remove this use of "encode"; it is deprecated.(Šôæ½üÿÿÿÿ
-T
-java:S4719D"9Replace charset name argument with StandardCharsets.UTF_8(ÀÔ€ªøÿÿÿÿ
-E
-java:S1481M"*Remove this unused "plots" local variable.(‰µ·ûÿÿÿÿ
-G
-java:S1481N",Remove this unused "posters" local variable.(Àñö¾úÿÿÿÿ
-J
-java:S1481O"/Remove this unused "targetplot" local variable.(˜—ÞŒúÿÿÿÿ
-G
-java:S1481P"1Remove this unused "targetposter" local variable.(Øžé›
-?
-java:S1481^")Remove this unused "year" local variable.(ÓÝ¤Ë
-N	java:S106q"9Replace this use of System.out or System.err by a logger.(Þÿ½†
-E
-java:S20933"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßñ–Áþÿÿÿÿ
-U
-java:S4719¡"9Replace charset name argument with StandardCharsets.UTF_8(ÃÝÙ‘ÿÿÿÿÿ
-F
-java:S2093“"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-i	java:S100Æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿îÈƒûÿÿÿÿ
-n
-java:S3776Æ"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¿îÈƒûÿÿÿÿ
-U
-java:S4719è"9Replace charset name argument with StandardCharsets.UTF_8(ÃÝÙ‘ÿÿÿÿÿ
-U
-java:S1155ÿ">Use isEmpty() to check whether the collection is empty or not.(™‡Ñé
-F
-java:S2093Ó"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+java:S1481"(Remove this unused "dto" local variable.(­æßé8ùßø†…1
+o	java:S100r"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´µûúÿÿÿÿ8’êç‡…1
+P
+java:S1874~".Remove this use of "encode"; it is deprecated.(Šôæ½üÿÿÿÿ8”êç‡…1
+\
+java:S4719‰"9Replace charset name argument with StandardCharsets.UTF_8(ÀÔ€ªøÿÿÿÿ8™êç‡…1
 M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¸ª÷„1
+java:S1481’"*Remove this unused "plots" local variable.(‰µ·ûÿÿÿÿ8•Ïø†…1
+H
+java:S1481“",Remove this unused "posters" local variable.(Àñö¾úÿÿÿÿ
+K
+java:S1481”"/Remove this unused "targetplot" local variable.(˜—ÞŒúÿÿÿÿ
+O
+java:S1481•"1Remove this unused "targetposter" local variable.(Øžé›8›êç‡…1
+G
+java:S1481£")Remove this unused "year" local variable.(ÓÝ¤Ë8žêç‡…1
+V	java:S106¶"9Replace this use of System.out or System.err by a logger.(Þÿ½†8¨°ý‡…1
+L
+java:S2093x"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8¥êç‡…1
+p	java:S100Æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßñ–Áþÿÿÿÿ8¥êç‡…1
+\
+java:S4719æ"9Replace charset name argument with StandardCharsets.UTF_8(ÃÝÙ‘ÿÿÿÿÿ8¬êç‡…1
 M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¹ª÷„1
+java:S2093Ø"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8³êç‡…1
+p	java:S100‹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿îÈƒûÿÿÿÿ8´êç‡…1
+u
+java:S3776‹"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¿îÈƒûÿÿÿÿ8´êç‡…1
+\
+java:S4719­"9Replace charset name argument with StandardCharsets.UTF_8(ÃÝÙ‘ÿÿÿÿÿ8ºêç‡…1
+\
+java:S1155Ä">Use isEmpty() to check whether the collection is empty or not.(™‡Ñé8½êç‡…1
+M
+java:S2093˜"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Ìêç‡…1
+Y
+java:S1128	"<Remove this unused import 'MainPage.AdminPage.Movie_Choose'.(¾ý¶8ô½ù†…1

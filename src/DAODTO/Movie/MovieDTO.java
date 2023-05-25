@@ -8,6 +8,8 @@ public class MovieDTO {
     private String Cast;
     private String Running_Time;
     private String Description;
+    private String Poster;
+
 
     public MovieDTO() {
         super();
@@ -78,6 +80,14 @@ public class MovieDTO {
 
     public void setDescription(String description) {
         Description = description;
+    }
+
+    public String getPoster() {
+        return Poster;
+    }
+
+    public void setPoster(String poster) {
+        Poster = poster;
     }
 
 }

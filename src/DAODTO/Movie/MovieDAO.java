@@ -6,6 +6,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import DataBase.DBConnect;
+import MainPage.AdminPage.Movie_Choose;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -19,18 +20,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MovieDAO {
+    public String TitletoChoice = "";
     //영화제목, 장르, 감독, 출연배우, 상영시간, 줄거리등
-    public String getTitle(int i){
-        String title = "";
+
+    public boolean ChoiceTitle(String title){
+        MovieDTO dto = new MovieDTO();
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
 
         try {
-            return null;
-        }catch (Exception e) {
+            conn = new DBConnect().getConn();
+            String query = "SELECT Movie_Title FROM movie_detail WHERE Movie_Title = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1, title);
+            rs = pstmt.executeQuery();
+
+            TitletoChoice = title;
+
+            return rs.next();
+        }catch (Exception e){
             e.printStackTrace();
-            return null;
+            return false;
         } finally {
             try {
                 if (pstmt != null) pstmt.close();
@@ -40,9 +51,67 @@ public class MovieDAO {
             }
         }
     }
+    public boolean infoTitle(){
+        MovieDTO dto = new MovieDTO();
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        String infotitle = TitletoChoice;
+        try {
+            conn = new DBConnect().getConn();
+            String query = "SELECT Movie_Title, Genre, Director, Actor, Running_Time, Description, Poster_URL FROM movie_detail WHERE Movie_Title = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1, infotitle);
+            rs = pstmt.executeQuery();
+            if(rs.next()){
+                dto.setTitle(rs.getString("Movie_Title"));
+                dto.setGenre(rs.getString("Genre"));
+                dto.setDirector(rs.getString("Director"));
+                dto.setCast(rs.getString("Actor"));
+                dto.setRunning_Time(rs.getString("Running_Time"));
+                dto.setDescription(rs.getString("Description"));
+                dto.setPoster(rs.getString("Poster_URL"));
+            }
+            return rs.next();
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
+    }
+    public List<String> getTitle(){
+        List<String> movieTitle = new ArrayList<>();
+
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = new DBConnect().getConn();
+
+            String query = "SELECT Movie_Title FROM movie_detail";
+            pstmt = conn.prepareStatement(query);
+            rs = pstmt.executeQuery();
+
+            while(rs.next()){
+                String movieName = rs.getString("Movie_Title");
+                movieTitle.add(movieName);
+            }
+
+        }catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return movieTitle;
+    }
 
     public boolean GETAPI_Poster(String title) {
-        MovieDAO dao = new MovieDAO();
         Connection conn = null;
         PreparedStatement pstmt = null;
 
