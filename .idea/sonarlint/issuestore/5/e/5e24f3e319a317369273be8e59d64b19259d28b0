@@ -1,12 +1,22 @@
 
 J
-java:S16042"(Make this anonymous inner class a lambda(‹‹¿üşÿÿÿÿ8Ü‹ö­…1
-J
-java:S1604T"(Make this anonymous inner class a lambda(Ô¶µÿşÿÿÿÿ8—Ã÷­…1
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¬£ñûÿÿÿÿ
+java:S1604M"(Make this anonymous inner class a lambda(‹‹¿üşÿÿÿÿ8´²ºµ…1
+E
+java:S1604l"(Make this anonymous inner class a lambda(ƒÍÆÖ8´²ºµ…1
+K
+java:S1604‘"(Make this anonymous inner class a lambda(Ô¶µÿşÿÿÿÿ8µ²ºµ…1
+:
+java:S1643…"Use a StringBuilder instead.(‡º›´8µ²ºµ…1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¬£ñûÿÿÿÿ8ãƒË³…1
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
-G
-java:S1948"%Make "dao" transient or serializable.(àù¼ìşÿÿÿÿ8Ğº¯…1
+z
+java:S1450"XRemove the "posterImg" field and declare it as a local variable in the relevant methods.(¸Âõ‡úÿÿÿÿ8ç²ºµ…1
 i
-java:S3252"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(§ıÏÁ8Ô¸õ­…1
-o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï°Ã‡üÿÿÿÿ8€Œö­…1
+java:S3252"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(§ıÏÁ8ì²ºµ…1
+o	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï°Ã‡üÿÿÿÿ8í²ºµ…1
+U	java:S106T"9Replace this use of System.out or System.err by a logger.(ŒÑÌ8ù²ºµ…1
+U	java:S106W"9Replace this use of System.out or System.err by a logger.(ŒÑÌ8ù²ºµ…1
+V	java:S106‡"9Replace this use of System.out or System.err by a logger.(™Ãø¤8ş²ºµ…1
+[	java:S106Š"9Replace this use of System.out or System.err by a logger.(àÕêåşÿÿÿÿ8€³ºµ…1
+N
+java:S1128"2Remove this unused import 'DAODTO.Movie.MovieDAO'.(äçÒ8ë²½µ…1

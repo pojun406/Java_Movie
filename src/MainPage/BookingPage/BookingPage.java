@@ -70,11 +70,11 @@ public class BookingPage extends JFrame{
                     moviedao.ChoiceTitle(selectedMovie);
                     bookingdao.ChoiceTheater(selectedTheater);
                     if(bookingdao.Theater_Size(selectedTheater) == 1){
-                        big_Theater bigT = new big_Theater();
+                        big_Theater bigT = new big_Theater(selectedMovie);
                         BookingPage.this.setVisible(false);
                     }
                     else{
-                        Small_Theater smallT = new Small_Theater();
+                        Small_Theater smallT = new Small_Theater(selectedMovie);
                         BookingPage.this.setVisible(false);
                     }
                     System.out.println("선택한 영화 : " + selectedMovie);

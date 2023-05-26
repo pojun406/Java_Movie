@@ -21,15 +21,13 @@ C
 java:S1948"(Make "theaterList" private or transient.(şë§ùÿÿÿÿ
 d
 java:S32524"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
-T
-java:S1854I"8Remove this useless assignment to local variable "bigT".(œÿ¹8¾•Å¯…1
-\
-java:S1854M":Remove this useless assignment to local variable "smallT".(«½î‚ùÿÿÿÿ8¾•Å¯…1
-E
-java:S1481I")Remove this unused "bigT" local variable.(œÿ¹8Â•Å¯…1
-M
-java:S1481M"+Remove this unused "smallT" local variable.(«½î‚ùÿÿÿÿ8Â•Å¯…1
+U
+java:S1854I"8Remove this useless assignment to local variable "bigT".(ıÈøŒ8¾•Å¯…1
+W
+java:S1854M":Remove this useless assignment to local variable "smallT".(êİı³8¾•Å¯…1
+F
+java:S1481I")Remove this unused "bigT" local variable.(ıÈøŒ8Â•Å¯…1
+H
+java:S1481M"+Remove this unused "smallT" local variable.(êİı³8Â•Å¯…1
 S	java:S106P"9Replace this use of System.out or System.err by a logger.(©ğ¼úÿÿÿÿ
 S	java:S106Q"9Replace this use of System.out or System.err by a logger.(éã‰‚üÿÿÿÿ
-W
-java:S1128":Remove this unused import 'MainPage.AdminPage.Movie_info'.(ü•Ï˜8œÂÄ¯…1

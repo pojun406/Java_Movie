@@ -1,23 +1,26 @@
 package MainPage.BookingPage;
-
-import DAODTO.Booking.BookingDAO;
-import MainPage.AdminPage.Movie_Choose;
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
-public class big_Theater extends JFrame{
+public class big_Theater extends JFrame {
+    String movie;
+    private JLabel posterImg;
     private JComponent ui = null;
     private JToggleButton[] seats = new JToggleButton[80];
     private JTextArea selectedSeats = new JTextArea(1, 40);
     JFrame f = new JFrame("좌석 선택 페이지");
+    private List<String> selectedSeatList = new ArrayList<>();
 
-    public big_Theater(){
+    public big_Theater(String movieName) {
+        movie = movieName;
 
-        if (ui!=null) return;
+        if (ui != null) return;
 
         init_UI();
 
@@ -32,6 +35,26 @@ public class big_Theater extends JFrame{
     public void init_UI() {
         ui = new JPanel(new BorderLayout(4, 4));
         ui.setBorder(new EmptyBorder(4, 4, 4, 4));
+        posterImg = new JLabel();
+
+        if (movie != null) {
+            // Create the image file path
+            String imagePath = "./img/" + movie.replaceAll("[^ㄱ-ㅎ가-힣0-9]+", "").replaceAll("\\s+", "") + ".jpg";
+
+            // Check if the image file exists
+            File imageFile = new File(imagePath);
+            if (imageFile.exists()) {
+                // If the image file exists, set the image to the JLabel
+                ImageIcon imageIcon = new ImageIcon(imagePath);
+                posterImg.setIcon(imageIcon);
+            } else {
+                // If the image file does not exist, set a default image or display a notification message
+                posterImg.setText("이미지 없음");
+            }
+        } else {
+            // If the movie is null, set a default image or display a notification message
+            posterImg.setText("이미지 없음");
+        }
 
         selectedSeats.setLineWrap(true);
         selectedSeats.setWrapStyleWord(true);
@@ -51,19 +74,16 @@ public class big_Theater extends JFrame{
         ActionListener seatSelectionListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                StringBuilder sb = new StringBuilder();
-                for (int ii = 0; ii < seats.length; ii++) {
-                    JToggleButton tb = seats[ii];
-                    if (tb.isSelected()) {
-                        sb.append(tb.getText());
-                        sb.append(", ");
-                    }
+                JToggleButton selectedSeat = (JToggleButton) e.getSource();
+                String seatText = selectedSeat.getText();
+                if (selectedSeat.isSelected()) {
+                    selectedSeatList.add(seatText);
+                    System.out.println(selectedSeatList);
+                } else {
+                    selectedSeatList.remove(seatText);
+                    System.out.println(selectedSeatList);
                 }
-                String s = sb.toString();
-                if (s.length() > 0) {
-                    s = s.substring(0, s.length() - 2);
-                }
-                selectedSeats.setText(s);
+
             }
         };
 
@@ -80,13 +100,49 @@ public class big_Theater extends JFrame{
                 rightStall.add(tb);
             }
         }
+
+        JButton nextButton = new JButton("다음");
+        nextButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setSeatInfo(selectedSeatList);
+            }
+        });
+
+        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
+        buttonPanel.add(nextButton);
+
+        JPanel contentPanel = new JPanel(new BorderLayout());
+        contentPanel.add(cinemaFloor, BorderLayout.CENTER);
+        contentPanel.add(posterImg, BorderLayout.WEST);
+        ui.add(contentPanel, BorderLayout.CENTER);
+        ui.add(buttonPanel, BorderLayout.PAGE_END);
     }
 
-    public static void main(String[] args) { // test main
+    public String[] setSeatInfo(List<String> seatinfo){
+        String info = "";
+        String[] a = null;
+        if(seatinfo == null){
+            JOptionPane.showMessageDialog(null,"선택하십쇼");
+        }
+        else{
+            for (int i = 0; i < seatinfo.size(); i++) {
+                info += seatinfo.get(i) + ",";
+            }
+            System.out.println(info);
+            a = info.split(",");
+            for (int i = 0; i < a.length; i++) {
+                System.out.println(a[i]);
+            }
+        }
+        return a;
+    }
+
+    public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new big_Theater();
+                new big_Theater("스즈메의문단속");
             }
         });
     }
