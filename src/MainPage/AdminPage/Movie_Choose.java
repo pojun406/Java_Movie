@@ -80,12 +80,4 @@ public class Movie_Choose extends JFrame {
             }
         });
     }
-    public static void main(String[] args) { // test main
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new Movie_Choose();
-            }
-        });
-    }
 }

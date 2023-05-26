@@ -3,8 +3,6 @@
 java:S16049"(Make this anonymous inner class a lambda(ŸÈ÷
 C
 java:S1604J"(Make this anonymous inner class a lambda(ÍÿŞÚúÿÿÿÿ
-C
-java:S1604T"(Make this anonymous inner class a lambda(Ô¶µÿşÿÿÿÿ
 o
 java:S1104"YMake selectedMovie a static final constant or non-public and provide accessors if needed.(æ‚â…
 g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ÿû¯¯úÿÿÿÿ

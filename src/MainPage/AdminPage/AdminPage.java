@@ -26,8 +26,6 @@ public class AdminPage extends JFrame{
         setResizable(false);
         setVisible(true);
 
-        MovieDTO moviedto = new MovieDTO();
-
         btn_Movieinfo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

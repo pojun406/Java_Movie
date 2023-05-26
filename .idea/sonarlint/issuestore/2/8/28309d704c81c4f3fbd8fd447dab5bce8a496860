@@ -1,4 +1,6 @@
 
+k	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¦ºÒüÿÿÿÿ
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†¥î¤
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(‡¥…üÿÿÿÿÿ
+b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¢ÉY
+c	java:S100S"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å“ù¨
+Q	java:S125q"<This block of commented-out lines of code should be removed.(à…Îô

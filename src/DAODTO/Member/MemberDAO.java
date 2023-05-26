@@ -10,9 +10,78 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MemberDAO{
+    public List<String> getUserWatched(String user) {
+    List<String> userWatched = new ArrayList<>();
 
-    public String getUserWatched(String User){
-        String User_Watched = "";
+    Connection conn = null;
+    PreparedStatement pstmt = null;
+    ResultSet rs = null;
+
+    try {
+        conn = new DBConnect().getConn();
+
+        String query = "SELECT User_Watch_list FROM user WHERE user_id = ?";
+        pstmt = conn.prepareStatement(query);
+        pstmt.setString(1, user);
+        rs = pstmt.executeQuery();
+
+        if (rs.next()) {
+            String watched = rs.getString("User_Watch_list");
+            userWatched.add(watched);
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    } finally {
+        try {
+            if (rs != null) rs.close();
+            if (pstmt != null) pstmt.close();
+            if (conn != null) conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    return userWatched;
+}
+
+    // User가 지불한 총 금액을 가져오는 함수
+    public int getUserTotalPay(String user) {
+        int totalPay = 0;
+
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = new DBConnect().getConn();
+
+            String query = "SELECT User_Pay FROM user WHERE user_id = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1, user);
+            rs = pstmt.executeQuery();
+
+            if (rs.next()) {
+                totalPay = rs.getInt("User_Pay");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        return totalPay;
+    }
+
+
+/*
+    public List<String> getUserWatched(String User){
+        List<String> User_Watched = new ArrayList<>();;
 
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -27,13 +96,16 @@ public class MemberDAO{
             rs = pstmt.executeQuery();
 
             if(rs.next()){
-                User_Watched = rs.getString("User_Watch_list");
+                String userWatched = rs.getString("User_Watch_list");
+                int paid = rs.getInt("User_Pay");
+
+                User_Watched.add(userWatched);
+                User_Watched.add(String.valueOf(paid));
             }
             return User_Watched;
 
         } catch (Exception e) {
             e.printStackTrace();
-            return null;
         } finally {
             try {
                 if (rs != null) rs.close();
@@ -43,8 +115,11 @@ public class MemberDAO{
                 e.printStackTrace();
             }
         }
+        return User_Watched;
     }
 
+
+ */
     public List<String> getUser() {
         List<String> Users = new ArrayList<>();
 

@@ -19,7 +19,7 @@ public class Movie_Update extends JFrame{
         list_Time = new JList();
 
         list_Movie.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        list_Theater.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        list_Theater.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
         list_Time.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
         setContentPane(MovieUpdatePanel);
