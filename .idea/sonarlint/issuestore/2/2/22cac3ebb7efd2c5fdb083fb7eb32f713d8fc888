@@ -1,0 +1,25 @@
+
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²İ›[
+v	java:S116
+"\Rename this field "CheckBookingPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§»ˆ‘øÿÿÿÿ
+k	java:S116"VRename this field "BookingList" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«¼ÎË
+i	java:S116"ORename this field "Seat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä’ÿıüÿÿÿÿ
+m	java:S116"SRename this field "Schedule" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ›˜«üÿÿÿÿ
+i	java:S116"TRename this field "MovieName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãØ½
+l	java:S116"PRename this field "Price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õŠŞŠ8ŸÜëí…1
+l	java:S116"RRename this field "btn_Out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òğ”öúÿÿÿÿ
+P
+java:S1068
+"5Remove this unused "CheckBookingPanel" private field.(§»ˆ‘øÿÿÿÿ
+E
+java:S1068"/Remove this unused "BookingList" private field.(«¼ÎË
+C
+java:S1068"(Remove this unused "Seat" private field.(ä’ÿıüÿÿÿÿ
+G
+java:S1068",Remove this unused "Schedule" private field.(Ÿ›˜«üÿÿÿÿ
+C
+java:S1068"-Remove this unused "MovieName" private field.(ãØ½
+F
+java:S1068")Remove this unused "Price" private field.(õŠŞŠ8¡Üëí…1
+F
+java:S1068"+Remove this unused "btn_Out" private field.(òğ”öúÿÿÿÿ

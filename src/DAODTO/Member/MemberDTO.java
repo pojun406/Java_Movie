@@ -1,34 +1,33 @@
 package DAODTO.Member;
 
 public class MemberDTO {
-    private int UID;
+    private String UID;
     private String USER_ID;
     private String USER_PW;
     private String USER_Name;
     private String USER_CallNum;
-    private String USER_Pay;
+    private int USER_Pay;
     private String USER_Watched;
+    private User user;
 
-    public MemberDTO(){
+    public MemberDTO() {
         super();
     }
 
-    public MemberDTO(int UID, String USER_ID, String USER_PW, String USER_Name, String USER_CallNum, String USER_Pay, String USER_Watched){
+    public MemberDTO(String UID, String USER_ID, String USER_PW) {
         super();
         this.UID = UID;
         this.USER_ID = USER_ID;
         this.USER_PW = USER_PW;
-        this.USER_Name = USER_Name;
-        this.USER_CallNum = USER_CallNum;
-        this.USER_Pay = USER_Pay;
-        this.USER_Watched = USER_Watched;
+        this.user = User.getInstance(); // User 인스턴스 생성
     }
 
-    public int getUID() {
+
+    public String getUID() {
         return UID;
     }
 
-    public void setUID(int UID) {
+    public void setUID(String UID) {
         this.UID = UID;
     }
 
@@ -64,11 +63,11 @@ public class MemberDTO {
         this.USER_CallNum = USER_CallNum;
     }
 
-    public String getUSER_Pay() {
+    public int getUSER_Pay() {
         return USER_Pay;
     }
 
-    public void setUSER_Pay(String USER_Pay) {
+    public void setUSER_Pay(int USER_Pay) {
         this.USER_Pay = USER_Pay;
     }
 
@@ -78,6 +77,10 @@ public class MemberDTO {
 
     public void setUSER_Watched(String USER_Watched) {
         this.USER_Watched = USER_Watched;
+    }
+
+    public User getUser() {
+        return user;
     }
 
 }

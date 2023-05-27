@@ -1,6 +1,33 @@
 
-k	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¦ºÒüÿÿÿÿ
+g
+java:S1192"JDefine a constant instead of duplicating this literal "Movie_Num" 3 times.(øùçö8¼à ò…1
+b
+java:S1192"LDefine a constant instead of duplicating this literal "Theater_Num" 4 times.(ó÷ğ¯
+‹
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(€«¼ÿÿÿÿÿ
+†
+java:S13191"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ğãí
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€«¼ÿÿÿÿÿ
+f	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğãí
+g	java:S117›"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù™Û·
+g	java:S117›"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù™Û·
+l	java:S117ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¦ºÒüÿÿÿÿ
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†¥î¤
-b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¢ÉY
-c	java:S100S"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å“ù¨
-Q	java:S125q"<This block of commented-out lines of code should be removed.(à…Îô
+j
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+j
+java:S2095d"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+j
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+j
+java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+j
+java:S2095j"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ˆËıÛûÿÿÿÿ
+h	java:S100x"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ÛÜ—üÿÿÿÿ
+d	java:S100›"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù™Û·
+C
+java:S1481"'Remove this unused "rs" local variable.(ÀÇÄûÿÿÿÿ
+c	java:S100Î"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¢ÉY
+W	java:S125¶"<This block of commented-out lines of code should be removed.(Œ‹§şÿÿÿÿ
+d	java:S100“"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å“ù¨
+R	java:S125±"<This block of commented-out lines of code should be removed.(à…Îô

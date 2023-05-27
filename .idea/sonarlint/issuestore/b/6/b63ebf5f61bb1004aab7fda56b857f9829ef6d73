@@ -1,8 +1,8 @@
 
 >
 java:S1604E"(Make this anonymous inner class a lambda(„¿õî
-E
-java:S1604Y"(Make this anonymous inner class a lambda(å³’¡8ÏÒ†¬…1
+>
+java:S1604Z"(Make this anonymous inner class a lambda(å³’¡
 g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‹û×åýÿÿÿÿ
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–¯ãN
 i	java:S116"TRename this field "User_List" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›´ƒÇ
@@ -13,8 +13,8 @@ g	java:S116"RRename this field "Watched" to match the regular expression '^[a
 l	java:S116"RRename this field "btn_Out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òð”öúÿÿÿÿ
 i	java:S116"TRename this field "btn_Check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¡åÐ
 h	java:S116"SRename this field "lb_Payed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ«Þ“
-G
-java:S1948"%Make "dao" transient or serializable.(«¥Çýýÿÿÿÿ8úì«¬…1
+@
+java:S1948"%Make "dao" transient or serializable.(«¥Çýýÿÿÿÿ
 ;
 java:S1948"%Make "UserList" private or transient.(ëùÙÚ
 S	java:S106,"9Replace this use of System.out or System.err by a logger.(¥Ç¸ãúÿÿÿÿ

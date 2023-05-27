@@ -86,6 +86,4 @@ public class BookingPage extends JFrame{
             }
         });
     }
-
-
 }

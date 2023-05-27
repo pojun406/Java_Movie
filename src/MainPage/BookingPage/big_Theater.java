@@ -35,6 +35,7 @@ public class big_Theater extends JFrame {
     public void init_UI() {
         ui = new JPanel(new BorderLayout(4, 4));
         ui.setBorder(new EmptyBorder(4, 4, 4, 4));
+
         posterImg = new JLabel();
 
         if (movie != null) {
@@ -106,6 +107,9 @@ public class big_Theater extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setSeatInfo(selectedSeatList);
+                Booking_Detail bok = new Booking_Detail(setSeatInfo(selectedSeatList), movie);
+                bok.setVisible(true);
+                big_Theater.this.setVisible(false);
             }
         });
 
@@ -136,14 +140,5 @@ public class big_Theater extends JFrame {
             }
         }
         return a;
-    }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new big_Theater("스즈메의문단속");
-            }
-        });
     }
 }

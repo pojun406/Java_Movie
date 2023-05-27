@@ -1,29 +1,34 @@
 
-k	java:S117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª‰ €üÿÿÿÿ
-l	java:S117Š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î’Åâşÿÿÿÿ
-f	java:S117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÂú*
-f	java:S117¯"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ŸÅ
+k	java:S117{"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª‰ €üÿÿÿÿ
+l	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î’Åâşÿÿÿÿ
+f	java:S117Î"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÂú*
+s	java:S117ø"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¶îüÿÿÿÿ8¢úãŞ…1
+s	java:S117ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İéÌ…üÿÿÿÿ8¢úãŞ…1
+n	java:S117ú"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üîù8¢úãŞ…1
+s	java:S117û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÚã¤øÿÿÿÿ8¢úãŞ…1
+s	java:S117ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒø¾åúÿÿÿÿ8¢úãŞ…1
+f	java:S117À"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ŸÅ
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÖÂÑ
-q
-java:S2095;"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ8èö·¬…1
 k
-java:S2095¢"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+java:S2095¡"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
 j
 java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+k
+java:S2095 "OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+k
+java:S2095¶"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+q
+java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ8èö·¬…1
+k
+java:S2095ò"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
 r
-java:S2095Ô"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ8éö·¬…1
-k
-java:S2095ó"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-k
-java:S2095·"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-k
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-Q	java:S125S"<This block of commented-out lines of code should be removed.(«—¦²
-d	java:S100›"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·’Âé
-T	java:S106¦"9Replace this use of System.out or System.err by a logger.(¸öøıÿÿÿÿ
-i	java:S100®"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼İßüÿÿÿÿ
-i	java:S100Ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œó­–üÿÿÿÿ
-d	java:S100ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™´‹ú
-d	java:S100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş®óï
-i	java:S100§"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó§„—øÿÿÿÿ
-O	java:S106µ"9Replace this use of System.out or System.err by a logger.(ÿØêâ
+java:S2095Ó"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ8éö·¬…1
+Q	java:S125R"<This block of commented-out lines of code should be removed.(«—¦²
+d	java:S100š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·’Âé
+T	java:S106¥"9Replace this use of System.out or System.err by a logger.(¸öøıÿÿÿÿ
+i	java:S100­"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼İßüÿÿÿÿ
+i	java:S100Ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œó­–üÿÿÿÿ
+d	java:S100ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™´‹ú
+d	java:S100˜"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş®óï
+i	java:S100¸"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó§„—øÿÿÿÿ
+O	java:S106Æ"9Replace this use of System.out or System.err by a logger.(ÿØêâ

@@ -4,6 +4,7 @@ import MainPage.AdminPage.AdminPage;
 import DAODTO.Member.MemberDAO;
 import DAODTO.Member.MemberDTO;
 import MainPage.BookingPage.BookingPage;
+import MainPage.MyPage.MainPage;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -31,33 +32,31 @@ public class Login extends JFrame{
         setResizable(false);
         setVisible(true);
 
-        MemberDTO member = new MemberDTO();
-
-
         btn_Login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Admin Page 진입 -----------------------
+                String User = txt_ID.getTexㄴt();
                 String Password = "";
                 char[] pw = txt_PW.getPassword();
                 for(char cha : pw){
                     Character.toString(cha);
                     Password += (Password.equals("")? ""+cha+"" : ""+cha+"");
                 }
-
-                member.setUSER_ID(txt_ID.getText());
-                member.setUSER_PW(Password);
-
                 MemberDAO dao = new MemberDAO();
-                boolean login = dao.Login(member);
-                if(login){
-                    if(member.getUID() == 0 && "admin".equals(member.getUSER_ID())){
+                MemberDTO login = new MemberDTO();
+                login.setUSER_ID(User);
+                login.setUSER_PW(Password);
+
+                if(dao.Login(login)){
+                    System.out.println("로그인할때 UID값 : "+login.getUID());
+                    if(login.getUID().equals("0") && "admin".equals(login.getUSER_ID())){
                         AdminPage adminpage = new AdminPage();
                         adminpage.setVisible(true);
                         Login.this.setVisible(false);
                     }
                     else{
-                        BookingPage bookpage = new BookingPage();
+                        MainPage bookpage = new MainPage(login);
                         bookpage.setVisible(true);
                         Login.this.setVisible(false);
                     }

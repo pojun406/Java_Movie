@@ -1,0 +1,16 @@
+
+>
+java:S1604"(Make this anonymous inner class a lambda(×º“‘
+C
+java:S1604#"(Make this anonymous inner class a lambda(ã¾ËÖùÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²Ý›[
+i	java:S116
+"TRename this field "MainPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìœÚö
+j	java:S116"URename this field "btn_goBook" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šö¿²
+l	java:S116"WRename this field "btn_goMyPage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü§ãõ
+=
+java:S1948"'Make "login" transient or serializable.(ûôÐ§
+d
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öþÿÿÿÿ
+F
+java:S1068")Remove this unused "login" private field.(ûôÐ§8Þ‚†ì…1

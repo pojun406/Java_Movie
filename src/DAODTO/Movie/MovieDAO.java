@@ -24,6 +24,86 @@ import java.util.List;
 
 public class MovieDAO {
     //영화제목, 장르, 감독, 출연배우, 상영시간, 줄거리등
+    public String getMovieRunningTime(String title){
+        String time = "";
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        try {
+            conn = new DBConnect().getConn();
+            String query = "SELECT Running_Time FROM movie_detail WHERE Movie_Title = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1,title);
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                time = rs.getString("Running_Time");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return time;
+    }
+
+    public String getMovieDescription(String title) {
+        String description = "";
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        try {
+            conn = new DBConnect().getConn();
+            String query = "SELECT Description FROM movie_detail WHERE Movie_Title = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1,title);
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                description = rs.getString("Description");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return description;
+    }
+    public String getMovieNum(String title){
+        String movieNum = "";
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try{
+            conn = new DBConnect().getConn();
+            String query = "SELECT Movie_Num FROM movie WHERE Movie_Title = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1,title);
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                movieNum = rs.getString("Movie_Num");
+            }
+        }catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return movieNum;
+    }
 
     public boolean ChoiceTitle(String title) {
         Connection conn = null;

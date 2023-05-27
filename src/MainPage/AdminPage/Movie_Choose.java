@@ -19,9 +19,7 @@ public class Movie_Choose extends JFrame {
     private JButton btn_show;
     private JPanel chosePanel;
     MovieDAO dao = new MovieDAO();
-
     public String selectedMovie = "";
-
     DefaultListModel<String> listModel = new DefaultListModel<>();
     List<String> movieList = new ArrayList<>();
 
@@ -79,5 +77,9 @@ public class Movie_Choose extends JFrame {
                 Movie_Choose.this.setVisible(false);
             }
         });
+    }
+
+    public static void main(String[] args) {
+        new Movie_Choose();
     }
 }

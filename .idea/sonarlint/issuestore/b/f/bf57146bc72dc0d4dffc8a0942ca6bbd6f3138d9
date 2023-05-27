@@ -1,37 +1,32 @@
 
-E
-java:S1604&"(Make this anonymous inner class a lambda(›ß­ä8Ùç¤…1
-a	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(îöÌ?
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»úÿ¢úÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙãÏ¡úÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´Êâÿÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Õ—Æ
+k	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¡Ê¾ùÿÿÿÿ
+f	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛüÇå
+f	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ñÌÏ
+f	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÐÄøý
+k	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Ò¸þÿÿÿÿ
+>
+java:S1604y"(Make this anonymous inner class a lambda(›ß­ä
+2
+java:S1643'"Use a StringBuilder instead.(‚ôâ§
+a	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(îöÌ?
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–¯ãN
-s	java:S116"YRename this field "MovieinfoPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷´ƒýÿÿÿÿ
-l	java:S116"RRename this field "btn_out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿ÕÃ·úÿÿÿÿ
-v	java:S116"URename this field "lb_MovieNm" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛØðƒýÿÿÿÿ8€Ù¦…1
-j	java:S116"URename this field "Poster_Img" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó´ÏØ
-p	java:S116"TRename this field "lb_Selled" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¬žÆ8Þé•…1
-v	java:S116"URename this field "lb_dayUser" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿªË€ÿÿÿÿÿ8Þé•…1
-v	java:S116"URename this field "lb_allUser" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¢Ééþÿÿÿÿ8Ý–…1
-p	java:S116"TRename this field "lb_profit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïåú€8Œ»–…1
-v
-java:S1450"YRemove the "Poster_Img" field and declare it as a local variable in the relevant methods.(ó´ÏØ8ßç¤…1
-k
-java:S3252 "IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öþÿÿÿÿ8áç¤…1
-O
-java:S11351"2Complete the task associated to this TODO comment.(¡ç‚Ï8ãç¤…1
-N
-java:S1128"2Remove this unused import 'DAODTO.Movie.MovieDAO'.(äçÒ8‡Ù¦…1
-O
-java:S1128"2Remove this unused import 'DAODTO.Movie.MovieDTO'.(ì“£¨8ƒª…1
-B
-java:S1128"%Remove this unused import 'java.awt'.(ï´µ©8‡Ù¦…1
-D
-java:S1068".Remove this unused "Poster_Img" private field.(ó´ÏØ
-J
-java:S1068"-Remove this unused "lb_Selled" private field.(ÿ¬žÆ8åé•…1
-P
-java:S1068".Remove this unused "lb_dayUser" private field.(ÿªË€ÿÿÿÿÿ8åé•…1
-P
-java:S1068".Remove this unused "lb_allUser" private field.(“¢Ééþÿÿÿÿ8ã–…1
-J
-java:S1068"-Remove this unused "lb_profit" private field.(Ïåú€8’»–…1
+s	java:S116"YRename this field "MovieinfoPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷´ƒýÿÿÿÿ
+l	java:S116"RRename this field "btn_out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿ÕÃ·úÿÿÿÿ
+o	java:S116"URename this field "lb_MovieNm" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛØðƒýÿÿÿÿ
+j	java:S116"URename this field "Poster_Img" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó´ÏØ
+i	java:S116"TRename this field "lb_Selled" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¬žÆ
+n	java:S116"YRename this field "lb_RunningTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄØÚÀ
+q	java:S116"WRename this field "lb_TheaterEx" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò“èÓýÿÿÿÿ
+@
+java:S1948"%Make "dao" transient or serializable.(àù¼ìþÿÿÿÿ
+>
+java:S1948"(Make "bokdao" transient or serializable.(£ò¦€
 Y
-java:S11440"7Remove this unused private "createUIComponents" method.(Á›°çýÿÿÿÿ8åç¤…1
+java:S1155#">Use isEmpty() to check whether the collection is empty or not.(Ñêè´úÿÿÿÿ
+d
+java:S3252h"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öþÿÿÿÿ
+R	java:S125ƒ"<This block of commented-out lines of code should be removed.(õþ–Ö

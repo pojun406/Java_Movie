@@ -109,6 +109,9 @@ public class Small_Theater extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 setSeatInfo(selectedSeatList);
+                Booking_Detail bok = new Booking_Detail(setSeatInfo(selectedSeatList), movie);
+                bok.setVisible(true);
+                Small_Theater.this.setVisible(false);
             }
         });
 
@@ -141,12 +144,5 @@ public class Small_Theater extends JFrame{
         return a;
     }
 
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new big_Theater("스즈메의문단속");
-            }
-        });
-    }
+
 }

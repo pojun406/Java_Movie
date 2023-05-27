@@ -1,0 +1,33 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(•—©ëúÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(•—©ëúÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•îÂ¢
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ñá¢
+C
+java:S1604b"(Make this anonymous inner class a lambda(õ—Î¥ıÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²İ›[
+n	java:S116"YRename this field "CheckBookPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î…—Ÿ
+j	java:S116"URename this field "btn_Detail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í×œË
+l	java:S116"RRename this field "btn_Out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òğ”öúÿÿÿÿ
+=
+java:S1948"'Make "login" transient or serializable.(ûôĞ§
+A
+java:S1948"&Make "book" transient or serializable.(ƒã¥°ÿÿÿÿÿ
+;
+java:S1948"%Make "dao" transient or serializable.(©ÍğÆ
+E
+java:S1948"(Make "bokdao" transient or serializable.(±Á„ğ8¥Ìèò…1
+F
+java:S1481"+Remove this unused "bokdto" local variable.(ÖÊ·¢ÿÿÿÿÿ
+U	java:S106""9Replace this use of System.out or System.err by a logger.(äüÃâ8†óóò…1
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(’‡òÈüÿÿÿÿ8Ø˜ôò…1
+d
+java:S3252^"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+M
+java:S1854d"7Remove this useless assignment to local variable "dia".(¡±‡¡
+>
+java:S1481d"(Remove this unused "dia" local variable.(¡±‡¡
+F
+java:S1068")Remove this unused "login" private field.(ûôĞ§8€¬äò…1

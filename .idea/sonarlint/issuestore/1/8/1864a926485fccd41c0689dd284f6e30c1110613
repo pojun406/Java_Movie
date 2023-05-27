@@ -1,12 +1,10 @@
 
 C
-java:S1604J"(Make this anonymous inner class a lambda(‹‹¿üşÿÿÿÿ
+java:S1604K"(Make this anonymous inner class a lambda(‹‹¿üşÿÿÿÿ
 >
-java:S1604i"(Make this anonymous inner class a lambda(ƒÍÆÖ
-D
-java:S1604"(Make this anonymous inner class a lambda(Ô¶µÿşÿÿÿÿ
+java:S1604j"(Make this anonymous inner class a lambda(ƒÍÆÖ
 3
-java:S1643‚"Use a StringBuilder instead.(‡º›´
+java:S1643†"Use a StringBuilder instead.(‡º›´
 g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(“ä¤†ùÿÿÿÿ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
 s
@@ -14,7 +12,7 @@ java:S1450"XRemove the "posterImg" field and declare it as a local variable in
 b
 java:S3252"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(§ıÏÁ
 h	java:S100#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï°Ã‡üÿÿÿÿ
-N	java:S106Q"9Replace this use of System.out or System.err by a logger.(ŒÑÌ
-N	java:S106T"9Replace this use of System.out or System.err by a logger.(ŒÑÌ
-O	java:S106„"9Replace this use of System.out or System.err by a logger.(™Ãø¤
-T	java:S106‡"9Replace this use of System.out or System.err by a logger.(àÕêåşÿÿÿÿ
+N	java:S106R"9Replace this use of System.out or System.err by a logger.(ŒÑÌ
+N	java:S106U"9Replace this use of System.out or System.err by a logger.(ŒÑÌ
+O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(™Ãø¤
+T	java:S106‹"9Replace this use of System.out or System.err by a logger.(àÕêåşÿÿÿÿ

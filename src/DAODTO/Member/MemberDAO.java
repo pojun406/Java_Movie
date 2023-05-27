@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MemberDAO{
-    public List<String> getUserWatched(String user) {
-    List<String> userWatched = new ArrayList<>();
+    public String getUserWatched(String user) {
+    String userWatched = "";
 
     Connection conn = null;
     PreparedStatement pstmt = null;
@@ -26,8 +26,7 @@ public class MemberDAO{
         rs = pstmt.executeQuery();
 
         if (rs.next()) {
-            String watched = rs.getString("User_Watch_list");
-            userWatched.add(watched);
+            userWatched = rs.getString("User_Watch_list");
         }
     } catch (Exception e) {
         e.printStackTrace();
@@ -245,7 +244,25 @@ public class MemberDAO{
             pstmt.setString(2, dto.getUSER_PW());
             rs = pstmt.executeQuery();
 
-            return rs.next(); // 성공시 true, 실패시 false
+            if (rs.next()) {
+                int UID = rs.getInt("UID");
+                String USER_Name = rs.getString("User_Name");
+                String USER_CallNum = rs.getString("User_CallNum");
+                int USER_Pay = rs.getInt("User_Pay");
+                String USER_Watched = rs.getString("User_Watch_list");
+
+                // User 인스턴스에 정보 저장
+                User user = User.getInstance();
+                user.setUID(UID);
+                user.setUSER_Name(USER_Name);
+                user.setUSER_CallNum(USER_CallNum);
+                user.setUSER_Pay(USER_Pay);
+                user.setUSER_Watched(USER_Watched);
+
+                return true; // 로그인 성공
+            } else {
+                return false; // 로그인 실패
+            }
         } catch (Exception e) {
             e.printStackTrace();
             return false;
@@ -305,7 +322,7 @@ public class MemberDAO{
             try (ResultSet rs = stmt.executeQuery(MAX_UID)) {
                 if (rs.next()) {
                     int maxUID = rs.getInt(1);
-                    int newUID = maxUID + 1;
+                    String newUID = String.valueOf(maxUID + 1);
                     System.out.println("새로운 UID: " + newUID);
                     dto.setUID(newUID);
                 }
@@ -313,7 +330,7 @@ public class MemberDAO{
 
             String query = "INSERT INTO user (UID, User_ID, User_PW, User_Name, User_CallNum) VALUES (?, ?, ?, ?, ?)";
             pstmt = conn.prepareStatement(query);
-            pstmt.setInt(1, dto.getUID());
+            pstmt.setString(1, dto.getUID());
             pstmt.setString(2, dto.getUSER_ID());
             pstmt.setString(3, dto.getUSER_PW());
             pstmt.setString(4, dto.getUSER_Name());
