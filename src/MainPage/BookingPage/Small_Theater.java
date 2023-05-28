@@ -1,5 +1,6 @@
 package MainPage.BookingPage;
 
+import DAODTO.Booking.BookingDTO;
 import DAODTO.Movie.MovieDAO;
 
 import javax.swing.*;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Small_Theater extends JFrame{
+    BookingDTO dto;
     String movie;
     private JLabel posterImg;
     private JComponent ui = null;
@@ -20,8 +22,8 @@ public class Small_Theater extends JFrame{
     JFrame f = new JFrame("좌석 선택 페이지");
     private java.util.List<String> selectedSeatList = new ArrayList<>();
 
-    public Small_Theater(String movieName) {
-        movie = movieName;
+    public Small_Theater(BookingDTO dto) {
+        movie = dto.getMovie_Name();
 
         if (ui != null) return;
 
@@ -105,15 +107,18 @@ public class Small_Theater extends JFrame{
         }
 
         JButton nextButton = new JButton("다음");
+        /*
         nextButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setSeatInfo(selectedSeatList);
-                Booking_Detail bok = new Booking_Detail(setSeatInfo(selectedSeatList), movie);
+                Booking_Detail bok = new Booking_Detail(setSeatInfo(selectedSeatList),  dto, Payed);
                 bok.setVisible(true);
                 Small_Theater.this.setVisible(false);
             }
         });
+
+         */
 
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
         buttonPanel.add(nextButton);

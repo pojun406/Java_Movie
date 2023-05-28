@@ -1,18 +1,28 @@
 
 C
-java:S1604K"(Make this anonymous inner class a lambda(‹‹¿üşÿÿÿÿ
+java:S1604O"(Make this anonymous inner class a lambda(‹‹¿üşÿÿÿÿ
 >
-java:S1604j"(Make this anonymous inner class a lambda(ƒÍÆÖ
-3
-java:S1643†"Use a StringBuilder instead.(‡º›´
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(“ä¤†ùÿÿÿÿ
+java:S1604s"(Make this anonymous inner class a lambda(ƒÍÆÖ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(“ä¤†ùÿÿÿÿ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
+m	java:S116"SRename this field "Schedule" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÂ ıÿÿÿÿ
 s
-java:S1450"XRemove the "posterImg" field and declare it as a local variable in the relevant methods.(¸Âõ‡úÿÿÿÿ
+java:S1450"XRemove the "posterImg" field and declare it as a local variable in the relevant methods.(¸Âõ‡úÿÿÿÿ
+<
+java:S1948"&Make "seat" transient or serializable.(î¬ã
+@
+java:S1948"%Make "dto" transient or serializable.(ˆ¡ıÙùÿÿÿÿ
+@
+java:S1948"*Make "seatList" transient or serializable.(Æ´ Ñ
 b
-java:S3252"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(§ıÏÁ
-h	java:S100#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï°Ã‡üÿÿÿÿ
-N	java:S106R"9Replace this use of System.out or System.err by a logger.(ŒÑÌ
-N	java:S106U"9Replace this use of System.out or System.err by a logger.(ŒÑÌ
-O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(™Ãø¤
-T	java:S106‹"9Replace this use of System.out or System.err by a logger.(àÕêåşÿÿÿÿ
+java:S3252$"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(§ıÏÁ
+h	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï°Ã‡üÿÿÿÿ
+m
+java:S3776,"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Ï°Ã‡üÿÿÿÿ
+S
+java:S1117W"8Rename "seat" which hides the field declared at line 16.(ú…µ‚ıÿÿÿÿ
+N
+java:S1117n"8Rename "seat" which hides the field declared at line 16.(æø¼«
+S
+java:S1117w"8Rename "seat" which hides the field declared at line 16.(Ê¹ÔÌøÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(Ä›Îâıÿÿÿÿ

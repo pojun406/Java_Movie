@@ -74,10 +74,11 @@ public class User_Manage extends JFrame {
                 if (selectedUser != null) {
                     String[] watched = null;
                     String watchedList = dao.getUserWatched(selectedUser); // 선택된 사용자의 시청 목록 조회
-                    if(watchedList != null){
+                    if (watchedList != null) {
                         watched = watchedList.split(",");
-                    }else{
-                        JOptionPane.showMessageDialog(null, "나가");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "시청 목록이 없습니다.");
+                        watched = new String[0]; // watched 배열 초기화
                     }
 
                     DefaultListModel<String> watchedListModel = new DefaultListModel<>();

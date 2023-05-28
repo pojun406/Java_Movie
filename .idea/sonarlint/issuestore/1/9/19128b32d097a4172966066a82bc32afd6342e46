@@ -1,46 +1,27 @@
 
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıÅªˆıÿÿÿÿ
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¬€éÿÿÿÿÿ8ùá‘Ş…1
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ÿÀ
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÒ¸÷8¸Ş…1
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡¡£şÿÿÿÿ
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Íâş}
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Á®Æ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÔéåşÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æùçã
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É€§Ôüÿÿÿÿ
+e	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò×æ
+f	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò×òŞ
 C
-java:S1604("(Make this anonymous inner class a lambda(ıÆßÒüÿÿÿÿ
-g	java:S101
-"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÂÄÆ•ûÿÿÿÿ
+java:S1604J"(Make this anonymous inner class a lambda(ıÆßÒüÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÂÄÆ•ûÿÿÿÿ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
-k	java:S116"VRename this field "lb_UserName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¾Ê•
-q	java:S116"WRename this field "lb_MovieName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æñô÷ÿÿÿÿÿ
-l	java:S116"RRename this field "lb_Seat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªæ•ùÿÿÿÿ
-k	java:S116"VRename this field "lb_showDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èúüÕ
-j	java:S116"URename this field "lb_theater" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼÷
-i	java:S116"TRename this field "btn_check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÍ‹
-j	java:S116"URename this field "Poster_Img" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó´ÏØ
-k	java:S116"VRename this field "DetailPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãæ¹À
+k	java:S116"VRename this field "lb_UserName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¾Ê•
+q	java:S116"WRename this field "lb_MovieName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æñô÷ÿÿÿÿÿ
+l	java:S116"RRename this field "lb_Seat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªæ•ùÿÿÿÿ
+k	java:S116"VRename this field "lb_showDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èúüÕ
+j	java:S116"URename this field "lb_theater" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼÷
+i	java:S116"TRename this field "btn_check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÍ‹
 >
-java:S1948"(Make "movdao" transient or serializable.(’²´Â
-E
-java:S1948"(Make "bokdao" transient or serializable.(£ò¦€8²ÈúŞ…1
-Q
-java:S1172"6Remove these unused method parameters "Seat", "title".(ıÅªˆıÿÿÿÿ
-P
-java:S1481".Remove this unused "User_Name" local variable.(û¬€éÿÿÿÿÿ8ÿá‘Ş…1
-G
-java:S1481"1Remove this unused "Scedule_Time" local variable.(²ÿÀ
-M
-java:S1481"0Remove this unused "Theater_Num" local variable.(ˆÒ¸÷8¾Ş…1
+java:S1948"(Make "bokdao" transient or serializable.(£ò¦€
+A
+java:S1948"&Make "user" transient or serializable.(š÷îÔùÿÿÿÿ
 d
-java:S3252$"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
-œ
-java:S1186*"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ Òşüÿÿÿÿ
-E
-java:S1068"/Remove this unused "lb_UserName" private field.(Ã¾Ê•
-K
-java:S1068"0Remove this unused "lb_MovieName" private field.(Æñô÷ÿÿÿÿÿ
-F
-java:S1068"+Remove this unused "lb_Seat" private field.(ªæ•ùÿÿÿÿ
-E
-java:S1068"/Remove this unused "lb_showDate" private field.(èúüÕ
-D
-java:S1068".Remove this unused "lb_theater" private field.(¼÷
-D
-java:S1068".Remove this unused "Poster_Img" private field.(ó´ÏØ
+java:S3252'"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+H
+java:S1068"-Remove this unused "posterImg" private field.(¸Âõ‡úÿÿÿÿ

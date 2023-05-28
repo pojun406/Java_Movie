@@ -3,6 +3,7 @@ package MainPage.BookingPage;
 //예매내역확인 페이지 (몇관, 몇장, 시트위치등)
 
 import DAODTO.Booking.BookingDAO;
+import DAODTO.Booking.BookingDTO;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -14,8 +15,12 @@ public class CheckBookingDialog extends JFrame {
     private JButton btn_Out;
     private JButton btn_Next;
     private BookingDAO bokdao = new BookingDAO();
+    private BookingDTO dto = new BookingDTO();
 
     public CheckBookingDialog(String title, String[] Schedule, String Theater_Num) {
+
+        dto.setMovie_Name(title);
+        dto.setTheater_Num(Theater_Num);
 
         CheckBookingPanel = new JPanel();
         CheckBookingPanel.setLayout(null);
@@ -67,14 +72,14 @@ public class CheckBookingDialog extends JFrame {
         btn_Next.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String selectedSchedule = (String) scheduleComboBox.getSelectedItem();
+                dto.setSchedule(selectedSchedule);
                 if(selectedSchedule != null){
                     if(bokdao.Theater_Size(Theater_Num) == 1){
-                        big_Theater bigT = new big_Theater(title);
-                        bigT.setVisible(true);
+                        big_Theater bigT = new big_Theater(dto);
                         CheckBookingDialog.this.setVisible(false);
                     }
                     else{
-                        Small_Theater smallT = new Small_Theater(title);
+                        Small_Theater smallT = new Small_Theater(dto);
                         smallT.setVisible(true);
                         CheckBookingDialog.this.setVisible(false);
                     }
