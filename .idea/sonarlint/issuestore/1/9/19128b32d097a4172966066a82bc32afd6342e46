@@ -15,7 +15,7 @@ k	java:S116"VRename this field "lb_showDate" to match the regular expression 
 j	java:S116"URename this field "lb_theater" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ž÷
 i	java:S116"TRename this field "btn_check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÍ‹
 j	java:S116"URename this field "Poster_Img" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó´ÏØ
-p	java:S116"VRename this field "DetailPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øèøØùÿÿÿÿ
+k	java:S116"VRename this field "DetailPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãæ¹À
 >
 java:S1948"(Make "movdao" transient or serializable.(’²´Â
 E

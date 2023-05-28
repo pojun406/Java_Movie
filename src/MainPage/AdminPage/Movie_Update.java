@@ -8,12 +8,13 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;import java.awt.event.ComponentAdapter;
+import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-public class Movie_Update extends JFrame{
+public class Movie_Update extends JFrame {
     private JPanel MovieUpdatePanel;
     private JList<String> list_Movie;
     private JList<String> list_Theater;
@@ -35,18 +36,18 @@ public class Movie_Update extends JFrame{
     List<String> timeList = new ArrayList<>();
 
     public void remove_movie(int index) {
-        if(index<0) {
-            if(movie_list.size()==0) return;	//아무것도 저장되어 있지 않으면 return
-            index=0;	//그 이상이면 가장 상위 list index
+        if (index < 0) {
+            if (movie_list.size() == 0) return;    //아무것도 저장되어 있지 않으면 return
+            index = 0;    //그 이상이면 가장 상위 list index
         }
 
         movie_list.remove(index);
     }
 
     public void remove_theater(int index) {
-        if(index<0) {
-            if(theater_list.size()==0) return;	//아무것도 저장되어 있지 않으면 return
-            index=0;	//그 이상이면 가장 상위 list index
+        if (index < 0) {
+            if (theater_list.size() == 0) return;    //아무것도 저장되어 있지 않으면 return
+            index = 0;    //그 이상이면 가장 상위 list index
         }
 
         theater_list.remove(index);
@@ -69,9 +70,9 @@ public class Movie_Update extends JFrame{
 
         MovieUpdatePanel = new JPanel();
         setContentPane(MovieUpdatePanel);
-        MovieUpdatePanel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+        MovieUpdatePanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         setTitle("영화 업데이트 페이지");
-        setSize(460,360);
+        setSize(460, 360);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
@@ -84,7 +85,7 @@ public class Movie_Update extends JFrame{
             movie_list.addElement(title);
         }
 
-        for (String theater : theaterList){
+        for (String theater : theaterList) {
             theater_list.addElement(theater);
         }
 
@@ -146,7 +147,6 @@ public class Movie_Update extends JFrame{
         });
 
 
-
         btn_out.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -167,14 +167,11 @@ public class Movie_Update extends JFrame{
                 if (hasMissingTheater) {
                     JOptionPane.showMessageDialog(null, "DB에 존재하지 않는 영화관이 선택되었습니다.");
                 } else {
-                    if (bokdao.Schedule_have()) {
-                        JOptionPane.showMessageDialog(null, "영화를 모두 업데이트 완료했습니다.");
-                        AdminPage admin = new AdminPage();
-                        admin.setVisible(true);
-                        Movie_Update.this.setVisible(false);
-                    } else {
-                        JOptionPane.showMessageDialog(null, "영화를 지정하지 않은 상영관이 존재합니다.");
-                    }
+                    JOptionPane.showMessageDialog(null, "영화 업데이트 완료했습니다.");
+                    AdminPage admin = new AdminPage();
+                    admin.setVisible(true);
+                    Movie_Update.this.setVisible(false);
+
                 }
             }
 

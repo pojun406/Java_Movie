@@ -40,7 +40,7 @@ public class User_Manage extends JFrame {
         User_List = new JList<>(listModel);
         User_Watched = new JList<>();
 
-        Watched = dao.getUserWatched(User_List.getSelectedValue()).toString();
+        Watched = dao.getUserWatched(User_List.getSelectedValue());
         System.out.println(Watched);
 
         ManagePanel = new JPanel();
@@ -72,8 +72,14 @@ public class User_Manage extends JFrame {
                 String selectedUser = User_List.getSelectedValue(); // 선택된 사용자
 
                 if (selectedUser != null) {
+                    String[] watched = null;
                     String watchedList = dao.getUserWatched(selectedUser); // 선택된 사용자의 시청 목록 조회
-                    String[] watched = watchedList.split(",");
+                    if(watchedList != null){
+                        watched = watchedList.split(",");
+                    }else{
+                        JOptionPane.showMessageDialog(null, "나가");
+                    }
+
                     DefaultListModel<String> watchedListModel = new DefaultListModel<>();
                     for (String watchedMovie : watched) {
                         watchedListModel.addElement(watchedMovie);

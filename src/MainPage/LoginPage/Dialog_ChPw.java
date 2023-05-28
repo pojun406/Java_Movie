@@ -2,6 +2,7 @@ package MainPage.LoginPage;
 
 import DAODTO.Member.MemberDAO;
 import DAODTO.Member.MemberDTO;
+import DAODTO.Member.User;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

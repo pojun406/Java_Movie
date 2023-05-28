@@ -245,7 +245,7 @@ public class MemberDAO{
             rs = pstmt.executeQuery();
 
             if (rs.next()) {
-                int UID = rs.getInt("UID");
+                String UID = rs.getString("UID");
                 String USER_Name = rs.getString("User_Name");
                 String USER_CallNum = rs.getString("User_CallNum");
                 int USER_Pay = rs.getInt("User_Pay");
@@ -253,11 +253,12 @@ public class MemberDAO{
 
                 // User 인스턴스에 정보 저장
                 User user = User.getInstance();
+                user.setUser_ID(dto.getUSER_ID());
                 user.setUID(UID);
-                user.setUSER_Name(USER_Name);
-                user.setUSER_CallNum(USER_CallNum);
-                user.setUSER_Pay(USER_Pay);
-                user.setUSER_Watched(USER_Watched);
+                user.setUser_Name(USER_Name);
+                user.setUser_CallNum(USER_CallNum);
+                user.setUser_Pay(USER_Pay);
+                user.setUser_Watch_list(USER_Watched);
 
                 return true; // 로그인 성공
             } else {

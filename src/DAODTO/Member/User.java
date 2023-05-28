@@ -2,14 +2,16 @@ package DAODTO.Member;
 
 public class User {
     private static User instance;
-    private int UID;
-    private String USER_Name;
-    private String USER_CallNum;
-    private int USER_Pay;
-    private String USER_Watched;
+    private String UID;
+    private String User_ID;
+    private String User_PW;
+    private String User_Name;
+    private String User_CallNum;
+    private int User_Pay;
+    private String User_Watch_list;
 
-    private User() {
-        // Private constructor to prevent instantiation from outside the class
+    private User(){
+        super();
     }
 
     public static User getInstance() {
@@ -19,43 +21,63 @@ public class User {
         return instance;
     }
 
-    public int getUID() {
+    public static void setInstance(User instance) {
+        User.instance = instance;
+    }
+
+    public String getUID() {
         return UID;
     }
 
-    public void setUID(int UID) {
+    public void setUID(String UID) {
         this.UID = UID;
     }
 
-    public String getUSER_Name() {
-        return USER_Name;
+    public String getUser_ID() {
+        return User_ID;
     }
 
-    public void setUSER_Name(String USER_Name) {
-        this.USER_Name = USER_Name;
+    public void setUser_ID(String user_ID) {
+        User_ID = user_ID;
     }
 
-    public String getUSER_CallNum() {
-        return USER_CallNum;
+    public String getUser_PW() {
+        return User_PW;
     }
 
-    public void setUSER_CallNum(String USER_CallNum) {
-        this.USER_CallNum = USER_CallNum;
+    public void setUser_PW(String user_PW) {
+        User_PW = user_PW;
     }
 
-    public int getUSER_Pay() {
-        return USER_Pay;
+    public String getUser_Name() {
+        return User_Name;
     }
 
-    public void setUSER_Pay(int USER_Pay) {
-        this.USER_Pay = USER_Pay;
+    public void setUser_Name(String user_Name) {
+        User_Name = user_Name;
     }
 
-    public String getUSER_Watched() {
-        return USER_Watched;
+    public String getUser_CallNum() {
+        return User_CallNum;
     }
 
-    public void setUSER_Watched(String USER_Watched) {
-        this.USER_Watched = USER_Watched;
+    public void setUser_CallNum(String user_CallNum) {
+        User_CallNum = user_CallNum;
+    }
+
+    public int getUser_Pay() {
+        return User_Pay;
+    }
+
+    public void setUser_Pay(int user_Pay) {
+        User_Pay = user_Pay;
+    }
+
+    public String getUser_Watch_list() {
+        return User_Watch_list;
+    }
+
+    public void setUser_Watch_list(String user_Watch_list) {
+        User_Watch_list = user_Watch_list;
     }
 }

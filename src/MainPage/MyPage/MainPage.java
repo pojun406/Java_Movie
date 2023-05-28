@@ -1,6 +1,7 @@
 package MainPage.MyPage;
 
 import DAODTO.Member.MemberDTO;
+import DAODTO.Member.User;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -10,10 +11,9 @@ public class MainPage extends JFrame{
     private JPanel MainPanel;
     private JButton btn_goBook;
     private JButton btn_goMyPage;
-    private MemberDTO login;
+    private User user = User.getInstance();
 
-    public MainPage(MemberDTO login) {
-        this.login = login;
+    public MainPage() {
 
         setContentPane(MainPanel);
         MainPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
@@ -27,7 +27,7 @@ public class MainPage extends JFrame{
         btn_goBook.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                CheckBookingList chbok = new CheckBookingList(login);
+                CheckBookingList chbok = new CheckBookingList();
                 chbok.setVisible(true);
                 MainPage.this.setVisible(false);
             }
@@ -35,7 +35,7 @@ public class MainPage extends JFrame{
         btn_goMyPage.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MyPage mp = new MyPage(login);
+                MyPage mp = new MyPage();
                 mp.setVisible(true);
                 MainPage.this.setVisible(false);
             }

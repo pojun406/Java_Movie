@@ -1,23 +1,23 @@
 
 E
-java:S3740"/Provide the parametrized type for this generic.(ãÓâè
+java:S3740"/Provide the parametrized type for this generic.(ãÓâè
 D
-java:S3740#"/Provide the parametrized type for this generic.(ôÍÔA
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëıø¼
+java:S3740""/Provide the parametrized type for this generic.(ôÍÔA
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëıø¼
 >
-java:S16046"(Make this anonymous inner class a lambda(²Ş…Ë
+java:S16045"(Make this anonymous inner class a lambda(²Ş…Ë
 >
-java:S1604?"(Make this anonymous inner class a lambda(å³’¡
+java:S1604>"(Make this anonymous inner class a lambda(å³’¡
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²İ›[
-p	java:S116"VRename this field "MyPagePanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ñÒÆÿÿÿÿÿ
-r	java:S116"XRename this field "btn_ChBooking" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤â şÿÿÿÿ
-m	java:S116"SRename this field "lb_money" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“‹¦¯ùÿÿÿÿ
-l	java:S116"WRename this field "list_Watched" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãÓâè
-l	java:S116"RRename this field "btn_Out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òğ”öúÿÿÿÿ
-D
-java:S1948"'Make "login" transient or serializable.(ûôĞ§8ô÷úí…1
+p	java:S116"VRename this field "MyPagePanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ñÒÆÿÿÿÿÿ
+r	java:S116"XRename this field "btn_ChBooking" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤â şÿÿÿÿ
+m	java:S116"SRename this field "lb_money" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“‹¦¯ùÿÿÿÿ
+l	java:S116"WRename this field "list_Watched" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãÓâè
+l	java:S116"RRename this field "btn_Out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òğ”öúÿÿÿÿ
+H
+java:S1948"&Make "user" transient or serializable.(¾šØíûÿÿÿÿ8—›¢€†1
 d
-java:S3252V"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
-S	java:S106Z"9Replace this use of System.out or System.err by a logger.(ˆ—›üÿÿÿÿ
-F
-java:S1068")Remove this unused "login" private field.(ûôĞ§8ø÷úí…1
+java:S3252U"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+S	java:S106Y"9Replace this use of System.out or System.err by a logger.(¥ô‡üÿÿÿÿ
+Q
+java:S1128"4Remove this unused import 'DAODTO.Member.MemberDTO'.(•¯ŸÕ8Àâ±€†1

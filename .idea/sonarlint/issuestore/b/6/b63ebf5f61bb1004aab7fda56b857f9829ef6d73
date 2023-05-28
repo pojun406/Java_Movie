@@ -2,7 +2,7 @@
 >
 java:S1604E"(Make this anonymous inner class a lambda(„¿õî
 >
-java:S1604Z"(Make this anonymous inner class a lambda(å³’¡
+java:S1604`"(Make this anonymous inner class a lambda(å³’¡
 g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‹û×åýÿÿÿÿ
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–¯ãN
 i	java:S116"TRename this field "User_List" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›´ƒÇ

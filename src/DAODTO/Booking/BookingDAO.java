@@ -10,6 +10,63 @@ import java.util.Arrays;
 import java.util.List;
 
 public class BookingDAO {
+    public String getMovieTitle(String movieNum) {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        String movieTitle = "";
+
+        try {
+            conn = new DBConnect().getConn();
+            String query = "SELECT Movie_Title FROM movie WHERE Movie_Num = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1, movieNum);
+            rs = pstmt.executeQuery();
+
+            if (rs.next()) {
+                movieTitle = rs.getString("Movie_Title");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return movieTitle;
+    }
+    public ArrayList<BookingDTO> getMovieSchedule(){
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        ArrayList<BookingDTO> canwatchmovieList = new ArrayList<>();
+        try {
+            conn = new DBConnect().getConn();
+            String query = "SELECT * FROM movie_schedule";
+            pstmt = conn.prepareStatement(query);
+            rs = pstmt.executeQuery();
+            while(rs.next()){
+                BookingDTO booking = new BookingDTO();
+                booking.setSchedule(rs.getString("Schedule"));
+                booking.setMovie_Num(rs.getString("Movie_Num"));
+                booking.setTheater_Num(rs.getString("Theater_Num"));
+
+                String Movie_Num = booking.getMovie_Num();
+                String Title = getMovieTitle(Movie_Num);
+                booking.setMovie_Name(Title);
+
+                canwatchmovieList.add(booking);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return canwatchmovieList;
+    }
+
+
     public ArrayList<BookingDTO> getAllReservationInfo(String Reservation_Num) {
         Connection conn = null;
         PreparedStatement pstmt = null;

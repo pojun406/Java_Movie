@@ -5,6 +5,7 @@ package MainPage.MyPage;
 import DAODTO.Booking.BookingDAO;
 import DAODTO.Booking.BookingDTO;
 import DAODTO.Member.MemberDTO;
+import DAODTO.Member.User;
 import MainPage.AdminPage.AdminPage;
 
 import javax.swing.*;
@@ -18,23 +19,21 @@ public class MyPage extends JFrame {
     private JLabel lb_money;
     private JList list_Watched;
     private JButton btn_Out;
-    private MemberDTO login;
+    private User user = User.getInstance();
 
-    public MyPage(MemberDTO login) {
-
-        this.login = login;
+    public MyPage() {
 
         JLabel howmuch = new JLabel("우리 영화관에 사용한 총액 : ");
         JLabel Watched = new JLabel("시청 목록");
 
-        if(login.getUSER_Pay() < 1){
+        if(user.getUser_Pay() < 1){
             lb_money = new JLabel("0 원");
         }else{
-            lb_money = new JLabel(login.getUSER_Pay()+" 원");
+            lb_money = new JLabel(user.getUser_Pay()+" 원");
         }
         list_Watched = new JList();
 
-        ArrayList<BookingDTO> watchedList = BookingDAO.getALLList(login.getUID());
+        ArrayList<BookingDTO> watchedList = BookingDAO.getALLList(user.getUID());
 
         DefaultListModel<String> listModel = new DefaultListModel<>();
         for (BookingDTO dto : watchedList) {
@@ -47,14 +46,14 @@ public class MyPage extends JFrame {
         Watched.setSize(100, 20);
         list_Watched.setSize(400,200);
 
-        btn_ChBooking = new JButton("예매 확인");
+        btn_ChBooking = new JButton("예매하러가기");
         btn_Out = new JButton("나가기");
 
 
         btn_ChBooking.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                CheckBookingList ch = new CheckBookingList(login);
+                CheckBookingList ch = new CheckBookingList();
                 ch.setVisible(true);
                 MyPage.this.setVisible(false);
             }
@@ -87,7 +86,7 @@ public class MyPage extends JFrame {
         setResizable(false);
         setVisible(true);
 
-        System.out.println(login.getUSER_ID());
+        System.out.println(user.getUser_ID());
 
         MyPagePanel.add(howmuch);
         MyPagePanel.add(Watched);

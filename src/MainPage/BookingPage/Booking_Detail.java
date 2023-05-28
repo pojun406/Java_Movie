@@ -15,7 +15,7 @@ public class Booking_Detail extends JFrame{
     private JLabel lb_theater;
     private JButton btn_check;
     private JLabel Poster_Img;
-    private JPanel DetailPanel;
+    private JPanel DetailPanel = new JPanel(null);
 
     MovieDAO movdao = new MovieDAO();
     BookingDAO bokdao = new BookingDAO();

@@ -1,9 +1,9 @@
 package MainPage.LoginPage;
 
+import DAODTO.Member.User;
 import MainPage.AdminPage.AdminPage;
 import DAODTO.Member.MemberDAO;
 import DAODTO.Member.MemberDTO;
-import MainPage.BookingPage.BookingPage;
 import MainPage.MyPage.MainPage;
 
 import javax.swing.*;
@@ -36,7 +36,7 @@ public class Login extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Admin Page 진입 -----------------------
-                String User = txt_ID.getTexㄴt();
+                String ID = txt_ID.getText();
                 String Password = "";
                 char[] pw = txt_PW.getPassword();
                 for(char cha : pw){
@@ -45,18 +45,18 @@ public class Login extends JFrame{
                 }
                 MemberDAO dao = new MemberDAO();
                 MemberDTO login = new MemberDTO();
-                login.setUSER_ID(User);
+                login.setUSER_ID(ID);
                 login.setUSER_PW(Password);
 
                 if(dao.Login(login)){
-                    System.out.println("로그인할때 UID값 : "+login.getUID());
-                    if(login.getUID().equals("0") && "admin".equals(login.getUSER_ID())){
+                    User user = User.getInstance();
+                    if(user.getUID().equals("0") && "admin".equals(user.getUser_ID())){
                         AdminPage adminpage = new AdminPage();
                         adminpage.setVisible(true);
                         Login.this.setVisible(false);
                     }
                     else{
-                        MainPage bookpage = new MainPage(login);
+                        MainPage bookpage = new MainPage();
                         bookpage.setVisible(true);
                         Login.this.setVisible(false);
                     }

@@ -1,5 +1,5 @@
 
-f	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡—µû
+k	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œêÀñüÿÿÿÿ
 k	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¼ûÿÿÿÿ
 >
 java:S1604#"(Make this anonymous inner class a lambda(“ã¶†
@@ -27,9 +27,6 @@ A
 java:S2201+",The return value of "toString" must be used.(Ï ³E
 x
 java:S3923,"]This conditional operation returns the same value whether the condition is "true" or "false".(„ËÏúÿÿÿÿ
-U	java:S1064"9Replace this use of System.out or System.err by a logger.(åÚ’8ÌĞèó…1
-_
-java:S1128"=Remove this unused import 'MainPage.BookingPage.BookingPage'.(¦ßıÿÿÿÿ8Å†Ğó…1
 D
 java:S1068")Remove this unused "lb_ID" private field.(¢ŸØùúÿÿÿÿ
 D

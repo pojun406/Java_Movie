@@ -1,0 +1,18 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Üç»„ýÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Üç»„ýÿÿÿÿ
+>
+java:S1604C"(Make this anonymous inner class a lambda(âÙ§
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
+v	java:S116"\Rename this field "CheckBookingPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§»ˆ‘øÿÿÿÿ
+i	java:S116"TRename this field "MovieName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãØ½
+l	java:S116"RRename this field "btn_Out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òð”öúÿÿÿÿ
+g	java:S116"SRename this field "btn_Next" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üåþu
+>
+java:S1948"(Make "bokdao" transient or serializable.(±Á„ð
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(¡‡¼¹øÿÿÿÿ
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(›æŒÁ
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(çíˆíüÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(¤ §“üÿÿÿÿ
+d
+java:S3252?"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öþÿÿÿÿ
