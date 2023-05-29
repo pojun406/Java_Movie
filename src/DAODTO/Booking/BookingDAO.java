@@ -6,6 +6,7 @@ import DataBase.DBConnect;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,25 +14,41 @@ import java.util.Date;
 import java.util.List;
 
 public class BookingDAO {
-    public void insertReservation(String reservationNum, String UID, String title, String schedule, String theaterNum, String seatList, int Price, String Payed) {
+    public static ArrayList<BookingDTO> getALLList(String UID) {
+        ArrayList<BookingDTO> bookingList = new ArrayList<>();
+
         Connection conn = null;
         PreparedStatement pstmt = null;
+        ResultSet rs = null;
 
         try {
             conn = new DBConnect().getConn();
-            String query = "INSERT INTO reservations (Reservation_Num, UID, Movie_Title, Schedule, Theater_Num, Seat_Num, Price, Payment_Method) " +
-                    "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-            pstmt = conn.prepareStatement(query);
-            pstmt.setString(1, reservationNum);
-            pstmt.setString(2, UID);
-            pstmt.setString(3, title);
-            pstmt.setString(4, schedule);
-            pstmt.setString(5, theaterNum);
-            pstmt.setString(6, seatList);
-            pstmt.setInt(7, Price);
-            pstmt.setString(8,Payed);
-            pstmt.executeUpdate();
-        } catch (Exception e){
+            String sql = "SELECT * FROM reservations WHERE uid = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, UID);
+            rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                String reservationNum = rs.getString("Reservation_Num");
+                String title = rs.getString("Movie_Title");
+                String schedule = rs.getString("Schedule");
+                String Theater_Num = rs.getString("Theater_Num");
+                String seatNum = rs.getString("seat_num");
+                int Price = rs.getInt("Price");
+                String Payed = rs.getString("Payment_Method");
+
+                BookingDTO dto = new BookingDTO();
+                dto.setReservation_Num(reservationNum);
+                dto.setMovie_Name(title);
+                dto.setSchedule(schedule);
+                dto.setTheater_Num(Theater_Num);
+                dto.setSeatNum(seatNum);
+                dto.setPrice(Price);
+                dto.setPayment_Method(Payed);
+
+                bookingList.add(dto);
+            }
+        } catch (SQLException e) {
             e.printStackTrace();
         }finally {
             try {
@@ -41,7 +58,39 @@ public class BookingDAO {
                 e.printStackTrace();
             }
         }
+
+        return bookingList;
     }
+
+    public boolean isSeatReserved(String seatNum) {
+        String[] SeatCount = seatNum.split(", ");
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = new DBConnect().getConn();
+            String query = "SELECT Seat_Num FROM reservations WHERE Seat_Num = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1, seatNum);
+            rs = pstmt.executeQuery();
+
+            return rs.next(); // ResultSet에 결과가 있으면 중복된 좌석이 존재하는 것이므로 true 반환
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     public String getReservationNum(){
         String Reservation_Num = "";
         Connection conn = null;
@@ -56,14 +105,14 @@ public class BookingDAO {
             rs = pstmt.executeQuery();
             if(rs.next()){
                 String maxReservationNumber = rs.getString(1);
-                if (maxReservationNumber != null) {
+                System.out.println(maxReservationNumber);
+                String uid = User.getInstance().getUID();
+                if (maxReservationNumber == null) {
+                    Reservation_Num = date + uid + "01";
+                } else {
                     // 다음 예약 번호 계산
                     int sequenceNumber = Integer.parseInt(maxReservationNumber.substring(8)) + 1;
-                    String uid = User.getInstance().getUID();
                     Reservation_Num = date + uid + String.format("%02d", sequenceNumber);
-                } else {
-                    // 예약 번호가 없을 경우 초기값 설정
-                    Reservation_Num = date + User.getInstance().getUID() + "01";
                 }
             }
         }catch (Exception e){
@@ -78,6 +127,54 @@ public class BookingDAO {
             }
         }
         return Reservation_Num;
+    }
+    public void insertReservation(String resnum, String UID, String title, String schedule, String theaterNum, String[] seatList, int Price, String Payed) {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+
+        try {
+            conn = new DBConnect().getConn();
+            if(seatList.length < 2){
+                String query = "INSERT INTO reservations (Reservation_Num ,UID, Movie_Title, Schedule, Theater_Num, Seat_Num, Price, Payment_Method) " +
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                pstmt = conn.prepareStatement(query);
+                pstmt.setString(1, resnum);
+                pstmt.setString(2, UID);
+                pstmt.setString(3, title);
+                pstmt.setString(4, schedule);
+                pstmt.setString(5, theaterNum);
+                pstmt.setString(6, seatList[0]);
+                pstmt.setInt(7, Price);
+                pstmt.setString(8,Payed);
+                pstmt.executeUpdate();
+            }
+            else{
+                for (int i = 0; i < seatList.length; i++) {
+                    String query = "INSERT INTO reservations (Reservation_Num ,UID, Movie_Title, Schedule, Theater_Num, Seat_Num, Price, Payment_Method) " +
+                            "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                    pstmt = conn.prepareStatement(query);
+                    pstmt.setString(1, resnum);
+                    pstmt.setString(2, UID);
+                    pstmt.setString(3, title);
+                    pstmt.setString(4, schedule);
+                    pstmt.setString(5, theaterNum);
+                    pstmt.setString(6, seatList[i]);
+                    pstmt.setInt(7, Price);
+                    pstmt.setString(8,Payed);
+                    pstmt.executeUpdate();
+                }
+            }
+
+        } catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
     public String getMovieTitle(String movieNum) {
         Connection conn = null;

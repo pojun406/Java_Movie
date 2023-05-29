@@ -19,6 +19,8 @@ public class PaymentPage extends JFrame{
         this.dto = dto;
         this.selectedSeats = selectedSeats;
 
+        System.out.println("결제창에서 영화명 "+dto.getMovie_Name());
+
         setContentPane(PaymentPanel);
         PaymentPanel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
         setTitle("결제 페이지");

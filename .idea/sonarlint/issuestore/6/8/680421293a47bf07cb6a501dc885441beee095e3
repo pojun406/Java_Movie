@@ -20,4 +20,6 @@ d
 java:S3252U"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öþÿÿÿÿ
 S	java:S106Y"9Replace this use of System.out or System.err by a logger.(¥ô‡žüÿÿÿÿ
 Q
-java:S1128"4Remove this unused import 'DAODTO.Member.MemberDTO'.(•¯ŸÕ8Àâ±€†1
+java:S1128"4Remove this unused import 'DAODTO.Member.MemberDTO'.(•¯ŸÕ8‰Õ’±†1
+[
+java:S1128	"9Remove this unused import 'MainPage.AdminPage.AdminPage'.(¶£éšüÿÿÿÿ8‰Õ’±†1

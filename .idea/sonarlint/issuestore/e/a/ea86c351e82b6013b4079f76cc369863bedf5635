@@ -9,20 +9,20 @@ l	java:S117û"QRename this local variable to match the regular expression '^[a
 l	java:S117ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒø¾åúÿÿÿÿ
 f	java:S117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ŸÅ
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŽÖÂÑ
-k
-java:S2095ò"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-k
-java:S2095¡"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-k
-java:S2095Ó"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-k
-java:S2095¡"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-j
-java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
 j
 java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
 k
+java:S2095¡"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+k
+java:S2095ò"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+k
 java:S2095¶"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+k
+java:S2095Ó"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+k
+java:S2095¡"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+j
+java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
 Q	java:S125R"<This block of commented-out lines of code should be removed.(«—¦²
 d	java:S100š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·’Âé
 T	java:S106¥"9Replace this use of System.out or System.err by a logger.(¸öøýÿÿÿÿ

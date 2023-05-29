@@ -62,7 +62,7 @@ public class MyPage extends JFrame {
         btn_Out.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                AdminPage ad = new AdminPage();
+                MainPage ad = new MainPage();
                 ad.setVisible(true);
                 MyPage.this.setVisible(false);
             }

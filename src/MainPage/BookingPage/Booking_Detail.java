@@ -24,15 +24,16 @@ public class Booking_Detail extends JFrame {
 
     public Booking_Detail(String[] seat, BookingDTO dto, String Payed) { // Payed는 Payment_Method 원툴임
         int ticketCount = seat.length;
-        String reservation_Num = bokdao.getReservationNum();
+        String Reservation_Num = bokdao.getReservationNum();
         String UID = user.getUID();
         String Title = dto.getMovie_Name();
         String schedule_Time = dto.getSchedule();
         String theater_Num = dto.getTheater_Num();
         int Price = 10000 * ticketCount;
+        //user.setUser_Pay(Price);
         String ID = user.getUser_ID();
 
-        bokdao.insertReservation(reservation_Num,UID,Title,schedule_Time,theater_Num,String.join(", ", seat),Price,Payed);
+        bokdao.insertReservation(Reservation_Num, UID,Title,schedule_Time,theater_Num,seat,Price,Payed);
 
         setTitle("상세 페이지");
         setSize(400, 300);

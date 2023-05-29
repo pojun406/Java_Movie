@@ -19,3 +19,23 @@ O	java:S106"9Replace this use of System.out or System.err by a logger.(™Ãø¤
 T	java:S106’"9Replace this use of System.out or System.err by a logger.(àÕêåşÿÿÿÿ
 G
 java:S1128"2Remove this unused import 'DAODTO.Movie.MovieDAO'.(äçÒ
+C
+java:S1604O"(Make this anonymous inner class a lambda(‹‹¿üşÿÿÿÿ
+3
+java:S1643"Use a StringBuilder instead.(‡º›´
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¬£ñûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
+s
+java:S1450"XRemove the "posterImg" field and declare it as a local variable in the relevant methods.(¸Âõ‡úÿÿÿÿ
+;
+java:S1948"%Make "dto" transient or serializable.(³Ş½–
+b
+java:S3252 "LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(§ıÏÁ
+h	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï°Ã‡üÿÿÿÿ
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(ŒÑÌ
+N	java:S106Y"9Replace this use of System.out or System.err by a logger.(ŒÑÌ
+Q	java:S125o"<This block of commented-out lines of code should be removed.(ƒÍÆÖ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(™Ãø¤
+T	java:S106’"9Replace this use of System.out or System.err by a logger.(àÕêåşÿÿÿÿ
+G
+java:S1128"2Remove this unused import 'DAODTO.Movie.MovieDAO'.(äçÒ
