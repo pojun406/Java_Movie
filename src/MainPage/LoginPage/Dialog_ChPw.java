@@ -22,7 +22,7 @@ public class Dialog_ChPw extends JDialog{
         MemberDTO member = new MemberDTO();
         setContentPane(chpwPanel);
         setTitle("비밀번호 변경");
-        setSize(200,200);
+        setSize(300,200);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         setResizable(false);
@@ -58,7 +58,6 @@ public class Dialog_ChPw extends JDialog{
                 }
 
                 if(PW_Checks){
-
                     member.setUSER_PW(Password);
                     member.setUSER_ID(UserID);
 
@@ -67,8 +66,6 @@ public class Dialog_ChPw extends JDialog{
 
                     if(success){
                         JOptionPane.showMessageDialog(null, "변경완료");
-                        System.out.println(Password);
-                        System.out.println(UserID);
                         setVisible(false);
                     }
                 }

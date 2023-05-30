@@ -1,6 +1,8 @@
 package MainPage.BookingPage;
 
+import DAODTO.Booking.BookingDAO;
 import DAODTO.Booking.BookingDTO;
+import DAODTO.Booking.Seat;
 import DAODTO.Movie.MovieDAO;
 
 import javax.swing.*;
@@ -13,17 +15,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Small_Theater extends JFrame{
-    BookingDTO dto;
     String movie;
+    String Schedule;
     private JLabel posterImg;
     private JComponent ui = null;
     private JToggleButton[] seats = new JToggleButton[40];
-    private JTextArea selectedSeats = new JTextArea(1, 40);
+    private BookingDTO dto;
     JFrame f = new JFrame("좌석 선택 페이지");
-    private java.util.List<String> selectedSeatList = new ArrayList<>();
+    private List<Seat> seatList = new ArrayList<>();
+    BookingDAO dao = new BookingDAO();
 
     public Small_Theater(BookingDTO dto) {
+        this.dto = dto;
+
         movie = dto.getMovie_Name();
+        Schedule = dto.getSchedule();
 
         if (ui != null) return;
 
@@ -35,11 +41,35 @@ public class Small_Theater extends JFrame{
         f.pack();
         f.setMinimumSize(f.getSize());
         f.setVisible(true);
+        f.setLocationRelativeTo(null);
+
+
+        String seatNums = dto.getSeatNum();
+        if (seatNums != null && !seatNums.isEmpty()) {
+            String[] selectedSeats = seatNums.split(", ");
+            disableSelectedSeats(selectedSeats);
+        }
+    }
+
+    private void disableSelectedSeats(String[] selectedSeats) {
+        for (String seatNumbers : selectedSeats) {
+            String[] seatNumberArray = seatNumbers.split(",");
+            for (String seatNumber : seatNumberArray) {
+                for (JToggleButton seat : seats) {
+                    if (seat.getText().equals(seatNumber.trim())) {
+                        seat.setEnabled(false);
+                        seat.setSelected(true);
+                        break;
+                    }
+                }
+            }
+        }
     }
 
     public void init_UI() {
         ui = new JPanel(new BorderLayout(4, 4));
         ui.setBorder(new EmptyBorder(4, 4, 4, 4));
+
         posterImg = new JLabel();
 
         if (movie != null) {
@@ -61,11 +91,6 @@ public class Small_Theater extends JFrame{
             posterImg.setText("이미지 없음");
         }
 
-        selectedSeats.setLineWrap(true);
-        selectedSeats.setWrapStyleWord(true);
-        selectedSeats.setEditable(false);
-        ui.add(new JScrollPane(selectedSeats), BorderLayout.PAGE_END);
-
         JPanel cinemaFloor = new JPanel(new BorderLayout(40, 0));
         ui.add(cinemaFloor, BorderLayout.CENTER);
         JPanel leftStall = new JPanel(new GridLayout(0, 2, 2, 2));
@@ -81,20 +106,47 @@ public class Small_Theater extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 JToggleButton selectedSeat = (JToggleButton) e.getSource();
                 String seatText = selectedSeat.getText();
-                if (selectedSeat.isSelected()) {
-                    selectedSeatList.add(seatText);
-                    System.out.println(selectedSeatList);
-                } else {
-                    selectedSeatList.remove(seatText);
-                    System.out.println(selectedSeatList);
-                }
 
+                for (int i = 0; i < seats.length; i++) {
+                    if (selectedSeat == seats[i]) {
+                        Seat seat = seatList.get(i);
+
+                        // 예약된 좌석인지 확인
+                        boolean isReserved = dao.isSeatReserved(seatText, movie, dto.getTheater_Num(), dto.getSchedule());
+
+                        for (int j = 0; j < seats.length; j++) {
+                            if (selectedSeat == seats[j]) {
+                                Seat selectedSeatObj = seatList.get(j);
+                                selectedSeatObj.setSeatNumber(seatText);
+                                selectedSeatObj.setSelected(selectedSeat.isSelected());
+
+                                // 예약된 좌석인 경우 토글 비활성화
+                                if (isReserved) {
+                                    selectedSeat.setEnabled(false);
+                                }
+
+                                break;
+                            }
+                        }
+                        seat.setSeatNumber(seatText);
+                        seat.setSelected(selectedSeat.isSelected());
+                        break;
+                    }
+                }
             }
         };
 
+
         for (int ii = 0; ii < seats.length; ii++) {
-            JToggleButton tb = new JToggleButton("S-" + (ii + 1));
+            String seatNumber = "S-" + (ii + 1);
+
+            // 예약된 좌석인지 확인
+            boolean isReserved = dao.isSeatReserved(seatNumber, movie, dto.getTheater_Num(), dto.getSchedule());
+
+            JToggleButton tb = new JToggleButton(seatNumber);
             tb.addActionListener(seatSelectionListener);
+            tb.setEnabled(!isReserved); // 예약된 좌석인 경우 비활성화
+            tb.setSelected(false);
             seats[ii] = tb;
             int colIndex = ii % 8;
             if (colIndex < 2) {
@@ -104,21 +156,35 @@ public class Small_Theater extends JFrame{
             } else {
                 rightStall.add(tb);
             }
+
+            // Create Seat object and add to seatList
+            Seat seat = new Seat(seatNumber, false, isReserved);
+            seatList.add(seat);
         }
 
         JButton nextButton = new JButton("다음");
-        /*
         nextButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                setSeatInfo(selectedSeatList);
-                Booking_Detail bok = new Booking_Detail(setSeatInfo(selectedSeatList),  dto, Payed);
-                bok.setVisible(true);
-                Small_Theater.this.setVisible(false);
+                List<String> selectedSeatNumbers = new ArrayList<>();
+                for (Seat seat : seatList) {
+                    if (seat.isSelected()) {
+                        selectedSeatNumbers.add(seat.getSeatNumber());
+                    }
+                }
+
+                if (selectedSeatNumbers.isEmpty()) {
+                    JOptionPane.showMessageDialog(Small_Theater.this, "선택된 좌석이 없습니다.", "경고", JOptionPane.WARNING_MESSAGE);
+                } else {
+                    String[] selectedSeatsArray = selectedSeatNumbers.toArray(new String[0]);
+                    //Booking_Detail bok = new Booking_Detail(selectedSeatsArray, dto);
+                    //bok.setVisible(true);
+                    PaymentPage paymentPage = new PaymentPage(dto, selectedSeatsArray);
+                    paymentPage.setVisible(true);
+                    f.setVisible(false);
+                }
             }
         });
-
-         */
 
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
         buttonPanel.add(nextButton);
@@ -129,25 +195,4 @@ public class Small_Theater extends JFrame{
         ui.add(contentPanel, BorderLayout.CENTER);
         ui.add(buttonPanel, BorderLayout.PAGE_END);
     }
-
-    public String[] setSeatInfo(List<String> seatinfo){
-        String info = "";
-        String[] a = null;
-        if(seatinfo == null){
-            JOptionPane.showMessageDialog(null,"선택하십쇼");
-        }
-        else{
-            for (int i = 0; i < seatinfo.size(); i++) {
-                info += seatinfo.get(i) + ",";
-            }
-            System.out.println(info);
-            a = info.split(",");
-            for (int i = 0; i < a.length; i++) {
-                System.out.println(a[i]);
-            }
-        }
-        return a;
-    }
-
-
 }

@@ -9,39 +9,69 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MemberDAO{
-    public String getUserWatched(String user) {
-    String userWatched = "";
 
-    Connection conn = null;
-    PreparedStatement pstmt = null;
-    ResultSet rs = null;
+public class MemberDAO {
+    public String User_to_UID(String username) {
+        String UID = "";
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
 
-    try {
-        conn = new DBConnect().getConn();
-
-        String query = "SELECT User_Watch_list FROM user WHERE user_id = ?";
-        pstmt = conn.prepareStatement(query);
-        pstmt.setString(1, user);
-        rs = pstmt.executeQuery();
-
-        if (rs.next()) {
-            userWatched = rs.getString("User_Watch_list");
-        }
-    } catch (Exception e) {
-        e.printStackTrace();
-    } finally {
         try {
-            if (rs != null) rs.close();
-            if (pstmt != null) pstmt.close();
-            if (conn != null) conn.close();
+            conn = new DBConnect().getConn();
+            String query = "SELECT UID FROM user WHERE User_Name = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1, username);
+            rs = pstmt.executeQuery();
+            if (rs.next()) {
+                UID = rs.getString("UID");
+            }
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
+        return UID;
     }
 
-    return userWatched;
-}
+    public ArrayList<String> getUserWatched(String UID) {
+        ArrayList<String> userWatched = new ArrayList<>();
+
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = new DBConnect().getConn();
+            String sql = "SELECT * FROM reservations WHERE UID = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, UID);
+            rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                String title = rs.getString("Movie_Title");
+                userWatched.add(title);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        return userWatched;
+    }
 
     // User가 지불한 총 금액을 가져오는 함수
     public int getUserTotalPay(String user) {
@@ -78,47 +108,47 @@ public class MemberDAO{
     }
 
 
-/*
-    public List<String> getUserWatched(String User){
-        List<String> User_Watched = new ArrayList<>();;
+    /*
+        public List<String> getUserWatched(String User){
+            List<String> User_Watched = new ArrayList<>();;
 
-        Connection conn = null;
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
+            Connection conn = null;
+            PreparedStatement pstmt = null;
+            ResultSet rs = null;
 
-        try {
-            conn = new DBConnect().getConn();
-
-            String query = "SELECT User_Watch_list FROM user WHERE user_id = ?";
-            pstmt = conn.prepareStatement(query);
-            pstmt.setString(1, User);
-            rs = pstmt.executeQuery();
-
-            if(rs.next()){
-                String userWatched = rs.getString("User_Watch_list");
-                int paid = rs.getInt("User_Pay");
-
-                User_Watched.add(userWatched);
-                User_Watched.add(String.valueOf(paid));
-            }
-            return User_Watched;
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
             try {
-                if (rs != null) rs.close();
-                if (pstmt != null) pstmt.close();
-                if (conn != null) conn.close();
+                conn = new DBConnect().getConn();
+
+                String query = "SELECT User_Watch_list FROM user WHERE user_id = ?";
+                pstmt = conn.prepareStatement(query);
+                pstmt.setString(1, User);
+                rs = pstmt.executeQuery();
+
+                if(rs.next()){
+                    String userWatched = rs.getString("User_Watch_list");
+                    int paid = rs.getInt("User_Pay");
+
+                    User_Watched.add(userWatched);
+                    User_Watched.add(String.valueOf(paid));
+                }
+                return User_Watched;
+
             } catch (Exception e) {
                 e.printStackTrace();
+            } finally {
+                try {
+                    if (rs != null) rs.close();
+                    if (pstmt != null) pstmt.close();
+                    if (conn != null) conn.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
+            return User_Watched;
         }
-        return User_Watched;
-    }
 
 
- */
+     */
     public List<String> getUser() {
         List<String> Users = new ArrayList<>();
 
@@ -151,11 +181,11 @@ public class MemberDAO{
         return Users;
     }
 
-    public boolean Ch_PW(MemberDTO dto){
+    public boolean Ch_PW(MemberDTO dto) {
         Connection conn = null;
         PreparedStatement pstmt = null;
 
-        try{
+        try {
             conn = new DBConnect().getConn();
             String query = "UPDATE user SET User_PW = ? WHERE User_ID = ?";
             pstmt = conn.prepareStatement(query);
@@ -164,18 +194,18 @@ public class MemberDAO{
             pstmt.executeUpdate();
             System.out.println(pstmt.executeUpdate());
             return true;
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return false;
         }
     }
 
-    public Boolean FindPW(MemberDTO dto){
+    public Boolean FindPW(MemberDTO dto) {
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
 
-        try{
+        try {
             conn = new DBConnect().getConn();
             String query = "SELECT * FROM user " +
                     "WHERE User_Name = ? AND User_CallNum = ? AND User_ID = ?";
@@ -186,7 +216,7 @@ public class MemberDAO{
             rs = pstmt.executeQuery();
 
             return rs.next();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return false;
         } finally {
@@ -199,13 +229,14 @@ public class MemberDAO{
             }
         }
     }
-    public String FindID(MemberDTO dto){
+
+    public String FindID(MemberDTO dto) {
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         String ID = "";
 
-        try{
+        try {
             conn = new DBConnect().getConn();
             String query = "SELECT * FROM user WHERE User_Name = ? AND User_CallNum = ?";
             pstmt = conn.prepareStatement(query);
@@ -213,11 +244,11 @@ public class MemberDAO{
             pstmt.setString(2, dto.getUSER_CallNum());
             rs = pstmt.executeQuery();
 
-            if(rs.next()){
+            if (rs.next()) {
                 ID = rs.getString("User_ID");
             }
             return ID;
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return "";
         } finally {
@@ -231,12 +262,12 @@ public class MemberDAO{
         }
     }
 
-    public boolean Login(MemberDTO dto){
+    public boolean Login(MemberDTO dto) {
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
 
-        try{
+        try {
             conn = new DBConnect().getConn();
             String query = "SELECT * FROM user WHERE User_ID = ? AND User_PW = ?";
             pstmt = conn.prepareStatement(query);
@@ -249,7 +280,6 @@ public class MemberDAO{
                 String USER_Name = rs.getString("User_Name");
                 String USER_CallNum = rs.getString("User_CallNum");
                 int USER_Pay = rs.getInt("User_Pay");
-                String USER_Watched = rs.getString("User_Watch_list");
 
                 // User 인스턴스에 정보 저장
                 User user = User.getInstance();
@@ -258,7 +288,6 @@ public class MemberDAO{
                 user.setUser_Name(USER_Name);
                 user.setUser_CallNum(USER_CallNum);
                 user.setUser_Pay(USER_Pay);
-                user.setUser_Watch_list(USER_Watched);
 
                 return true; // 로그인 성공
             } else {

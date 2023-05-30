@@ -41,6 +41,8 @@ public class big_Theater extends JFrame {
         f.pack();
         f.setMinimumSize(f.getSize());
         f.setVisible(true);
+        f.setLocationRelativeTo(null);
+
 
         String seatNums = dto.getSeatNum();
         if (seatNums != null && !seatNums.isEmpty()) {
@@ -110,7 +112,7 @@ public class big_Theater extends JFrame {
                         Seat seat = seatList.get(i);
 
                         // 예약된 좌석인지 확인
-                        boolean isReserved = dao.isSeatReserved(seatText);
+                        boolean isReserved = dao.isSeatReserved(seatText, movie, dto.getTheater_Num(), dto.getSchedule());
 
                         for (int j = 0; j < seats.length; j++) {
                             if (selectedSeat == seats[j]) {
@@ -139,7 +141,7 @@ public class big_Theater extends JFrame {
             String seatNumber = "S-" + (ii + 1);
 
             // 예약된 좌석인지 확인
-            boolean isReserved = dao.isSeatReserved(seatNumber);
+            boolean isReserved = dao.isSeatReserved(seatNumber, movie, dto.getTheater_Num(), dto.getSchedule());
 
             JToggleButton tb = new JToggleButton(seatNumber);
             tb.addActionListener(seatSelectionListener);
@@ -193,4 +195,5 @@ public class big_Theater extends JFrame {
         ui.add(contentPanel, BorderLayout.CENTER);
         ui.add(buttonPanel, BorderLayout.PAGE_END);
     }
+
 }

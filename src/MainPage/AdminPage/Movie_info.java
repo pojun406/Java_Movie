@@ -28,6 +28,7 @@ public class Movie_info extends JFrame {
         String TheaterNum = "";
 
 
+
         Description = dao.getMovieDescription(selectedMovie);
         RunningTime = dao.getMovieRunningTime(selectedMovie);
         TheaterNums = bokdao.getTheaterNum(selectedMovie);
@@ -36,7 +37,7 @@ public class Movie_info extends JFrame {
             TheaterNum = "현재 할당된 상영관이 없습니다.";
         }else{
             for (int i = 0; i < TheaterNums.size(); i++) {
-                TheaterNum += TheaterNums.get(i) + ",";
+                TheaterNum += TheaterNums.get(i);
             }
         }
 
@@ -61,7 +62,7 @@ public class Movie_info extends JFrame {
 
         btn_out = new JButton("나가기");
         lb_MovieNm = new JLabel(selectedMovie);
-        lb_Selled = new JLabel("" + "장");
+        lb_Selled = new JLabel(bokdao.ReservationALL(selectedMovie) + "장");
         lb_RunningTime = new JLabel(RunningTime + "분");
         lb_TheaterEx = new JLabel(TheaterNum);
         tpDescription.setText(Description);

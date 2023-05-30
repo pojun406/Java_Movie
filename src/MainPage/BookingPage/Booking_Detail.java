@@ -23,14 +23,12 @@ public class Booking_Detail extends JFrame {
     User user = User.getInstance();
 
     public Booking_Detail(String[] seat, BookingDTO dto, String Payed) { // Payed는 Payment_Method 원툴임
-        int ticketCount = seat.length;
         String Reservation_Num = bokdao.getReservationNum();
         String UID = user.getUID();
         String Title = dto.getMovie_Name();
         String schedule_Time = dto.getSchedule();
         String theater_Num = dto.getTheater_Num();
-        int Price = 10000 * ticketCount;
-        //user.setUser_Pay(Price);
+        int Price = user.getUser_Pay();
         String ID = user.getUser_ID();
 
         bokdao.insertReservation(Reservation_Num, UID,Title,schedule_Time,theater_Num,seat,Price,Payed);
@@ -83,5 +81,7 @@ public class Booking_Detail extends JFrame {
 
         setContentPane(detailPanel);
         setVisible(true);
+        setLocationRelativeTo(null);
+
     }
 }

@@ -1,59 +1,78 @@
 
+i
+java:S1192["LDefine a constant instead of duplicating this literal "Movie_Title" 3 times.(±Â¢Â8şÕÔ†1
 a
-java:S1192Ü"JDefine a constant instead of duplicating this literal "Movie_Num" 3 times.(øùçö
-b
-java:S1192#"LDefine a constant instead of duplicating this literal "Theater_Num" 5 times.(›«’´
-_
-java:S1192""IDefine a constant instead of duplicating this literal "Schedule" 3 times.(‘Îùï
+java:S1192Ì"JDefine a constant instead of duplicating this literal "Movie_Num" 3 times.(øùçö
+n
+java:S1192]"LDefine a constant instead of duplicating this literal "Theater_Num" 6 times.(Õ‡‚ßùÿÿÿÿ8€ÖÔ†1
+\
+java:S11926"FDefine a constant instead of duplicating this literal "Price" 4 times.(Şš†
+k
+java:S1192\"IDefine a constant instead of duplicating this literal "Schedule" 4 times.(ñÃıÛûÿÿÿÿ8ÖÔ†1
+‹
+java:S1319F"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(º¾è«şÿÿÿÿ
 †
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ğãí
+java:S1319}"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ğãí
 ‡
-java:S1319Ï"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¡†ÎÅ
-Œ
-java:S1319ì"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(€«¼ÿÿÿÿÿ
-W	java:S107ƒ"<Method has 8 parameters, which is greater than 7 authorized.(¡‡Õ†ùÿÿÿÿ
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğãí
-f	java:S117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›«’´
-f	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şºÊ
-k	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ´Ûûşÿÿÿÿ
-f	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³÷Ã‰
-k	java:S117_"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âšâıÿÿÿÿ
-l	java:S117ƒ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡‡Õ†ùÿÿÿÿ
-l	java:S117ƒ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡‡Õ†ùÿÿÿÿ
-l	java:S117ƒ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡‡Õ†ùÿÿÿÿ
-f	java:S117ß"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ª˜J
-g	java:S117à"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ØÁ’
-l	java:S117ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€«¼ÿÿÿÿÿ
-g	java:S117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù™Û·
-g	java:S117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù™Û·
-l	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¦ºÒüÿÿÿÿ
+java:S1319¿"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¡†ÎÅ
+“
+java:S1319Ü"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(€«¼ÿÿÿÿÿ8ˆÖÔ†1
+W	java:S107ó"<Method has 8 parameters, which is greater than 7 authorized.(¡‡Õ†ùÿÿÿÿ
+k	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¶åÌúÿÿÿÿ
+k	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô£ç–ıÿÿÿÿ
+f	java:S117}"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğãí
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›«’´
+g	java:S117‘"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şºÊ
+l	java:S117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ´Ûûşÿÿÿÿ
+g	java:S117­"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½£ºÌ
+g	java:S117­"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½£ºÌ
+g	java:S117­"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½£ºÌ
+g	java:S117®"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³÷Ã‰
+l	java:S117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âšâıÿÿÿÿ
+l	java:S117ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡‡Õ†ùÿÿÿÿ
+l	java:S117ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡‡Õ†ùÿÿÿÿ
+l	java:S117ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡‡Õ†ùÿÿÿÿ
+f	java:S117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ª˜J
+g	java:S117Ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ØÁ’
+l	java:S117Ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€«¼ÿÿÿÿÿ
+g	java:S117¿"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù™Û·
+g	java:S117¿"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù™Û·
+l	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¦ºÒüÿÿÿÿ
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†¥î¤
-k
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ˆËıÛûÿÿÿÿ
-k
-java:S2095³"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-r
-java:S2095õ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ8¯ÀÄ¶†1
 j
-java:S2095J"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-j
-java:S2095h"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
 k
-java:S2095›"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+java:S2095ˆ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
 k
-java:S2095˜"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+java:S2095‹"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
 k
-java:S2095×"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
-D
-java:S1481B".Remove this unused "SeatCount" local variable.(³÷Ã‰
-S	java:S106l"9Replace this use of System.out or System.err by a logger.(‰óáäøÿÿÿÿ
-i	java:S100¬"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ÛÜ—üÿÿÿÿ
-d	java:S100Ï"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù™Û·
+java:S2095å"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+k
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ˆËıÛûÿÿÿÿ
+k
+java:S2095£"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+k
+java:S2095·"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+k
+java:S2095Ø"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+k
+java:S2095Ç"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò‡£´ÿÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¶Å»şÿÿÿÿ
+h	java:S100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¶åÌúÿÿÿÿ
+U
+java:S1481Z"3Remove this unused "reservationNum" local variable.(Ô¼¾Ïüÿÿÿÿ8šõÔ†1
+G
+java:S1481_"*Remove this unused "price" local variable.(Şš†8œõÔ†1
+L
+java:S1481`"*Remove this unused "payed" local variable.(·Ì†òûÿÿÿÿ8õÔ†1
+E
+java:S1481®".Remove this unused "SeatCount" local variable.(³÷Ã‰
+T	java:S106Ü"9Replace this use of System.out or System.err by a logger.(‰óáäøÿÿÿÿ
+i	java:S100œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ÛÜ—üÿÿÿÿ
+d	java:S100¿"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù™Û·
 C
-java:S1481Ò"'Remove this unused "rs" local variable.(ÀÇÄûÿÿÿÿ
-c	java:S100‚"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¢ÉY
-W	java:S125ê"<This block of commented-out lines of code should be removed.(Œ‹§şÿÿÿÿ
-d	java:S100Ç"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å“ù¨
-R	java:S125å"<This block of commented-out lines of code should be removed.(à…Îô
-H
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+java:S1481Â"'Remove this unused "rs" local variable.(ÀÇÄûÿÿÿÿ
+c	java:S100ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¢ÉY
+W	java:S125Ú"<This block of commented-out lines of code should be removed.(Œ‹§şÿÿÿÿ
+d	java:S100·"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å“ù¨
+R	java:S125Õ"<This block of commented-out lines of code should be removed.(à…Îô

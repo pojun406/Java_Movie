@@ -1,0 +1,21 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò×òŞ8Ñ¢Ù†1
+J
+java:S1604N"(Make this anonymous inner class a lambda(ıÆßÒüÿÿÿÿ8ŸÔ¨Õ†1
+>
+java:S1643""Use a StringBuilder instead.(‘µ†˜ùÿÿÿÿ8Ò¢Ù†1
+n	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(–«ü·úÿÿÿÿ8Ò¢Ù†1
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²İ›[
+r	java:S116"VRename this field "lb_UserName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¾Ê•8À¡¢Ù†1
+x	java:S116"WRename this field "lb_MovieName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æñô÷ÿÿÿÿÿ8À¡¢Ù†1
+s	java:S116"RRename this field "lb_Seat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªæ•ùÿÿÿÿ8À¡¢Ù†1
+r	java:S116"VRename this field "lb_showDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èúüÕ8À¡¢Ù†1
+q	java:S116"URename this field "lb_theater" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼÷8À¡¢Ù†1
+p	java:S116"TRename this field "btn_check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÍ‹8À¡¢Ù†1
+E
+java:S1948"(Make "bokdao" transient or serializable.(£ò¦€8Å¡¢Ù†1
+H
+java:S1948"&Make "user" transient or serializable.(š÷îÔùÿÿÿÿ8Å¡¢Ù†1
+d
+java:S3252J"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ

@@ -30,14 +30,6 @@ public class BookingDTO {
         Reservation_Num = reservation_Num;
     }
 
-    public String getUID() {
-        return UID;
-    }
-
-    public void setUID(String UID) {
-        this.UID = UID;
-    }
-
     public String getMovie_Name() {
         return Movie_Name;
     }

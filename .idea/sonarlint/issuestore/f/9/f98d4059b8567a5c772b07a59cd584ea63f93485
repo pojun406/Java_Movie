@@ -4,7 +4,7 @@ e	java:S117#"QRename this local variable to match the regular expression '^[a-
 >
 java:S1604"(Make this anonymous inner class a lambda(ï¹ğ¡
 >
-java:S1604Q"(Make this anonymous inner class a lambda(¾ŸŞ
+java:S1604N"(Make this anonymous inner class a lambda(¾ŸŞ
 7
 java:S1643'"Use a StringBuilder instead.(„ËÏúÿÿÿÿ
 2
@@ -32,7 +32,5 @@ A
 java:S2201+",The return value of "toString" must be used.(Ï ³E
 s
 java:S3923,"]This conditional operation returns the same value whether the condition is "true" or "false".(‹£òŒ
-N	java:S106F"9Replace this use of System.out or System.err by a logger.(˜—áú
-S	java:S106G"9Replace this use of System.out or System.err by a logger.(æ¦û†şÿÿÿÿ
 L
 java:S1128"/Remove this unused import 'DAODTO.Member.User'.(Ñèëã8Ò™€†1

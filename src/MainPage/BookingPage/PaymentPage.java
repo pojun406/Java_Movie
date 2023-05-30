@@ -1,6 +1,7 @@
 package MainPage.BookingPage;
 
 import DAODTO.Booking.BookingDTO;
+import DAODTO.Member.User;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -13,18 +14,18 @@ public class PaymentPage extends JFrame{
     private JLabel lb_WhatPay;
     private BookingDTO dto;  // BookingDTO 정보를 저장할 필드
     private String[] selectedSeats;  // 선택된 좌석 정보를 저장할 필드
+    private User user = User.getInstance();
 
 
     public PaymentPage(BookingDTO dto, String[] selectedSeats) {
         this.dto = dto;
         this.selectedSeats = selectedSeats;
-
-        System.out.println("결제창에서 영화명 "+dto.getMovie_Name());
+        user.setUser_Pay(10000);
 
         setContentPane(PaymentPanel);
         PaymentPanel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
         setTitle("결제 페이지");
-        setSize(350,220);
+        setSize(500,220);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);

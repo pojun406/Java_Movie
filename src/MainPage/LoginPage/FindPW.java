@@ -25,7 +25,7 @@ public class FindPW extends JFrame{
         setContentPane(FindPWPanel);
         FindPWPanel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
         setTitle("비밀번호 찾기 페이지");
-        setSize(350,220);
+        setSize(450,220);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);

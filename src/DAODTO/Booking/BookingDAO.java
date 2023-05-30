@@ -8,12 +8,120 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class BookingDAO {
+    public int ReservationALL(String title){
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        int resall = 0;
+        try{
+            conn = new DBConnect().getConn();
+            String query = "SELECT COUNT(*) FROM reservations WHERE Movie_Title = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1, title);
+            rs = pstmt.executeQuery();
+
+            if (rs.next()) { // 결과 집합에 다음 행이 있는지 확인
+                resall = rs.getInt(1);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                if (rs != null) rs.close();
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return resall;
+    }
+    public int PayedALL(String UID) {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        int Pay = 0;
+        try {
+            conn = new DBConnect().getConn();
+            String query = "SELECT Price FROM reservations WHERE UID = ?";
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1, UID);
+            rs = pstmt.executeQuery();
+            while (rs.next()){
+                int price = rs.getInt("Price");
+                Pay += price;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return Pay;
+    }
+    public ArrayList<String> getlisttodetail(String resnum) {
+        ArrayList<String> list = new ArrayList<>();
+
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = new DBConnect().getConn();
+            String sql = "SELECT * FROM reservations WHERE Reservation_Num = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, resnum);
+            rs = pstmt.executeQuery();
+
+            String title = null;
+            String schedule = null;
+            String theaterNum = null;
+            List<String> seatList = new ArrayList<>();
+
+            while (rs.next()) {
+                String reservationNum = rs.getString("Reservation_Num");
+                title = rs.getString("Movie_Title");
+                schedule = rs.getString("Schedule");
+                theaterNum = rs.getString("Theater_Num");
+                String seatNum = rs.getString("Seat_Num");
+                int price = rs.getInt("Price");
+                String payed = rs.getString("Payment_Method");
+
+                // Collect seat numbers in a list
+                if (seatNum != null && !seatNum.isEmpty()) {
+                    seatList.add(seatNum);
+                }
+            }
+
+            // Add the details to the list
+            list.add("영화 제목 : " + title);
+            if (!seatList.isEmpty()) {
+                list.add("좌석 : "+String.join(", ", seatList));
+            }
+            list.add("상영 시간 : " + schedule);
+            list.add("상영관 : " + theaterNum);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        return list;
+    }
+
     public static ArrayList<BookingDTO> getALLList(String UID) {
         ArrayList<BookingDTO> bookingList = new ArrayList<>();
 
@@ -62,7 +170,7 @@ public class BookingDAO {
         return bookingList;
     }
 
-    public boolean isSeatReserved(String seatNum) {
+    public boolean isSeatReserved(String seatNum, String Title, String TheaterNum, String Schedule) {
         String[] SeatCount = seatNum.split(", ");
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -70,9 +178,13 @@ public class BookingDAO {
 
         try {
             conn = new DBConnect().getConn();
-            String query = "SELECT Seat_Num FROM reservations WHERE Seat_Num = ?";
+            String query = "SELECT Seat_Num FROM reservations WHERE Seat_Num = ? " +
+                    "AND Movie_Title = ? AND Theater_Num = ? AND Schedule = ?";
             pstmt = conn.prepareStatement(query);
             pstmt.setString(1, seatNum);
+            pstmt.setString(2, Title);
+            pstmt.setString(3, TheaterNum);
+            pstmt.setString(4, Schedule);
             rs = pstmt.executeQuery();
 
             return rs.next(); // ResultSet에 결과가 있으면 중복된 좌석이 존재하는 것이므로 true 반환

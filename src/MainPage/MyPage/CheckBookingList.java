@@ -31,7 +31,7 @@ public class CheckBookingList extends JFrame{
         JScrollPane listScrollPane = new JScrollPane(bookingMovieList);
         listScrollPane.setBounds(10, 10, 270, 300);
 
-        btn_Detail = new JButton("상세 정보");
+        btn_Detail = new JButton("영화 선택");
         btn_Detail.setBounds(10, 320, 130, 30);
 
         btn_Out = new JButton("나가기");
@@ -53,6 +53,9 @@ public class CheckBookingList extends JFrame{
         btn_Detail.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String selectedMovie = bookingMovieList.getSelectedValue().toString();
+                if(selectedMovie == null){
+                    JOptionPane.showMessageDialog(null,"선택한 영화가 없습니다.");
+                }
                 BookingDTO selectedMovieDTO = null;
 
                 // 선택된 영화명과 일치하는 DTO 찾기

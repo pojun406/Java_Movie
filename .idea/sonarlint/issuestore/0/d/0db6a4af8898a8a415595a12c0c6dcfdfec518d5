@@ -6,11 +6,11 @@ java:S3740"/Provide the parametrized type for this generic.(•—©ëúÿÿÿÿ
 f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Û£¸
 f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Õ—Æ
 f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÉ«¿
-k	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨‰±ùÿÿÿÿÿ
+r	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨‰±ùÿÿÿÿÿ8à„ðÓ†1
 C
 java:S16045"(Make this anonymous inner class a lambda(õ—Î¥ýÿÿÿÿ
 >
-java:S1604J"(Make this anonymous inner class a lambda(å³’¡
+java:S1604M"(Make this anonymous inner class a lambda(å³’¡
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²Ý›[
 n	java:S116"YRename this field "CheckBookPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î…—Ÿ
 j	java:S116"URename this field "btn_Detail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í×œË

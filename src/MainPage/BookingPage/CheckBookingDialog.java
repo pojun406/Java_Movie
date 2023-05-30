@@ -80,7 +80,6 @@ public class CheckBookingDialog extends JFrame {
                     }
                     else{
                         Small_Theater smallT = new Small_Theater(dto);
-                        smallT.setVisible(true);
                         CheckBookingDialog.this.setVisible(false);
                     }
                 }

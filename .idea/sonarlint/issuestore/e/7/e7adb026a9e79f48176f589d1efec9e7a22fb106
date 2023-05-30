@@ -1,32 +1,32 @@
 
-f	java:S117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê·ÂÃ
-f	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öª´¥
+f	java:S117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê·ÂÃ
+f	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öª´¥
 >
-java:S1604 "(Make this anonymous inner class a lambda(ãÙˆò
+java:S1604!"(Make this anonymous inner class a lambda(ãÙˆò
 C
-java:S1604("(Make this anonymous inner class a lambda(¢Şèçûÿÿÿÿ
+java:S1604)"(Make this anonymous inner class a lambda(¢Şèçûÿÿÿÿ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
-l	java:S116
-"WRename this field "PaymentPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ–Ìş
-h	java:S116"SRename this field "btn_Cash" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Üê
-m	java:S116"SRename this field "btn_Card" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¨ÀÅùÿÿÿÿ
-o	java:S116"URename this field "lb_WhatPay" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²·½Úûÿÿÿÿ
+l	java:S116"WRename this field "PaymentPanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ–Ìş
+h	java:S116"SRename this field "btn_Cash" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Üê
+m	java:S116"SRename this field "btn_Card" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¨ÀÅùÿÿÿÿ
+o	java:S116"URename this field "lb_WhatPay" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²·½Úûÿÿÿÿ
 ;
-java:S1948"%Make "dto" transient or serializable.(ƒ†ıí
-N	java:S106"9Replace this use of System.out or System.err by a logger.(şÆÈ¨
+java:S1948"%Make "dto" transient or serializable.(ƒ†ıí
+A
+java:S1948"&Make "user" transient or serializable.(¾šØíûÿÿÿÿ
 d
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
 R
-java:S1854$"7Remove this useless assignment to local variable "bok".(ïªúóüÿÿÿÿ
+java:S1854%"7Remove this useless assignment to local variable "bok".(ïªúóüÿÿÿÿ
 C
-java:S1481$"(Remove this unused "bok" local variable.(ïªúóüÿÿÿÿ
+java:S1481%"(Remove this unused "bok" local variable.(ïªúóüÿÿÿÿ
 R
-java:S1854,"7Remove this useless assignment to local variable "bok".(ïªúóüÿÿÿÿ
+java:S1854-"7Remove this useless assignment to local variable "bok".(ïªúóüÿÿÿÿ
 C
-java:S1481,"(Remove this unused "bok" local variable.(ïªúóüÿÿÿÿ
+java:S1481-"(Remove this unused "bok" local variable.(ïªúóüÿÿÿÿ
 I
-java:S1068".Remove this unused "lb_WhatPay" private field.(²·½Úûÿÿÿÿ
+java:S1068".Remove this unused "lb_WhatPay" private field.(²·½Úûÿÿÿÿ
 =
-java:S1068"'Remove this unused "dto" private field.(ƒ†ıí
+java:S1068"'Remove this unused "dto" private field.(ƒ†ıí
 L
-java:S1068"1Remove this unused "selectedSeats" private field.(øµâØûÿÿÿÿ
+java:S1068"1Remove this unused "selectedSeats" private field.(øµâØûÿÿÿÿ

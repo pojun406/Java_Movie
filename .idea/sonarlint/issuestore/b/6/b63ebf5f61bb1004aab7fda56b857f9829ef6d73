@@ -1,22 +1,24 @@
 
->
-java:S1604E"(Make this anonymous inner class a lambda(„¿õî
->
-java:S1604a"(Make this anonymous inner class a lambda(å³’¡
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‹û×åıÿÿÿÿ
+E
+java:S1604B"(Make this anonymous inner class a lambda(„¿õî8Àäˆ×†1
+E
+java:S1604a"(Make this anonymous inner class a lambda(å³’¡8¯Ñ™×†1
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‹û×åıÿÿÿÿ
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–¯ãN
-i	java:S116"TRename this field "User_List" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›´ƒÇ
-l	java:S116"WRename this field "User_Watched" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Š„á
-p	java:S116"VRename this field "ManagePanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜»¼Ëşÿÿÿÿ
-h	java:S116"SRename this field "UserList" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëùÙÚ
-g	java:S116"RRename this field "Watched" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¢†®
-l	java:S116"RRename this field "btn_Out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òğ”öúÿÿÿÿ
-i	java:S116"TRename this field "btn_Check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¡åĞ
-h	java:S116"SRename this field "lb_Payed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ«Ş“
-@
-java:S1948"%Make "dao" transient or serializable.(«¥Çııÿÿÿÿ
-;
-java:S1948"%Make "UserList" private or transient.(ëùÙÚ
-S	java:S106,"9Replace this use of System.out or System.err by a logger.(¥Ç¸ãúÿÿÿÿ
-d
-java:S32525"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+p	java:S116"TRename this field "User_List" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›´ƒÇ8Èà×†1
+s	java:S116"WRename this field "User_Watched" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Š„á8Éà×†1
+w	java:S116"VRename this field "ManagePanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜»¼Ëşÿÿÿÿ8Éà×†1
+o	java:S116"SRename this field "UserList" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëùÙÚ8Éà×†1
+s	java:S116"RRename this field "btn_Out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òğ”öúÿÿÿÿ8ÁÑ™×†1
+p	java:S116"TRename this field "btn_Check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¡åĞ8ÁÑ™×†1
+o	java:S116"SRename this field "lb_Payed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ«Ş“8ÁÑ™×†1
+G
+java:S1948"%Make "dao" transient or serializable.(«¥Çııÿÿÿÿ8‚åˆ×†1
+E
+java:S1948"(Make "bokdao" transient or serializable.(£ò¦€8ß«°×†1
+B
+java:S1948"%Make "UserList" private or transient.(ëùÙÚ8Ëà×†1
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ı°øùÿÿÿÿ8ÍÑ™×†1
+k
+java:S32523"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ÑÑ™×†1
