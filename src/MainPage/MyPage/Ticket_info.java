@@ -68,7 +68,7 @@ public class Ticket_info extends JFrame {
 
         // Set the content pane and other frame properties
         setContentPane(detailPanel);
-        setTitle("Ticket Information");
+        setTitle("예매 정보");
         setSize(300, 250);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

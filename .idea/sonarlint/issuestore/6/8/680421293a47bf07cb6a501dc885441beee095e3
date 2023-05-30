@@ -1,30 +1,29 @@
 
+L
+java:S3740"/Provide the parametrized type for this generic.(ãÓâè8¹ìÚç†1
+K
+java:S3740%"/Provide the parametrized type for this generic.(ôÍÔA8ÎìÚç†1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëıø¼8ÙìÚç†1
 E
-java:S3740"/Provide the parametrized type for this generic.(ãÓâè
-D
-java:S3740%"/Provide the parametrized type for this generic.(ôÍÔA
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëıø¼
->
-java:S1604@"(Make this anonymous inner class a lambda(²Ş…Ë
->
-java:S1604a"(Make this anonymous inner class a lambda(å³’¡
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²İ›[
-p	java:S116"VRename this field "MyPagePanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ñÒÆÿÿÿÿÿ
-r	java:S116"XRename this field "btn_ChBooking" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤â şÿÿÿÿ
-m	java:S116"SRename this field "lb_money" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“‹¦¯ùÿÿÿÿ
-l	java:S116"WRename this field "list_Watched" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãÓâè
-l	java:S116"RRename this field "btn_Out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òğ”öúÿÿÿÿ
-A
-java:S1948"&Make "user" transient or serializable.(¾šØíûÿÿÿÿ
-;
-java:S1948"%Make "dao" transient or serializable.(ª°ô
-m
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ÎŞÕÓúÿÿÿÿ
-S	java:S106-"9Replace this use of System.out or System.err by a logger.(ª‘ÊÕûÿÿÿÿ
-d
-java:S3252x"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
-S	java:S106|"9Replace this use of System.out or System.err by a logger.(¥ô‡üÿÿÿÿ
-J
-java:S1128"4Remove this unused import 'DAODTO.Member.MemberDTO'.(•¯ŸÕ
-T
-java:S1128	"9Remove this unused import 'MainPage.AdminPage.AdminPage'.(¶£éšüÿÿÿÿ
+java:S1604?"(Make this anonymous inner class a lambda(²Ş…Ë8ÜìÚç†1
+E
+java:S1604`"(Make this anonymous inner class a lambda(å³’¡8ÜìÚç†1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²İ›[8ãìÚç†1
+w	java:S116"VRename this field "MyPagePanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ñÒÆÿÿÿÿÿ8“ğÚç†1
+y	java:S116"XRename this field "btn_ChBooking" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤â şÿÿÿÿ8”ğÚç†1
+t	java:S116"SRename this field "lb_money" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“‹¦¯ùÿÿÿÿ8”ğÚç†1
+s	java:S116"WRename this field "list_Watched" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãÓâè8”ğÚç†1
+s	java:S116"RRename this field "btn_Out" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òğ”öúÿÿÿÿ8”ğÚç†1
+H
+java:S1948"&Make "user" transient or serializable.(¾šØíûÿÿÿÿ8§ğÚç†1
+B
+java:S1948"%Make "dao" transient or serializable.(ª°ô8§ğÚç†1
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ÎŞÕÓúÿÿÿÿ8¼ğÚç†1
+k
+java:S3252w"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8®ñÚç†1
+Z	java:S106{"9Replace this use of System.out or System.err by a logger.(¥ô‡üÿÿÿÿ8°ñÚç†1
+Q
+java:S1128"4Remove this unused import 'DAODTO.Member.MemberDTO'.(•¯ŸÕ8µñÚç†1
+[
+java:S1128	"9Remove this unused import 'MainPage.AdminPage.AdminPage'.(¶£éšüÿÿÿÿ8µñÚç†1

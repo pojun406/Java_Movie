@@ -67,10 +67,12 @@ public class User_Manage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String selectedUser = User_List.getSelectedValue(); // 선택된 사용자
+                System.out.println(selectedUser);
 
                 if (selectedUser != null) {
-                    String uid = dao.User_to_UID(selectedUser); // 선택된 사용자의 UID 조회
+                    String uid = dao.User_to_UID(selectedUser);// 선택된 사용자의 UID 조회
 
+                    System.out.println(uid);
                     if (uid != null) {
                         List<String> watchedMovies = dao.getUserWatched(uid); // 선택된 사용자의 시청 목록 조회
 

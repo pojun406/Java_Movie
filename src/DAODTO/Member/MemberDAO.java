@@ -19,7 +19,7 @@ public class MemberDAO {
 
         try {
             conn = new DBConnect().getConn();
-            String query = "SELECT UID FROM user WHERE User_Name = ?";
+            String query = "SELECT UID FROM user WHERE User_ID = ?";
             pstmt = conn.prepareStatement(query);
             pstmt.setString(1, username);
             rs = pstmt.executeQuery();

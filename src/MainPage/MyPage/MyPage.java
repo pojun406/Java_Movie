@@ -42,10 +42,9 @@ public class MyPage extends JFrame {
 
         for (BookingDTO dto : watchedList) {
             String currentReservationNum = dto.getReservation_Num();
-            System.out.println("마페이지 커런트넘"+ currentReservationNum);
             // 이전 예약 번호와 현재 예약 번호가 다르면 Movie_Name을 추가
             if (!currentReservationNum.equals(prevReservationNum)) {
-                listModel.addElement("예약번호 : "+currentReservationNum+" | " +dto.getMovie_Name() + "  | 상영시간 : " + dto.getSchedule());
+                listModel.addElement("예약번호 : "+currentReservationNum+" | " +dto.getMovie_Name() + " | 상영시간 : " + dto.getSchedule());
             }
 
             prevReservationNum = currentReservationNum;

@@ -1,29 +1,29 @@
 
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡¡£şÿÿÿÿ
-e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”¬Œ
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Á®Æ
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÔéåşÿÿÿÿ
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æùçã
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É€§Ôüÿÿÿÿ
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¦ÆÊüÿÿÿÿ8òöéÏ†1
-f	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò×òŞ
-C
-java:S1604I"(Make this anonymous inner class a lambda(ıÆßÒüÿÿÿÿ
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÂÄÆ•ûÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ
-k	java:S116"VRename this field "lb_UserName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¾Ê•
-q	java:S116"WRename this field "lb_MovieName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æñô÷ÿÿÿÿÿ
-l	java:S116"RRename this field "lb_Seat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªæ•ùÿÿÿÿ
-k	java:S116"VRename this field "lb_showDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èúüÕ
-j	java:S116"URename this field "lb_theater" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼÷
-i	java:S116"TRename this field "btn_check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÍ‹
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡¡£şÿÿÿÿ8ğòÚç†1
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”¬Œ8ğòÚç†1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Á®Æ8ñòÚç†1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÔéåşÿÿÿÿ8ñòÚç†1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æùçã8ñòÚç†1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É€§Ôüÿÿÿÿ8ñòÚç†1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¦ÆÊüÿÿÿÿ8ñòÚç†1
+m	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò×òŞ8òòÚç†1
+J
+java:S1604I"(Make this anonymous inner class a lambda(ıÆßÒüÿÿÿÿ8òòÚç†1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÂÄÆ•ûÿÿÿÿ8óòÚç†1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ëôâùÿÿÿÿ8ôòÚç†1
+r	java:S116"VRename this field "lb_UserName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¾Ê•8ÿòÚç†1
+x	java:S116"WRename this field "lb_MovieName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æñô÷ÿÿÿÿÿ8€óÚç†1
+s	java:S116"RRename this field "lb_Seat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªæ•ùÿÿÿÿ8€óÚç†1
+r	java:S116"VRename this field "lb_showDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èúüÕ8€óÚç†1
+q	java:S116"URename this field "lb_theater" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼÷8€óÚç†1
+p	java:S116"TRename this field "btn_check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÍ‹8€óÚç†1
 E
-java:S1948"(Make "bokdao" transient or serializable.(£ò¦€8ŸœËµ†1
-A
-java:S1948"&Make "user" transient or serializable.(š÷îÔùÿÿÿÿ
-d
-java:S3252&"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
-N
-java:S1128"2Remove this unused import 'DAODTO.Movie.MovieDAO'.(äçÒ8·÷éÏ†1
+java:S1948"(Make "bokdao" transient or serializable.(£ò¦€8†óÚç†1
 H
-java:S1068"-Remove this unused "posterImg" private field.(¸Âõ‡úÿÿÿÿ
+java:S1948"&Make "user" transient or serializable.(š÷îÔùÿÿÿÿ8†óÚç†1
+k
+java:S3252&"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8óÚç†1
+N
+java:S1128"2Remove this unused import 'DAODTO.Movie.MovieDAO'.(äçÒ8šóÚç†1
+O
+java:S1068"-Remove this unused "posterImg" private field.(¸Âõ‡úÿÿÿÿ8šóÚç†1

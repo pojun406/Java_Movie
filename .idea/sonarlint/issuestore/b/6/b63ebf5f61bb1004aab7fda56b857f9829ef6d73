@@ -2,7 +2,7 @@
 E
 java:S1604B"(Make this anonymous inner class a lambda(„¿õî8Àäˆ×†1
 E
-java:S1604a"(Make this anonymous inner class a lambda(å³’¡8¯Ñ™×†1
+java:S1604c"(Make this anonymous inner class a lambda(å³’¡8¯Ñ™×†1
 g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‹û×åıÿÿÿÿ
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–¯ãN
 p	java:S116"TRename this field "User_List" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›´ƒÇ8Èà×†1
@@ -22,3 +22,5 @@ t
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ı°øùÿÿÿÿ8ÍÑ™×†1
 k
 java:S32523"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ÑÑ™×†1
+U	java:S106F"9Replace this use of System.out or System.err by a logger.(æòï8íŠ­è†1
+Z	java:S106K"9Replace this use of System.out or System.err by a logger.(ØşÁïıÿÿÿÿ8Âƒ†é†1
