@@ -30,16 +30,16 @@ java:S1643™"Use a StringBuilder instead.(Ç¤˜ğ
 }
 java:S1488‰"fImmediately return this expression instead of assigning it to the temporary variable "uniqueFileName".( ³ü‘
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Çñ˜­
-h
-java:S2095­"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÃİÙ‘ÿÿÿÿÿ
+e
+java:S2095ë"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ğ€B
 f
 java:S2095·"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ö¤«§
 h
 java:S2095ô"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÃİÙ‘ÿÿÿÿÿ
-e
-java:S2095ë"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ğ€B
 f
 java:S2095ã"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(©õ€…
+h
+java:S2095­"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÃİÙ‘ÿÿÿÿÿ
 h	java:S100m"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÈ´úÿÿÿÿ
 i	java:S100§"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´µûúÿÿÿÿ
 J
